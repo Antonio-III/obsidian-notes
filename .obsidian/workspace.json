@@ -4,46 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "16893fe93d5b322c",
+        "id": "c679658a57e1cc67",
         "type": "tabs",
         "children": [
           {
-            "id": "fc48f52e1c54dd72",
+            "id": "93b4c851ac5faee5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Logs.md",
+                "file": "BSU/Emerging Technologies.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2c6515c36ae956fc",
+            "id": "3496a1fb0dff32c8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MIT/Number Systems.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7e64630d147b41e0",
-            "type": "leaf",
-            "state": {
-              "type": "diff-view",
-              "state": {
-                "file": ".obsidian/plugins/obsidian-git/data.json",
-                "staged": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "BSU/Emerging Technologies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "BSU/Emerging Technologies.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -146,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "BSU/Emerging Technologies.md"
+              }
             }
           },
           {
@@ -162,7 +150,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 234.5
+    "width": 234.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -175,17 +164,22 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "7e64630d147b41e0",
+  "active": "93b4c851ac5faee5",
   "lastOpenFiles": [
+    "Untitled.md",
+    "BSU/Emerging Technologies.md",
+    "BSU/Creative Industry Challenge.md",
+    "BSU/Code Lab II (Python).md",
+    "To do.md",
+    "BSU/Web Dev II (HTML, CSS, JS).md",
     "Logs.md",
+    "MIT/Number Systems.md",
     "obsidian-notes",
     "BSU/images/Emerging Technologies/Pew Research/Negative Effect of Social Media Index.png",
     "Destiny.md",
-    "BSU/Emerging Technologies.md",
     "BSU/images/Emerging Technologies/Science Advances/Distribution of Total and Fake news Share.jpeg",
     "BSU/images/Emerging Technologies/Science Advances/Mean Fake News Shared vs Demograpics.jpeg",
     "BSU/images/Emerging Technologies/Pew Research/Divided Political Opinions.png",
-    "BSU/Creative Industry Challenge.md",
     "BSU/images/Emerging Technologies/Pew Research/US as an Outlier.png",
     "BSU/images/Emerging Technologies/Pew Research/Social Media Makes Population Susceptible to Manipulation.png",
     "BSU/images/Emerging Technologies/Pew Research/Social Media Informs Citizens.png",
@@ -195,8 +189,6 @@
     "Vision Board.md",
     "Foundations of Algorithms/Lectures/Lecture 3.md",
     "BSU/Smartphone Apps.md",
-    "MIT/Number Systems.md",
-    "BSU/Web Dev II (HTML, CSS, JS).md",
     "Templater/Subscript.md",
     "Templater/Superscript.md",
     "Untitled",
@@ -212,7 +204,6 @@
     "Foundations of Algorithms/Images/2023/Lecture 2",
     "Foundations of Algorithms/Images/2023",
     "Linkedin Learning/Untitled",
-    "To do.md",
     "Harvard/Py50 (2022)/Hints.md",
     "font combinations.md",
     "Codewars.md",
@@ -222,7 +213,6 @@
     "Harvard/Py50 (2022)/Week 2 - Conditionals.md",
     "Harvard/Py50 (2022)/Week 4 - Exceptions.md",
     "Harvard/Py50 (2022)/Week 1 - Variables, Functions.md",
-    "Harvard/Py50 (2022)/Week 3 - Loops.md",
-    "BSU/Code Lab II (Python).md"
+    "Harvard/Py50 (2022)/Week 3 - Loops.md"
   ]
 }
