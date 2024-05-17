@@ -1,0 +1,9 @@
+.HyperMD-codeblock, .markdown-rendered code[class*="language-"] {
+    overflow-x: auto;
+    word-wrap: normal;
+    white-space: pre;   
+}
+
+.HyperMD-codeblock.HyperMD-codeblock-begin.HyperMD-codeblock-begin-bg.HyperMD-codeblock-bg.cm-line {
+    padding-bottom: 0.6rem;
+}

@@ -1,0 +1,227 @@
+{
+  "main": {
+    "id": "05b6e5e84a9c466e",
+    "type": "split",
+    "children": [
+      {
+        "id": "16893fe93d5b322c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fc48f52e1c54dd72",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Logs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2c6515c36ae956fc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MIT/Number Systems.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7e64630d147b41e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "BSU/Creative Industry Challenge.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d78f51c6efa6418b",
+    "type": "split",
+    "children": [
+      {
+        "id": "29a887fcc4c18bea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0ba945ab6911c77b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "21ab59fb43124993",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e2684dd3af753cb1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "bc411c24a0c477ca",
+    "type": "split",
+    "children": [
+      {
+        "id": "7584ad0d302cb8fd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fc534bc029256899",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "BSU/Creative Industry Challenge.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1fed61cd47b2029b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "BSU/Creative Industry Challenge.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "f4ee327b536db99e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "374a00a97d03354c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "BSU/Creative Industry Challenge.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 234.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "0ba945ab6911c77b",
+  "lastOpenFiles": [
+    "obsidian-notes",
+    "BSU/images/Emerging Technologies/Pew Research/Negative Effect of Social Media Index.png",
+    "Destiny.md",
+    "BSU/Emerging Technologies.md",
+    "BSU/images/Emerging Technologies/Science Advances/Distribution of Total and Fake news Share.jpeg",
+    "BSU/images/Emerging Technologies/Science Advances/Mean Fake News Shared vs Demograpics.jpeg",
+    "BSU/images/Emerging Technologies/Pew Research/Divided Political Opinions.png",
+    "BSU/Creative Industry Challenge.md",
+    "BSU/images/Emerging Technologies/Pew Research/US as an Outlier.png",
+    "BSU/images/Emerging Technologies/Pew Research/Social Media Makes Population Susceptible to Manipulation.png",
+    "BSU/images/Emerging Technologies/Pew Research/Social Media Informs Citizens.png",
+    "BSU/images/Emerging Technologies/Pew Research/Social Media in Democracy.png",
+    "BSU/images/Emerging Technologies/Pew Research/Social Media has been a ___.png",
+    "BSU/images/Emerging Technologies/Pew Research/Less Civil.png",
+    "Vision Board.md",
+    "Foundations of Algorithms/Lectures/Lecture 3.md",
+    "BSU/Smartphone Apps.md",
+    "MIT/Number Systems.md",
+    "BSU/Web Dev II (HTML, CSS, JS).md",
+    "Logs.md",
+    "Templater/Subscript.md",
+    "Templater/Superscript.md",
+    "Untitled",
+    "Templater",
+    "MIT.md",
+    "MIT",
+    "Foundations of Algorithms/Images/2023/Lecture 4",
+    "Untitled.canvas",
+    "Foundations of Algorithms/Lectures/Lecture 2.md",
+    "Foundations of Algorithms/Images/2023/Lecture 3",
+    "Foundations of Algorithms/Lectures",
+    "Harvard/Terminal.md",
+    "Foundations of Algorithms/Images/2023/Lecture 2",
+    "Foundations of Algorithms/Images/2023",
+    "Linkedin Learning/Untitled",
+    "Foundations of Algorithms/Images",
+    "To do.md",
+    "Harvard/Py50 (2022)/Hints.md",
+    "font combinations.md",
+    "Codewars.md",
+    "2024-04-16.md",
+    "BSU/creative challenges.md",
+    "Untitled 1.canvas",
+    "Harvard/Py50 (2022)/Week 2 - Conditionals.md",
+    "Harvard/Py50 (2022)/Week 4 - Exceptions.md",
+    "Harvard/Py50 (2022)/Week 1 - Variables, Functions.md",
+    "Harvard/Py50 (2022)/Week 3 - Loops.md",
+    "BSU/Code Lab II (Python).md"
+  ]
+}
