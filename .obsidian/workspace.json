@@ -35,11 +35,10 @@
             "id": "7e64630d147b41e0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diff-view",
               "state": {
-                "file": "BSU/Creative Industry Challenge.md",
-                "mode": "source",
-                "source": false
+                "file": ".obsidian/plugins/obsidian-git/data.json",
+                "staged": false
               }
             }
           }
@@ -110,7 +109,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BSU/Creative Industry Challenge.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +125,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BSU/Creative Industry Challenge.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -149,18 +146,23 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "BSU/Creative Industry Challenge.md"
-              }
+              "state": {}
+            }
+          },
+          {
+            "id": "8b626894a0d2597a",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 234.5,
-    "collapsed": true
+    "width": 234.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -173,8 +175,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "0ba945ab6911c77b",
+  "active": "7e64630d147b41e0",
   "lastOpenFiles": [
+    "Logs.md",
     "obsidian-notes",
     "BSU/images/Emerging Technologies/Pew Research/Negative Effect of Social Media Index.png",
     "Destiny.md",
@@ -194,7 +197,6 @@
     "BSU/Smartphone Apps.md",
     "MIT/Number Systems.md",
     "BSU/Web Dev II (HTML, CSS, JS).md",
-    "Logs.md",
     "Templater/Subscript.md",
     "Templater/Superscript.md",
     "Untitled",
@@ -210,7 +212,6 @@
     "Foundations of Algorithms/Images/2023/Lecture 2",
     "Foundations of Algorithms/Images/2023",
     "Linkedin Learning/Untitled",
-    "Foundations of Algorithms/Images",
     "To do.md",
     "Harvard/Py50 (2022)/Hints.md",
     "font combinations.md",
