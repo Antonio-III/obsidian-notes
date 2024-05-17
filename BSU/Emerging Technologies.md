@@ -382,18 +382,17 @@ A **median of 77% think that social media has been an effective tool to raise pu
 
 South Korea agrees the most that social media is effective for changing people's minds, at 87%; behind that is Malaysia at 78%, who is 9 percentage points behind. France and Israel are the least to agree, at 45 and 46%. Younger people **(18~29) are the most likely to say social media is effective at raising awareness and at changing people's minds compared to older groups**.
 
-Social media use may also play a role in seeing the positive effects of social media. **Those who use social media tend to say it is effective at raising awareness and changing people's minds compared to those who don't.**
+Social media use may also play a role in seeing the positive effects of social media. **Those who use social media have a higher tendency to say it is effective at raising awareness and changing people's minds** compared to those who don't.
 
 When it comes to social media’s efficacy towards getting politicians to pay attention to issues, South Korea is the most to say that it has somewhat or very effective, at 85%, with Singapore close behind, at 83%. France and Hungary are the least to agree, at 46 and 47%.
 
 Lastly, a slightly lower median (61%) say that social media is effective at influencing policy decisions in their own country, the lowest out of all questions. South Korea, Malaysia, and Singapore agree the most, at 78, 76, 74%. Israel is the least to agree, at 39%, the second is France, at 47%; 8 percentage points ahead of israel. **A majority in Israel (61%) say it is not somewhat/very effective at influencing policy decisions**, while close to 50% in Belgium, France, and Netherlands agree.
 
+ In all the countries surveyed, at least **40% of the population of every country have said that social media is at least somewhat effective at accomplishing all these goals**.
+
 Those with **lower income and education are less likely to provide answers to whether it changes minds, influences policy decisions, or brings awareness to issues**. This means that those with **lower income and education may be underrepresented** in these questions.
 
-
 Among social media users, those who **post about political issues sometimes or often tend to agree on all 4 questions than those who post rarely or never**.
-
-So in all the countries surveyed, at least **40% of the population of every country have said that social media is at least somewhat effective at accomplishing all these goals**.
 
 Additionally, people who **think they have influence in politics in their country tend to agree that social media is at least somewhat effective at influencing policy decisions and bringing issues to the attention of politicians and the public**.
 
@@ -402,12 +401,13 @@ Moreover, **people who post about political issues tend to say social media is e
 And **people who say they have influence in politics believe social media can bring issues to the attention of elected officials**, as well as **believing social media can influence policy decisions**. The authors cite 60% of those who have political influence in Germany say social media is at least somewhat effective for influencing policy decisions, while 43% who say they have no influence agree.
 
 
+
 #### Younger people more often see social media as a benefit to democracy
 
-Figure:
+Figure 8:
 ![[Young Adults More Positive About Social Media.png]]
 
-In the countries surveyed, 14 out of 19 countries had young adults (18~29) say that social media's impact on politics has been a good thing compared to older people (30~49, and 50+). The exception is Italy where slightly more of older adults (ages 30~49) see social media as a positive thing, at 62%, where younger adults agree at 60%. But the **youngest group is consistently ahead of the oldest group** (50+), being ahead by at least eight percentage points.
+In the countries surveyed, 14 out of 19 countries had **young adults (18~29) say that social media's impact on politics has been a good thing compared to older people** (30~49, and 50+). The exception is Italy where slightly more of older adults (ages 30~49) see social media as a positive thing, at 62%, where younger adults agree at 60%. But the **youngest group is consistently ahead of the oldest group** (50+), being ahead by at least eight percentage points.
 
 Additionally, the oldest group is consistently behind their younger peers, and is the group least likely to agree that social media has been a good thing for politics. They are at least 6 percentage points behind the second-oldest group (ages 30~49), with the exception of Belgium, where the gap between the two oldest groups is 2 percentage points.
 
@@ -430,6 +430,7 @@ In a study by Kwak, N., et al. (2018), they analyzed whether or not perceiving s
 
 ##### Most agree social media makes people susceptible to manipulation
 
+Figure 9:
 ![[Social Media Makes Population Susceptible to Manipulation.png]]
 
 In every country **except Poland and Malaysia**, at least **70% of the population say that social media has made people easier to manipulate**.
@@ -550,20 +551,16 @@ The authors' explanation for this is that **older people may not be digitally li
 There are some counters for why sharing fake news is rare, and they are addressed in the paper. 
 
 - "They don't share links"
+	Figure 12:
 	![[Distribution of Total and Fake news Share.jpeg]]
 	In the figure on the left, majority of the respondents shared less than 500 web links overall. And the figure on the right, most respondents shared 0 fake news articles.
 	Out of the 1191 respondents, **90.8% shared at least 1 link during data collection**. In that 90.8% figure (1080), a minority (3.5%) shared 10 or fewer links, and the majority (61.3%) shared in the ranges of: 100~1000 links. So the **sharing of fake news is still an expectional occurrence**.
 
 
 - "They share anything" 
+	Figure 13:
 	![[Mean Fake News Shared vs Demograpics.jpeg]]
 	In Figure D, **those who shared the most articles (at least 2001) tend to share less fake news articles**. So the claim of "people will share anything" is not true, otherwise the more articles you've shared, the more likely you are to have shared a fake news article. What this instead shows is that **people who share a lot of links are more able to distinguish between fake news and real news**. 
-
-
-
-
-
-
 
 
 ### [Americans Who Mainly Get Their News on Social Media Are Less Engaged, Less Knowledgeable](https://www.pewresearch.org/journalism/2020/07/30/americans-who-mainly-get-their-news-on-social-media-are-less-engaged-less-knowledgeable/)
