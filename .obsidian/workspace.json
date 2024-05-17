@@ -23,8 +23,10 @@
             "id": "3496a1fb0dff32c8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "image",
+              "state": {
+                "file": "BSU/images/Emerging Technologies/Pew Research/Social Media Makes Population Susceptible to Manipulation.png"
+              }
             }
           }
         ]
@@ -166,8 +168,18 @@
   },
   "active": "93b4c851ac5faee5",
   "lastOpenFiles": [
-    "Untitled.md",
+    "BSU/images/Emerging Technologies/Pew Research/Social Media Makes Population Susceptible to Manipulation.png",
+    "BSU/images/Emerging Technologies/Pew Research/Social Media Informs Citizens.png",
+    "BSU/images/Emerging Technologies/Pew Research/Social Media in Democracy.png",
+    "BSU/images/Emerging Technologies/Pew Research/Social Media has been a ___.png",
+    "BSU/images/Emerging Technologies/Pew Research/Negative Effect of Social Media Index.png",
+    "BSU/images/Emerging Technologies/Pew Research/Less Civil.png",
+    "BSU/images/Emerging Technologies/Pew Research/Impact on Tolerance.png",
+    "BSU/images/Emerging Technologies/Pew Research/Effective at Raising Awareness.png",
+    "BSU/images/Emerging Technologies/Pew Research/Divided Political Opinions.png",
     "BSU/Emerging Technologies.md",
+    "BSU/images/Emerging Technologies/Pew Research/Active Posters See Social Media as Good.png",
+    "Untitled.md",
     "BSU/Creative Industry Challenge.md",
     "BSU/Code Lab II (Python).md",
     "To do.md",
@@ -175,17 +187,8 @@
     "Logs.md",
     "MIT/Number Systems.md",
     "obsidian-notes",
-    "BSU/images/Emerging Technologies/Pew Research/Negative Effect of Social Media Index.png",
     "Destiny.md",
     "BSU/images/Emerging Technologies/Science Advances/Distribution of Total and Fake news Share.jpeg",
-    "BSU/images/Emerging Technologies/Science Advances/Mean Fake News Shared vs Demograpics.jpeg",
-    "BSU/images/Emerging Technologies/Pew Research/Divided Political Opinions.png",
-    "BSU/images/Emerging Technologies/Pew Research/US as an Outlier.png",
-    "BSU/images/Emerging Technologies/Pew Research/Social Media Makes Population Susceptible to Manipulation.png",
-    "BSU/images/Emerging Technologies/Pew Research/Social Media Informs Citizens.png",
-    "BSU/images/Emerging Technologies/Pew Research/Social Media in Democracy.png",
-    "BSU/images/Emerging Technologies/Pew Research/Social Media has been a ___.png",
-    "BSU/images/Emerging Technologies/Pew Research/Less Civil.png",
     "Vision Board.md",
     "Foundations of Algorithms/Lectures/Lecture 3.md",
     "BSU/Smartphone Apps.md",
@@ -212,7 +215,6 @@
     "Untitled 1.canvas",
     "Harvard/Py50 (2022)/Week 2 - Conditionals.md",
     "Harvard/Py50 (2022)/Week 4 - Exceptions.md",
-    "Harvard/Py50 (2022)/Week 1 - Variables, Functions.md",
-    "Harvard/Py50 (2022)/Week 3 - Loops.md"
+    "Harvard/Py50 (2022)/Week 1 - Variables, Functions.md"
   ]
 }
