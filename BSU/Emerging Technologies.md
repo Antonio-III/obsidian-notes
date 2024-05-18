@@ -195,6 +195,9 @@ I think learning more about Flourish to benefit from its full features would hav
 
 **1600-word** document
 
+Some modifications:
+Try **not** to bolden every word in a sentence, as the sentences can speak for themselves. The method to evaluate whether a word is to be boldenes is arbitratry, but it must be consistent with the overall message; in that it boldens important keywords or phrases but not the whole sentence as the readers should come to that conclusion implicitly.
+
 ## Affirmative Arguments
 
 ### Most people say social media benefitted politics in their country, with exceptions.
