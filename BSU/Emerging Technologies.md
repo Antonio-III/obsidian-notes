@@ -69,7 +69,7 @@ This makes the data hard to grasp as there are too many variables and that there
 
   
 
-What I've done is transform the data from: "List of Data Science jobs and their salaries from 2020~2022", to: "Average Salaries of Data Science jobs from 2020~2022". This means the data presented will show information about which jobs are the highest and lowest paid in that year.
+What I've done is transform the data from: "List of Data Science jobs and their salaries from 2020-2022", to: "Average Salaries of Data Science jobs from 2020-2022". This means the data presented will show information about which jobs are the highest and lowest paid in that year.
 
   
 
@@ -86,7 +86,7 @@ The one limitation about this visualization is that there is no way to see a dis
 
   
 
-It is a: "Popular computer languages from 2004~2013" data set. A bar chart race seemed to make the most sense when visualizing this data, so I chose that.
+It is a: "Popular computer languages from 2004-2013" data set. A bar chart race seemed to make the most sense when visualizing this data, so I chose that.
 
   
 
@@ -245,7 +245,7 @@ The authors note that having **perceived influence in politics makes one more li
 Figure 3:
 ![[Active Posters See Social Media as Good.png]]
 
-In all countries surveyed, **those who post about political issues on social media say that democracy has been good in their countries**. The biggest gap is in Israel where 72% who rarely or never post agree, whereas 93% who do post sometimes or often say the same. The smallest gap is in Japan where 64% of rarely-or-never-post users agree and 71% who do post say the same.
+In 19 countries surveyed, **those who post about political issues on social media say that democracy has been good in their countries**. The biggest gap is in Israel where 72% who rarely or never post agree, whereas 93% who do post sometimes or often say the same. The smallest gap is in Japan where 64% of rarely-or-never-post users agree and 71% who do post say the same.
 
 #### Potential positives
 ##### Social Media informs citizens about current events
@@ -285,7 +285,7 @@ The first two possible good outcomes is whether social media has made people **m
 	2. Greece and Netherlands - 10%
 
 
-The **youngest group (18~29) are most likely to say social media informs about current events compared to the oldest (50+)**. While the **oldest are more likely to say it hasn't had much impact**. An example is the US, where 71% of the youngest group say it has made people more informed, with 60% of the oldest who agree. When it comes to not having much impact, 11% of the youngest agree, with 19% of the oldest who say the same.
+The **youngest group (18-29) are most likely to say social media informs about current events compared to the oldest (50+)**. While the **oldest are more likely to say it hasn't had much impact**. An example is the US, where 71% of the youngest group say it has made people more informed, with 60% of the oldest who agree. When it comes to not having much impact, 11% of the youngest agree, with 19% of the oldest who say the same.
 
 ##### Mixed views regarding increased tolerance by social media, but many agree
 
@@ -325,9 +325,9 @@ A more **mixed** view happens on **whether social media has made people more acc
 	2. South Korea - 21%
 	3. Netherlands - 23%
 
-Belgium, Hungary, Netherlands, and France stand out as the countries who **had more people who disagree (37~45%) than who are impartial or agree**.
+Belgium, Hungary, Netherlands, and France stand out as the countries who **had more people who disagree (37-45%) than who are impartial or agree**.
 
-In most countries (16 out of 19), the **youngest group (18~29) say social media has made people more tolerant compared to the oldest group (50+)**.
+In most countries (16 out of 19), the **youngest group (18-29) say social media has made people more tolerant compared to the oldest group (50+)**.
 ##### Majority see social media as making people less civil in talking about politics
 
 Figure 6:
@@ -380,13 +380,13 @@ The survey had 4 questions regarding the influence of social media when it comes
 
 A **median of 77% think that social media has been an effective tool to raise public awareness**, with 19% who think otherwise. This is the **highest median out of the 4 questions**, so it's fair to say that the countries are mostly in **agreement about social media being at least somewhat effective at raising awareness for issues**. The countries who most agree with this are the UK (87%) and Singapore (86%). The countries who agree the least are Belgium and France, both at 57%. And those with **higher income, and education tend to agree more than their lower income, and education counterparts**.
 
-South Korea agrees the most that social media is effective for changing people's minds, at 87%; behind that is Malaysia at 78%, who is 9 percentage points behind. France and Israel are the least to agree, at 45 and 46%. Younger people **(18~29) are the most likely to say social media is effective at raising awareness and at changing people's minds compared to older groups**.
+South Korea agrees the most that social media is effective for changing people's minds, at 87%; behind that is Malaysia at 78%, who is 9 percentage points behind. France and Israel are the least to agree, at 45 and 46%. Younger people **(18-29) are the most likely to say social media is effective at raising awareness and at changing people's minds compared to older groups**.
 
 Social media use may also play a role in seeing the positive effects of social media. **Those who use social media have a higher tendency to say it is effective at raising awareness and changing people's minds** compared to those who don't.
 
-When it comes to social media’s efficacy towards getting politicians to pay attention to issues, South Korea is the most to say that it has somewhat or very effective, at 85%, with Singapore close behind, at 83%. France and Hungary are the least to agree, at 46 and 47%.
+When it comes to social media’s efficacy towards getting politicians to pay attention to issues, South Korea is the most to say that it has been somewhat or very effective, at 85%, with Singapore close behind, at 83%. France and Hungary are the least to agree, at 46 and 47%.
 
-Lastly, a slightly lower median (61%) say that social media is effective at influencing policy decisions in their own country, the lowest out of all questions. South Korea, Malaysia, and Singapore agree the most, at 78, 76, 74%. Israel is the least to agree, at 39%, the second is France, at 47%; 8 percentage points ahead of israel. **A majority in Israel (61%) say it is not somewhat/very effective at influencing policy decisions**, while close to 50% in Belgium, France, and Netherlands agree.
+Lastly, a slightly lower median (61%) say that social media is effective at influencing policy decisions in their own country, the lowest out of all questions. South Korea, Malaysia, and Singapore agree the most, at 78, 76, 74%. Israel is the least to agree, at 39%; the second is France, at 47%; 8 percentage points ahead of israel. **A majority in Israel (61%) say it is not somewhat/very effective at influencing policy decisions**, while close to 50% in Belgium, France, and Netherlands agree.
 
  In all the countries surveyed, at least **40% of the population of every country have said that social media is at least somewhat effective at accomplishing all these goals**.
 
@@ -400,28 +400,19 @@ Moreover, **people who post about political issues tend to say social media is e
 
 And **people who say they have influence in politics believe social media can bring issues to the attention of elected officials**, as well as **believing social media can influence policy decisions**. The authors cite 60% of those who have political influence in Germany say social media is at least somewhat effective for influencing policy decisions, while 43% who say they have no influence agree.
 
-
-
 #### Younger people more often see social media as a benefit to democracy
 
 Figure 8:
 ![[Young Adults More Positive About Social Media.png]]
 
-In the countries surveyed, 14 out of 19 countries had **young adults (18~29) say that social media's impact on politics has been a good thing compared to older people** (30~49, and 50+). The exception is Italy where slightly more of older adults (ages 30~49) see social media as a positive thing, at 62%, where younger adults agree at 60%. But the **youngest group is consistently ahead of the oldest group** (50+), being ahead by at least eight percentage points.
+14 out of 19 countries surveyed had more **young adults (18-29) say that social media's impact on politics has been a good thing compared to older people** (30-49, and 50+). The exception is Italy where slightly more older adults (ages 30-49) see social media as a positive thing, at 62%, where younger adults agree at 60%. But the **youngest group is consistently ahead of the oldest group** (50+), being ahead by at least eight percentage points.
 
-Additionally, the oldest group is consistently behind their younger peers, and is the group least likely to agree that social media has been a good thing for politics. They are at least 6 percentage points behind the second-oldest group (ages 30~49), with the exception of Belgium, where the gap between the two oldest groups is 2 percentage points.
+Additionally, the oldest group is consistently behind their younger peers, and is the group least likely to agree that social media has been a good thing for politics. They are at least 6 percentage points behind the second-oldest group (ages 30-49), with the exception of Belgium, where the gap between the two oldest groups is 2 percentage points.
 
 
 #### Seeing social media as effective in politics indirectly leads to more offline participation
 
-In a study by Kwak, N., et al. (2018), they analyzed whether or not perceiving social media as a useful tool to engage in politics would promote political expression in social media, and therefore increase offline political participation. The finding was that it **does seem to be the case that perceived usefulness of social media on politics helps political expression in social media, which influences offline political participation**. However, researchers note that it **doesn't seem to be the case for those who are exposed to diverse political views, and for younger people**.
-
-
-
-
-
-
-
+In a study by Kwak, N., et al. (2018), they analyzed whether or not perceiving social media as a useful tool to engage in politics would promote political expression in social media, and therefore increase offline political participation. The finding was that it **does seem to be the case that perceived usefulness of social media on politics helps political expression in social media, which then influences offline political participation**. However, researchers note that it **doesn't seem to be the case for those who are exposed to diverse political views, and for younger people**.
 
 
 ### Negative Arguments
@@ -441,7 +432,7 @@ In every country **except Poland and Malaysia**, at least **70% of the populatio
 	2. Australia - 90%
 	3. UK - 89%
 
-Despite the US being exceptionally-negative about the impacts of social media in politics, they are the sixth-highest to say it has made people more easy to manipulate, at 86%.
+Despite the US being exceptionally negative about the impacts of social media in politics, they are the sixth-highest to say it has made people more easy to manipulate, at 86%.
 
 **Lowest** percentage who say it has made people **more easy to manipulate**:
 	1. Malaysia - 51%
@@ -453,8 +444,6 @@ Despite the US being exceptionally-negative about the impacts of social media in
 	1. Malaysia - 29%
 	2. Singapore - 16%
 	3. Hungary, and Poland - 12%
-
-Malaysia is the only country where close to three-tenths (29%) say social media has made people less easy to manipulate. The country closest to say the same is Singapore, at 16%.
 
 **Lowest** percentage who say it has made people **less easy to manipulate**:
 	1. UK, Canada, and Japan - 2%
@@ -469,14 +458,14 @@ Malaysia is the only country where close to three-tenths (29%) say social media 
 	1. Netherlands, and Belgium - 5%
 	2. Australia - 6%
 
-The authors note that **younger people** and those who have **attained higher education are more likely to say it has made people more easy to manipulate**.
+The authors note that **younger people**, and those who have **attained higher education are more likely to say it has made people more easy** to manipulate.
 
 ##### Majority see Social Media leads to divided opinions
 
 Figure 10:
 ![[Divided Political Opinions.png]]
 
-The question of whether social media has made people more divided in their political opinion shows a median of 65% who agree, a quarter (26%) who say it hasn't had much impact, and 8% who say it has made people less divided.
+The question of **whether social media has made people more divided in their political opinion** shows a **median of 65% who agree**, a quarter **(26%) who say it hasn't had much impact**, and **8% who say it has made people less divided**.
 
 **Highest** percentage who say it has made people **more divided**:
 	1. US - 79%
@@ -517,7 +506,7 @@ The question of whether social media has made people more divided in their polit
 Figure 11:
 ![[Negative Effect of Social Media Index.png]]
 
-In the Pew Research survey, respondents who answered negatively in the six questions were coded as 1 in the index, meaning they say that social media has made people less: (1~2) informed domestically/internationally; (3) accepting of differing backgrounds; (4) civil in how they talk about politics. And those who agree that social media has made people more: (1) easy to manipulate; (2) divided in their opinions, were coded the same. An opposing or indifferent answer is coded as 0. And respondents who answered "don't know" to any of the six questions were excluded from the index.
+In the Pew Research survey, respondents who **answered negatively in the six questions were coded as 1 in the index**, meaning they say that social media has made people **less**: (1-2) **informed domestically/internationally**; (3) **accepting of differing backgrounds**; (4) **civil in how they talk about politics**. And those who agree that social media has made people more: (5) **easy to manipulate**; (6) **divided in their opinions**, were coded the same. An opposing or indifferent answer is coded as 0. Respondents who answered "don't know" to any of the six questions were excluded from the index.
 
 Highest index:
 	1. US - 3.05
@@ -531,7 +520,7 @@ Lowest index:
 	2. Poland - 2.05
 	3. Israel - 2.17
 
-Singapore and Poland are also the two countries least to view social media as a bad thing for politics.
+Singapore and Poland are also the two countries to least view social media as a bad thing for politics.
 
 This shows that in **all the countries surveyed, at least 2 questions were answered in an unfavorable view of social media**.
 ### Older people tend to share more fake news than younger people.
@@ -542,9 +531,9 @@ What they found was that **8.5% (101) of respondents have shared at least 1 fake
 
 The reason brought up for why this could be is that **most fake news articles tend to be pro-Trump**, and that **people would probably share articles they agree with**. So the authors thought it might not be a tendency of just being conservative that will compel you to share fake news but more so that they just agree with pro-Trump narratives at the time. So it's **entirely possible that conservatives aren't more prone to spreading misinformation, they just agree with pro-Trump articles that just so happen to be fake news**.
 
-Another finding was that the **older you get, the more likely you are to share fake news stories**. This happened consistently, regardless of education, political leaning, and posting activity. **Anyone over the age of 65 was 7 times more likely to share a fake news story compared to the youngest group (18~29), and 2 times more likely than the second-oldest group (45~65)**. And respondents in each category were more likely to share fake news than the next-younger group. So the trend is that the older you get, the more likely you are to share a fake news article.
+Another finding was that the **older you get, the more likely you are to share fake news stories**. This happened consistently, regardless of education, political leaning, and posting activity. **Anyone over the age of 65 was 7 times more likely to share a fake news story compared to the youngest group (18-29), and 2 times more likely than the second-oldest group (45-65)**. And respondents in each category were more likely to share fake news than the next-younger group. So the trend is that the older you get, the more likely you are to share a fake news article.
 
-The authors' explanation for this is that **older people may not be digitally literate to discern fake news from real news**. And the general effect of aging in memory is that the older you get, the less likely you are to resist persistent beliefs and fake narratives dressed to be real.
+The authors' explanation for this is that **older people may not be digitally literate to discern fake news from real news**. And the general effect of aging in memory is that the older you get, the less likely you are to resist persistent beliefs and fake characterized to be real.
 
 #### Counter arguments 
 
@@ -554,13 +543,13 @@ There are some counters for why sharing fake news is rare, and they are addresse
 	Figure 12:
 	![[Distribution of Total and Fake news Share.jpeg]]
 	In the figure on the left, majority of the respondents shared less than 500 web links overall. And the figure on the right, most respondents shared 0 fake news articles.
-	Out of the 1191 respondents, **90.8% shared at least 1 link during data collection**. In that 90.8% figure (1080), a minority (3.5%) shared 10 or fewer links, and the majority (61.3%) shared in the ranges of: 100~1000 links. So the **sharing of fake news is still an expectional occurrence**.
+	Out of the 1191 respondents, **90.8% shared at least 1 link during data collection**. In that 90.8% figure (1080), a minority (3.5%) shared 10 or fewer links, and the majority (61.3%) shared in the ranges of: 100-1000 links. So the **sharing of fake news is still an expectional occurrence**.
 
 
 - "They share anything" 
 	Figure 13:
 	![[Mean Fake News Shared vs Demograpics.jpeg]]
-	In Figure D, **those who shared the most articles (at least 2001) tend to share less fake news articles**. So the claim of "people will share anything" is not true, otherwise the more articles you've shared, the more likely you are to have shared a fake news article. What this instead shows is that **people who share a lot of links are more able to distinguish between fake news and real news**. 
+	In Figure D, **those who shared the most articles (at least 2001) tend to share less fake news articles**. So the claim of "people will share anything" is not true, otherwise it would be true that the more articles you've shared, the more likely you are to have shared a fake news article. Instead what this shows is that **people who share a lot of links are more able to distinguish between fake news and real news**. 
 
 
 ### [Americans Who Mainly Get Their News on Social Media Are Less Engaged, Less Knowledgeable](https://www.pewresearch.org/journalism/2020/07/30/americans-who-mainly-get-their-news-on-social-media-are-less-engaged-less-knowledgeable/)
