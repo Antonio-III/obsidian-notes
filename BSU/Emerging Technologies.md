@@ -238,7 +238,7 @@ Among the 19 countries surveyed, the US stands out, with 34% who say social medi
 	3. Netherlands - 44%
 
 
-Do note that showing a favor for one side doesn't necessarily mean a heavy leaning on the other. While **Poland has the least percentage who say social media has been bad for politics in their country, it is the third-highest who say it’s been a good thing**. **Malaysia on the other hand is the sixth-least to say that social media has been bad, and is second-highest to say it has been good**. But the **countries that heavily say social media has been bad for politics in their country are also the least to say it has been good**.
+Do note that showing a **favor for one side doesn't necessarily mean a heavy leaning on the other**. While Poland has the least percentage who say social media has been bad for politics in their country, it is the third-highest who say it’s been a good thing. Malaysia on the other hand is the sixth-least to say that social media has been bad, and is second-highest to say it has been good. But the countries that heavily say social media has been bad for politics in their country are also the least to say it has been good.
 
 The authors note that having **perceived influence in politics makes one more likely to say that social media has been good for politics**. They stated that 62% of Belgians that say they have an influence in politics also think that social media has been good for politics in their country, contrast to 44% who agree and say they have little-to-no influence on politics.
 
@@ -248,7 +248,7 @@ The authors note that having **perceived influence in politics makes one more li
 Figure 3:
 ![[Active Posters See Social Media as Good.png]]
 
-In 19 countries surveyed, **those who post about political issues on social media say that democracy has been good in their countries**. The biggest gap is in Israel where 72% who rarely or never post agree, whereas 93% who do post sometimes or often say the same. The smallest gap is in Japan where 64% of rarely-or-never-post users agree and 71% who do post say the same.
+In 19 countries surveyed, **those who post about political issues on social media say that democracy has been good** in their countries. The biggest gap is in Israel where 72% who rarely or never post agree, whereas 93% who do post sometimes or often say the same. The smallest gap is in Japan where 64% of rarely-or-never-post users agree and 71% who do post say the same.
 
 #### Potential positives
 ##### Social Media informs citizens about current events
@@ -256,7 +256,7 @@ In 19 countries surveyed, **those who post about political issues on social medi
 Figure 4:
 ![[Social Media Informs Citizens.png]]
 
-The first two possible good outcomes is whether social media has made people **more informed about events domestically and internationally**, and the **median amount who agree is 73% in both questions**. **Those who agree domestically are highly correlated to agree internationally**.
+The first two possible good outcomes is whether social media has made people more informed about events domestically and internationally, and the **median amount who agree is 73% in both questions**. **Those who agree domestically are highly correlated to agree internationally**.
 
 **Highest** percentage who say it has made people **more** informed:
 	1. Sweden - 85%
@@ -295,7 +295,7 @@ The **youngest group (18-29) are most likely to say social media informs about c
 Figure 5:
 ![[Impact on Tolerance.png]]
 
-A more **mixed** view happens on **whether social media has made people more accepting of differing backgrounds** (religion, races, ethnic groups). A **median of 45% say it has**, around half of that amount **(22%) say it has made people less accepting**, and close to three-tenths **(29%) say it hasn't made much impact**.
+A more **mixed** view happens on whether social media has made people more accepting of differing backgrounds (religion, races, ethnic groups). A **median of 45% say it has**, around half of that amount **(22%) say it has made people less accepting**, and close to three-tenths **(29%) say it hasn't made much impact**.
 
 **Highest** percentage who say it has made people **more** tolerant:
 	1. South Korea - 62%
@@ -328,7 +328,7 @@ A more **mixed** view happens on **whether social media has made people more acc
 	2. South Korea - 21%
 	3. Netherlands - 23%
 
-Belgium, Hungary, Netherlands, and France stand out as the countries who **had more people who disagree (37-45%) than who are impartial or agree**.
+Belgium, Hungary, Netherlands, and France stand out as the countries who had **more people who disagree (37-45%) than who are impartial or agree**.
 
 In most countries (16 out of 19), the **youngest group (18-29) say social media has made people more tolerant compared to the oldest group (50+)**.
 ##### Majority see social media as making people less civil in talking about politics
@@ -336,7 +336,7 @@ In most countries (16 out of 19), the **youngest group (18-29) say social media 
 Figure 6:
 ![[Less Civil.png]]
 
-The last possible good outcome is **whether social media has made people more civil in political discussions**. And the outcomes show that a **median of (23%) say it has**, and a majority (72%) either say it has made people **less civil (46%)** or are **impartial (26%)**.
+The last possible good outcome is whether social media has made people more civil in political discussions. And the outcomes show that a **median of (23%) say it has**, and a majority (72%) either say it has made people **less civil (46%)** or are **impartial (26%)**.
 
 **Highest** percentage who say it has made people **more** civil in political discussions:
 	1. Singapore - 47%
@@ -367,7 +367,7 @@ The last possible good outcome is **whether social media has made people more ci
 **Lowest** percentage who say it **hasn’t had much impact**:
 	1. US, Hungary, and Netherlands - 16%
 
-Singapore is the only country where a majority see social media as making people more civil (47%) than who are impartial (25%) or disagree (27%). 
+Singapore is the only country where a **majority see social media as making people more civil (47%) than who are impartial (25%) or disagree (27%)**. 
 
 Most countries have more people who are impartial or disagree, than people who say it has made people more civil. 
 
@@ -381,7 +381,7 @@ Figure 7:
 
 The survey had 4 questions regarding the influence of social media when it comes to effecting political change and its impact on political discourse.
 
-A **median of 77% think that social media has been an effective tool to raise public awareness**, with 19% who think otherwise. This is the **highest median out of the 4 questions**, so it's fair to say that the countries are mostly in **agreement about social media being at least somewhat effective at raising awareness for issues**. The countries who most agree with this are the UK (87%) and Singapore (86%). The countries who agree the least are Belgium and France, both at 57%. And those with **higher income, and education tend to agree more than their lower income, and education counterparts**.
+A **median of 77% think that social media has been an effective tool to raise public awareness**, with 19% who think otherwise. This is the highest median out of the 4 questions, so it's fair to say that the countries are mostly in **agreement about social media being at least somewhat effective at raising awareness for issues**. The countries who most agree with this are the UK (87%) and Singapore (86%). The countries who agree the least are Belgium and France, both at 57%. And those with **higher income, and education tend to agree more than their lower income, and education counterparts**.
 
 South Korea agrees the most that social media is effective for changing people's minds, at 87%; behind that is Malaysia at 78%, who is 9 percentage points behind. France and Israel are the least to agree, at 45 and 46%. Younger people **(18-29) are the most likely to say social media is effective at raising awareness and at changing people's minds compared to older groups**.
 
