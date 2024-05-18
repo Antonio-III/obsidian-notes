@@ -498,7 +498,9 @@ The question of **whether social media has made people more divided in their pol
 	2. South Korea - 12%
 	3. US and Netherlands - 14%
 
-**Younger people tend to say it has made people more divided compared to older age groups. This is also the case between more-educated people and less. People who agree tend to also say that social media has made people less civil**.
+**Younger people more tend to say it has made people more divided** compared to older age groups. This is **also the case between more-educated people and less**. 
+
+**People who agree** tend to also say that **social media has made people less civil**.
 
 
 #### Negative effects of social media index
@@ -506,7 +508,7 @@ The question of **whether social media has made people more divided in their pol
 Figure 11:
 ![[Negative Effect of Social Media Index.png]]
 
-In the Pew Research survey, respondents who **answered negatively in the six questions were coded as 1 in the index**, meaning they say that social media has made people **less**: (1-2) **informed domestically/internationally**; (3) **accepting of differing backgrounds**; (4) **civil in how they talk about politics**. And those who agree that social media has made people more: (5) **easy to manipulate**; (6) **divided in their opinions**, were coded the same. An opposing or indifferent answer is coded as 0. Respondents who answered "don't know" to any of the six questions were excluded from the index.
+In the Pew Research survey, respondents who **answered negatively in the six questions were coded as 1 in the index**, meaning they say that social media has made people **less**: (1-2) **informed domestically/internationally**; (3) **accepting of differing backgrounds**; (4) **civil in how they talk about politics**. And those who agree that social media has made people more: (5) **easy to manipulate**; (6) **divided in their opinions**, were coded the same. An opposing or indifferent answer is coded as 0. The answers were then averaged for every country. Respondents who answered "don't know" to any of the six questions were excluded from the index.
 
 Highest index:
 	1. US - 3.05
