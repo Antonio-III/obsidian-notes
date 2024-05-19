@@ -86,3 +86,16 @@ The endian system might be used to represent the bit order in a byte (???).
 
 # Operation on numbers
 
+Base 10:
+```	
+	11  <- Carry
+	145
++	256
+---------
+	401 <- Sum area
+```
+
+
+
+
+Base 2:
