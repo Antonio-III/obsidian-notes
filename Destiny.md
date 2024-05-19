@@ -70,7 +70,7 @@ Things that are hard to test are easier to adopt false beliefs from e.g. how ins
 **Examples**: (1) Having a religious family might prevent a person from abandoning the Christian belief as it can damage a person's social and financial support, so the person is incentivised to stay in that Christian belief. (2) A public figure might have an audience that demands adhere to what the audience believes, and abandoning it causes financial loss, so the person adheres to what the audience believes. (3) A person in school might be pressured to believe to certain sociopolitical beliefs and abandoning it causes the person to be outcasted in a social group, so the person believes certain beliefs to fit in the social group. 
 
 
-## [Constellation of beliefs](https://youtu.be/irz0oAAlW0c?t=404)
+## [Constellation of Beliefs](https://youtu.be/irz0oAAlW0c?t=404)
 
 People inherit beliefs from their social group they're in often due to social pressure that pushes to them to this belief system. The beliefs themselves have weak logic but are believed in an applied level. The beliefs are often abstract, i.e. hard to test, and so aren't easy to counter them. 
 
@@ -81,7 +81,7 @@ It can be hard to break someone out of the constellations of beliefs because the
 **Evidence**: (1) People that are part of the same constellation of beliefs will agree on everything. (2) Possessing one belief in the constellation will posses many of the beliefs in that constellation. (3) Many of the beliefs, when investigated, often contradict each other. (4) If someone thinks you're in a constellation of belief, they will project their own adherence of constellations of beliefs onto you. For example: if you say you believe *this*, someone will say you believe in: *this, this, this, and this*. This is called **webbing**, and it is a fallacy when you **webbing**. 
 
 
-## [Normative confusion with applied positions](https://youtu.be/irz0oAAlW0c?t=784)
+## [Normative Confusion with Applied Positions](https://youtu.be/irz0oAAlW0c?t=784)
 
 
 Example:
@@ -90,6 +90,23 @@ Premise 2: A charge of genocide would stop Israel from killing civilians.
 Conclusion: We should charge Israel with genocide.
 
 
-People with [[#[Normative confusion with applied positions](https //youtu.be/irz0oAAlW0c?t=784)|Normative confusion with applied positions]] will say that if you disagree with the soundness of Premise 2 i.e. you don't think Premise 2 is True, you necessarily disagree with Premise 1 as well. And they will ascribe to you that you think civilians should be targeted in war.
+People with Normative Confusion with Applied Positions will say that if you disagree with the soundness of Premise 2 i.e. you don't think Premise 2 is True, you necessarily disagree with Premise 1 as well. And they will ascribe to you that you think civilians should be targeted in war.
 
-The Premises and Conclusions themselves are more than likely inherited from the [[#[Constellation of beliefs](https //youtu.be/irz0oAAlW0c?t=404)|Constellation of beliefs]].
+The Premises and Conclusions themselves are more-than-likely inherited from the [[#[Constellation of beliefs](https //youtu.be/irz0oAAlW0c?t=404)|Constellation of Beliefs]].
+
+## [Humans are not truth-seeking machines](https://youtu.be/irz0oAAlW0c?t=1124)
+
+Truth is a tool to further someone's happiness, when Truth is no longer serving that purpose, it will be abandoned in favor of another Tool, like a belief from the [[#[Constellation of beliefs](https //youtu.be/irz0oAAlW0c?t=404)|Constellation]].
+
+In hard-science domains e.g. Science, Engineering, and Medicine, this idea does not apply since for any of the field's findings to prove beneficial, it has to adhere to reality.
+
+Example of abandoning truth in favor of a Constellation belief is Vaccine Skepticism, and Holocaust Denialism.
+
+
+## [Skeptics are rarely skeptics](https://youtu.be/irz0oAAlW0c?t=1256)
+
+Someone who claims to be a skeptic of a social/political issue will often commit these things:
+
+Selectively apply their skepticism across a media entity. E.g. if a media channel reports on something they agree with, they will not be skeptical of that story whereas if it reports on something they disagree with, they will be skeptical. There's nothing wrong with agreeing/disagreeing with how a story is reported, but there creates an unhealthy skepticism when skepticism only occurs when something doesn't align with your personal beliefs.
+
+

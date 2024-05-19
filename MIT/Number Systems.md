@@ -7,7 +7,7 @@ When a number system is **at least equal to** the base, **place values** are use
 
 In any number system, the counting always starts at **0**.
 
-Decimal forms in this note will be represented as **N**<sub>10</sub>; with N being any interger.
+Decimal forms in this note will be represented as **N**<sub>10</sub>; with N being any integer.
 
 Example: The number **1,234**<sub>10</sub>:
 	This can be represented as: 1\*10\*\*3 + 2 \*10\*\*2 + 3 \*10\*\*1 + 4 \*10\*\*0. This is the same number in an **expanded form**.
@@ -20,7 +20,7 @@ Example: The number **1,234**<sub>10</sub>:
 Example 2: The number **1234.567**<sub>10</sub> :
 	This can be represented as: 1\*10\*\*3 + 2 \*10\*\*2 + 3 \*10\*\*1 + 4 \*10\*\*0 + 5 \*10\*\***-1** + 6 \*10\*\***-2** + 7 \*10\*\***-3**
 	**5**<sub>10</sub>  is in the **tenths** place.
-	**6**<sub>10</sub> is in the **hundreths** place.
+	**6**<sub>10</sub> is in the **hundredths** place.
 	**7**<sub>10</sub> is in the thousandths place.
 
 

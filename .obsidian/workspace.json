@@ -13,19 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BSU/Emerging Technologies.md",
+                "file": "Destiny.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "3496a1fb0dff32c8",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "BSU/images/Emerging Technologies/Pew Research/Social Media Makes Population Susceptible to Manipulation.png"
               }
             }
           },
@@ -47,14 +37,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Destiny.md",
+                "file": "Vision Board.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -191,12 +180,17 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "852e7ff3c6505462",
+  "active": "93b4c851ac5faee5",
   "lastOpenFiles": [
     "MIT/Number Systems.md",
+    "Vision Board.md",
+    "Destiny.md",
+    "BSU/Web Dev II (HTML, CSS, JS).md",
+    "BSU/Smartphone Apps.md",
     "BSU/Emerging Technologies.md",
-    "Harvard/Py50 (2022)/Week 1 - Variables, Functions.md",
     "BSU/images/Emerging Technologies/Pew Research/Social Media Makes Population Susceptible to Manipulation.png",
+    "BSU/Code Lab II (Python).md",
+    "Harvard/Py50 (2022)/Week 1 - Variables, Functions.md",
     "BSU/images/Emerging Technologies/Pew Research/Social Media Informs Citizens.png",
     "BSU/images/Emerging Technologies/Pew Research/Social Media in Democracy.png",
     "BSU/images/Emerging Technologies/Pew Research/Social Media has been a ___.png",
@@ -208,15 +202,10 @@
     "BSU/images/Emerging Technologies/Pew Research/Active Posters See Social Media as Good.png",
     "Untitled.md",
     "BSU/Creative Industry Challenge.md",
-    "BSU/Code Lab II (Python).md",
     "To do.md",
-    "BSU/Web Dev II (HTML, CSS, JS).md",
     "Logs.md",
     "obsidian-notes",
-    "Destiny.md",
-    "Vision Board.md",
     "Foundations of Algorithms/Lectures/Lecture 3.md",
-    "BSU/Smartphone Apps.md",
     "Templater/Subscript.md",
     "Templater/Superscript.md",
     "Untitled",
