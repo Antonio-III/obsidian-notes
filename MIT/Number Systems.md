@@ -88,14 +88,27 @@ The endian system might be used to represent the bit order in a byte (???).
 
 Base 10:
 ```	
-	11  <- Carry
+	11  <- Carry Area
 	145
 +	256
 ---------
-	401 <- Sum area
+	401 <- Sum Area
 ```
 
+The algorithm is to start from **right** to **left**. We add the 2 lowest-significant digit, which are 14**5** and 25**6**. 
+
+If the sum of these 2 numbers is at least equal to the Base, the sum is divided by the Base, and its remainder is put into the Sum Area, and into the same Place Value; i.e. if a *ones-place*'s sum is 10, 0 will be put into the Sum Area's *ones-place*. 
 
 
+
+The same principle applies to Base 2.
 
 Base 2:
+
+```
+	    1 
+	11100100
++   00000101
+--------------
+	11101001
+```
