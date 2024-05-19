@@ -64,13 +64,15 @@ https://youtu.be/v0UpH5Doo6U?t=1545
 
 # Liberals Vs Everyone Else
 
-Social incentives dictate beliefs. Things that are hard to test are easier to adopt false beliefs from e.g. how institutions work, how democracy works, etc.. 
+## [Social incentives dictate beliefs](https://youtu.be/irz0oAAlW0c?t=94)
+Things that are hard to test are easier to adopt false beliefs from e.g. how institutions work, how democracy works, etc.. 
 
 **Examples**: (1) Having a religious family might prevent a person from abandoning the Christian belief as it can damage a person's social and financial support, so the person is incentivised to stay in that Christian belief. (2) A public figure might have an audience that demands adhere to what the audience believes, and abandoning it causes financial loss, so the person adheres to what the audience believes. (3) A person in school might be pressured to believe to certain sociopolitical beliefs and abandoning it causes the person to be outcasted in a social group, so the person believes certain beliefs to fit in the social group. 
-https://youtu.be/irz0oAAlW0c?t=94
 
-Constellation of beliefs. People inherit beliefs from their social group they're in often due to social pressure that pushes to them to this belief system. The beliefs themselves have weak logic but are believed in an applied level. The beliefs are often abstract, i.e. hard to test, and so aren't easy to counter them. 
 
+## [Constellation of beliefs](https://youtu.be/irz0oAAlW0c?t=404)
+
+People inherit beliefs from their social group they're in often due to social pressure that pushes to them to this belief system. The beliefs themselves have weak logic but are believed in an applied level. The beliefs are often abstract, i.e. hard to test, and so aren't easy to counter them. 
 
 It can be hard to break someone out of the constellations of beliefs because there's always something that can explain everything (a larger-than-life concept) in the constellation is true, albeit logically false.
 
@@ -79,5 +81,15 @@ It can be hard to break someone out of the constellations of beliefs because the
 **Evidence**: (1) People that are part of the same constellation of beliefs will agree on everything. (2) Possessing one belief in the constellation will posses many of the beliefs in that constellation. (3) Many of the beliefs, when investigated, often contradict each other. (4) If someone thinks you're in a constellation of belief, they will project their own adherence of constellations of beliefs onto you. For example: if you say you believe *this*, someone will say you believe in: *this, this, this, and this*. This is called **webbing**, and it is a fallacy when you **webbing**. 
 
 
-https://youtu.be/irz0oAAlW0c?t=404
+## [Normative confusion with applied positions](https://youtu.be/irz0oAAlW0c?t=784)
 
+
+Example:
+Premise 1: Civilians should not be targeted in war.
+Premise 2: A charge of genocide would stop Israel from killing civilians.
+Conclusion: We should charge Israel with genocide.
+
+
+People with [[#[Normative confusion with applied positions](https //youtu.be/irz0oAAlW0c?t=784)|Normative confusion with applied positions]] will say that if you disagree with the soundness of Premise 2 i.e. you don't think Premise 2 is True, you necessarily disagree with Premise 1 as well. And they will ascribe to you that you think civilians should be targeted in war.
+
+The Premises and Conclusions themselves are more than likely inherited from the [[#[Constellation of beliefs](https //youtu.be/irz0oAAlW0c?t=404)|Constellation of beliefs]].
