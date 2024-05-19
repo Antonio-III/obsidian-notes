@@ -60,3 +60,24 @@ https://youtu.be/v0UpH5Doo6U?t=278
 
 Name of the disease and the virus/bacteria are differentiated. Like SARS-COV-2 is the name of the virus, and Covid is the name of the disease. **A vaccine fights SARS-COV-2 (name of the virus)**, which prevents the chances of getting Covid (name of the disease).
 https://youtu.be/v0UpH5Doo6U?t=1545
+
+
+# Liberals Vs Everyone Else
+
+Social incentives dictate beliefs. Things that are hard to test are easier to adopt false beliefs from e.g. how institutions work, how democracy works, etc.. 
+
+**Examples**: (1) Having a religious family might prevent a person from abandoning the Christian belief as it can damage a person's social and financial support, so the person is incentivised to stay in that Christian belief. (2) A public figure might have an audience that demands adhere to what the audience believes, and abandoning it causes financial loss, so the person adheres to what the audience believes. (3) A person in school might be pressured to believe to certain sociopolitical beliefs and abandoning it causes the person to be outcasted in a social group, so the person believes certain beliefs to fit in the social group. 
+https://youtu.be/irz0oAAlW0c?t=94
+
+Constellation of beliefs. People inherit beliefs from their social group they're in often due to social pressure that pushes to them to this belief system. The beliefs themselves have weak logic but are believed in an applied level. The beliefs are often abstract, i.e. hard to test, and so aren't easy to counter them. 
+
+
+It can be hard to break someone out of the constellations of beliefs because there's always something that can explain everything (a larger-than-life concept) in the constellation is true, albeit logically false.
+
+**Example**: (1) Anti-establishment constellation; you support Donald Trump; Oppose "woke" things; Don't trust mainstream media; Don't trust vaccines; Don't trust intelligence/health institutions. 
+
+**Evidence**: (1) People that are part of the same constellation of beliefs will agree on everything. (2) Possessing one belief in the constellation will posses many of the beliefs in that constellation. (3) Many of the beliefs, when investigated, often contradict each other. (4) If someone thinks you're in a constellation of belief, they will project their own adherence of constellations of beliefs onto you. For example: if you say you believe *this*, someone will say you believe in: *this, this, this, and this*. This is called **webbing**, and it is a fallacy when you **webbing**. 
+
+
+https://youtu.be/irz0oAAlW0c?t=404
+
