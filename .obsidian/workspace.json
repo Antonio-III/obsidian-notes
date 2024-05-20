@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f327a9538fc6c316",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linkedin Learning/Responsive Layout.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BSU/Emerging Technologies.md",
+                "file": "Linkedin Learning/Responsive Layout.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BSU/Emerging Technologies.md",
+                "file": "Linkedin Learning/Responsive Layout.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BSU/Emerging Technologies.md"
+                "file": "Linkedin Learning/Responsive Layout.md"
               }
             }
           },
@@ -181,15 +193,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "852e7ff3c6505462",
+  "active": "f327a9538fc6c316",
   "lastOpenFiles": [
+    "BSU/Emerging Technologies.md",
     "Destiny.md",
     "DialogFlow.md",
     "MIT/Number Systems.md",
     "Vision Board.md",
     "BSU/Web Dev II (HTML, CSS, JS).md",
     "BSU/Smartphone Apps.md",
-    "BSU/Emerging Technologies.md",
     "BSU/images/Emerging Technologies/Pew Research/Social Media Makes Population Susceptible to Manipulation.png",
     "BSU/Code Lab II (Python).md",
     "Harvard/Py50 (2022)/Week 1 - Variables, Functions.md",
