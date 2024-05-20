@@ -591,6 +591,41 @@ Kwak, N., et al. (2018). *Perceptions of Social Media for Politics: Testing the 
 Kruse, L. M., Norris, D. R. and Flinchum, J. R. (2018) *Social Media as a Public Sphere? Politics on Social Media*, *The Sociological Quarterly*, 59(1), pp. 62–84. https://doi.org/10.1080/00380253.2017.1383143.
 
 Wike, R., et al. (2022). *Social Media Seen as Mostly Good for Democracy Across Many Nations, But U.S. is a Major Outlier*. *Pew Research Center*. https://www.pewresearch.org/global/2022/12/06/social-media-seen-as-mostly-good-for-democracy-across-many-nations-but-u-s-is-a-major-outlier/
-# Chatbot
+# DialogFlow
 
 Idea: Booking a transportation vehicle to a **location, date and time**.
+
+## Terminology
+
+An **agent** is the chatbot itself.
+
+**Intent** what the **goal** of the chat is; what are you talking to the chatbot for?
+
+When you fulfill the **intent**, it doesn't necessarily mean you've completed the query. For example, if you intend to simulate a pizza order from a chatbot, communicating that you want a pizza ordered is not enough for the chatbot to fulfill that order; it needs to know **minor details** like the name of the pizza to be ordered, toppings, crust, etc.. The **minor details** are called **entities**.
+
+So for every **intent**, there is an **entity**.
+
+**Knowledge** is like an FAQ. Any common questions will be put in the **knowledge** section.
+
+**Fulfillment** is for accessing a database. 
+
+**Integration** adds support for the chatbot to work in different platforms.
+
+
+## Intent
+
+Any expression inputted into the chatbot, the chatbot will map the expression into an intent. There will be 2 pre-defined intents when a chatbot is created. 
+
+### OrderPizza Intent
+
+$pizzaToppings entity:
+```
+
+What toppings would you like? We have cheese, onion, chicken, pineapple, mushroom, and barbeque toppings.
+
+```
+
+$pizzaSize entity: 
+```
+What size would you like? We have small, medium, large, and extra large sizes.
+```

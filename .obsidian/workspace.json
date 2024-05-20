@@ -37,13 +37,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vision Board.md",
+                "file": "BSU/Emerging Technologies.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -109,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Destiny.md",
+                "file": "BSU/Emerging Technologies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Destiny.md",
+                "file": "BSU/Emerging Technologies.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -149,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Destiny.md"
+                "file": "BSU/Emerging Technologies.md"
               }
             }
           },
@@ -180,11 +181,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "93b4c851ac5faee5",
+  "active": "852e7ff3c6505462",
   "lastOpenFiles": [
+    "Destiny.md",
+    "DialogFlow.md",
     "MIT/Number Systems.md",
     "Vision Board.md",
-    "Destiny.md",
     "BSU/Web Dev II (HTML, CSS, JS).md",
     "BSU/Smartphone Apps.md",
     "BSU/Emerging Technologies.md",
@@ -200,7 +202,6 @@
     "BSU/images/Emerging Technologies/Pew Research/Effective at Raising Awareness.png",
     "BSU/images/Emerging Technologies/Pew Research/Divided Political Opinions.png",
     "BSU/images/Emerging Technologies/Pew Research/Active Posters See Social Media as Good.png",
-    "Untitled.md",
     "BSU/Creative Industry Challenge.md",
     "To do.md",
     "Logs.md",
