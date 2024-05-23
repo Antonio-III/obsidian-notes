@@ -594,7 +594,7 @@ Wike, R., et al. (2022). *Social Media Seen as Mostly Good for Democracy Across 
 # DialogFlow
 
 Idea: Ordering a pizza, and drink, at a pizza restaurant. 
-4 intents: order pizza. order drink. faq - timings, prices. make a reservation. show menu.
+4 intents: order - pizza/drink. faq - timings/prices. show menu - pizzas/drink. make a reservation.
 4 entities: toppings, pizza sizes, crust sizes, added cheese or none, drinks.
 4 dialog nodes (4 dialog trees, kinda like intents)
 2 context variables/2 slots: instances where we used an entity.
