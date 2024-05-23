@@ -599,6 +599,9 @@ Idea: Ordering a pizza, and drink, at a pizza restaurant.
 4 dialog nodes (4 dialog trees, kinda like intents)
 2 context variables/2 slots: instances where we used an entity.
 
+Video of the chat bot's web integration. 
+Critical Summary - 750-word document
+
 ## Terminology
 
 An **agent** is the chatbot itself.
