@@ -42,21 +42,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "f327a9538fc6c316",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linkedin Learning/Responsive Layout.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -122,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linkedin Learning/Responsive Layout.md",
+                "file": "BSU/Emerging Technologies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linkedin Learning/Responsive Layout.md",
+                "file": "BSU/Emerging Technologies.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -162,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linkedin Learning/Responsive Layout.md"
+                "file": "BSU/Emerging Technologies.md"
               }
             }
           },
@@ -193,8 +181,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f327a9538fc6c316",
+  "active": "852e7ff3c6505462",
   "lastOpenFiles": [
+    "Linkedin Learning/Responsive Layout.md",
     "BSU/Emerging Technologies.md",
     "Destiny.md",
     "DialogFlow.md",

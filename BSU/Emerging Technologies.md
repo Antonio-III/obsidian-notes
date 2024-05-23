@@ -593,7 +593,11 @@ Kruse, L. M., Norris, D. R. and Flinchum, J. R. (2018) *Social Media as a Public
 Wike, R., et al. (2022). *Social Media Seen as Mostly Good for Democracy Across Many Nations, But U.S. is a Major Outlier*. *Pew Research Center*. https://www.pewresearch.org/global/2022/12/06/social-media-seen-as-mostly-good-for-democracy-across-many-nations-but-u-s-is-a-major-outlier/
 # DialogFlow
 
-Idea: Booking a transportation vehicle to a **location, date and time**.
+Idea: Ordering a pizza, and drink, at a pizza restaurant. 
+4 intents: order pizza. order drink. faq - timings, prices. make a reservation. show menu.
+4 entities: toppings, pizza sizes, crust sizes, added cheese or none, drinks.
+4 dialog nodes (4 dialog trees, kinda like intents)
+2 context variables/2 slots: instances where we used an entity.
 
 ## Terminology
 
