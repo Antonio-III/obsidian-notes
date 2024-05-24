@@ -636,3 +636,22 @@ $pizzaSize entity:
 ```
 What size would you like? We have small, medium, large, and extra large sizes.
 ```
+
+## Critical Summary
+
+### Context
+
+When thinking for a topic that I could use for my chatbot, I had to think of something that could satisfy the 4 requirements: It needs **4 entities**, which means at least 4 variables that hold keywords belonging to 1 attribute, whether it's the color, size, taste, etc.. Then, **4 intents**, which means 4 goals of the conversation. The user must be able to interact with the bot on at least 4 topics. Then, come 4 dialog nodes, which are a lot like intent, 
+
+### Decisions 
+
+technical and creative decisions you made
+
+### Reflection
+
+#### Strengths
+
+#### Weakness
+
+#### Recommendations
+
