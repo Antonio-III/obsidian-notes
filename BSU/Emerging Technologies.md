@@ -641,7 +641,9 @@ What size would you like? We have small, medium, large, and extra large sizes.
 
 ### Context
 
-When thinking for a topic that I could use for my chatbot, I had to think of something that could satisfy the 4 requirements: It needs **4 entities**, which means at least 4 variables that hold keywords belonging to 1 attribute, whether it's the color, size, taste, etc.. Then, **4 intents**, which means 4 goals of the conversation. The user must be able to interact with the bot on at least 4 topics. Then, come 4 dialog nodes, which are a lot like intent, 
+When thinking for a topic that I could use for my chatbot, I had to think of something that could satisfy the 4 requirements: It needs **4 entities**, which means at least 4 variables that hold keywords belonging to 1 attribute, whether it's the color, size, taste, etc.. Then, **4 intents**, which means 4 goals of the conversation. The user must be able to interact with the bot on at least 4 topics. Then, 4 dialog nodes, which are a lot like intent, which I understood it to be the same thing. Then 2 context variables/2 slots, which is basically telling us to use 2 entities at the same time. A slot is basically a context variable but **required**. A context variable is an instance where we used an entity.
+
+The fitting topic for something like this is ordering food from a restaurant, but not just any food, it had to be customizable food; meaning, the user can pick attributes they want for the food. One such thing is ordering a pizza because this is a lot different from ordering a plain dish.
 
 ### Decisions 
 
