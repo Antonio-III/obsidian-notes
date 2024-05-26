@@ -660,5 +660,7 @@ The reason why I've added a "summary" feature is so that the interaction will fe
 
 I think the way that I've implemented the chatbot sufficiently satisfies the requirements, and it feels more dynamic when it is able to remember information that the user has entered. This chatbot goes beyond than a simple chatbot that is able to detect keywords as entities, but fails to show the user that it has remembered the keyword.
 
-One thing restricting the chatbot is its potential for other dialogues. The topic I had 
+One thing restricting the chatbot is its lack of potential for other dialogues. The topic I had is centered around ordering a pizza from a pizza restaurant, this leaves the scope for different dialogue trees become limited. I can't just ask about the weather or order a car from a pizza store, as that escapes the scope of the topic I chose. In the end, the chatbot is, more or less, a simulation of ordering food from a fast-food restaurant. You can order your pizza with the many options available, as well as having an option to order drinks. You can also make a reservation and ask some basic questions, like the timing and prices.
+
+I think there could've been more dialogue trees added to my chatbot. But this is what I could've come up with, considering the limited knowledge I have for ordering food from a restaurant. There are for sure some possible options that are left to be explored, such as asking the customer whether or not they want to dine in.
 
