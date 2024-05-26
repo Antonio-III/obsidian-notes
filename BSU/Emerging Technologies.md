@@ -643,17 +643,22 @@ What size would you like? We have small, medium, large, and extra large sizes.
 
 When thinking for a topic that I could use for my chatbot, I had to think of something that could satisfy the 4 requirements: It needs **4 entities**, which means at least 4 variables that hold keywords belonging to 1 attribute, whether it's the color, size, taste, etc.. Then, **4 intents**, which means 4 goals of the conversation. The user must be able to interact with the bot on at least 4 topics. Then, 4 dialog nodes, which are a lot like intent, which I understood it to be the same thing. Then 2 context variables/2 slots, which is basically telling us to use 2 entities at the same time. A slot is basically a context variable but **required**. A context variable is an instance where we used an entity.
 
-The fitting topic for something like this is ordering food from a restaurant, but not just any food, it had to be customizable food; meaning, the user can pick attributes they want for the food. One such thing is ordering a pizza because this is a lot different from ordering a plain dish.
+The fitting topic for something like this is ordering food from a restaurant, but not just any food, it had to be customizable food; meaning, the user can pick attributes they want for the food. One such thing is ordering a pizza because this is a lot different from ordering a plain dish.  A pizza can have different sizes like a plain dish, but you can customize what toppings you want for your pizza whereas a plain dish is restricted to different meat types for the dish, nothing else. And there's also an option to customize the crust size, whereas a plain dish would run out of customizable option. So this is why I settled for a pizza-ordering chatbot.
 
 ### Decisions 
 
 technical and creative decisions you made
 
+When it comes to implementing the customizable attributes for the pizza, I created entities for them. The entities would then hold keywords for the attributes for the pizza, such as their sizes and toppings. But implementing toppings is a little different. What I've done is to make it a "list" which means the user can call on different toppings and have it register as one selection of toppings. What I mean by this is that the user can order, for example: "cheese and pineapple" as toppings on their pizza, and the bot will be able to recognize that "cheese and pineapple" meant \["cheese", "pineapple"\] instead of just "cheese". The implementation of a list allows for a more flexible engagement with a chatbot, meaning, the user will feel like he's ordering 2 toppings instead of just 1. And having this feature present shows a deeper understanding of the fundamental mechanics of the chatbot.
+
+I've also added an feature that, after the user has specified the attributes of their pizza, the chatbot repeats all the registered attributes back to the user. What this means is that when a user writes "I want a small chicken and onion pizza", the chatbot will respond with "you wanted a small pizza with chicken and onion, correct?". This is done so that the user can see what their pizza order was in a single message, and they have an option respond "yes" or "no". A response of "yes" means that the conversation will move into obtaining the contact information of the user, whereas a response of "no" will lead to a no-context conversation, allowing the user to do as they please as if the user hadn't ordered anything yet.
+
+The reason why I've added a "summary" feature is so that the interaction will feel more dynamic; it will feel like there's an actual entity that remembers the options you've selected and responding your chosen options back to you. This creates an illusion that you're engaging with someone that appears to be listening, and I think it's good when chatbots can simulate this kind of conversation instead of just a static-level engagement where the bot does not provide information of anything that was said in the conversation. 
+
+
 ### Reflection
 
-#### Strengths
+I think the way that I've implemented the chatbot sufficiently satisfies the requirements, and it feels more dynamic when it is able to remember information that the user has entered. This chatbot goes beyond than a simple chatbot that is able to detect keywords as entities, but fails to show the user that it has remembered the keyword.
 
-#### Weakness
-
-#### Recommendations
+One thing restricting the chatbot is its potential for other dialogues. The topic I had 
 
