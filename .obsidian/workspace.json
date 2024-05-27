@@ -47,11 +47,16 @@
             "id": "affff482cc02c7f7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "BSU/Smartphone Apps.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -117,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Destiny.md",
+                "file": "BSU/Smartphone Apps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Destiny.md",
+                "file": "BSU/Smartphone Apps.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -157,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Destiny.md"
+                "file": "BSU/Smartphone Apps.md"
               }
             }
           },
@@ -188,8 +193,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "93b4c851ac5faee5",
+  "active": "affff482cc02c7f7",
   "lastOpenFiles": [
+    "Destiny.md",
     "MIT/Number Systems.md",
     "BSU/Emerging Technologies.md",
     "Linkedin Learning/Responsive Layout.md",
@@ -197,7 +203,6 @@
     "To-buy.md",
     "Untitled.md",
     "BSU/Code Lab II (Python).md",
-    "Destiny.md",
     "DialogFlow.md",
     "Vision Board.md",
     "BSU/Web Dev II (HTML, CSS, JS).md",

@@ -278,14 +278,9 @@ I think the app is flexible and responsive; if the user does not want to input t
 Given the scope of the app, I think it implements all of the necessary structure pretty well, but there is one thing that can be improved upon, which is a way to copy the resulting color's hexadecimal form into the user's clipboard for use. It's one thing to see what the resulting color is and its hexadecimal form, and it's another to be able to do the same, but with the ability to use this outputted value for use.
 
 
-# Video Script
 
-This is my nan calculator app. And what it does it that it mixes a color based on the strengths of the 3 primary colors, red, green, and blue. 
+# Assessment 2 - Multi-view App
 
-The icons on the left represent the strength of the color. By default, it's at the max strength, to signify what color it corresponds to.
+Done with an MVVM architecture. A development process to make the app clean, and testable.
 
-The button on the right represents a random button, which generates a number from 0~255.
-
-At the bottom is the resulting color, as well as its hexadecimal representation.
-
-And lastly, the "info" icon, which describes how to interact with the app.
+3 elements - activity fragments, view model, repository.
