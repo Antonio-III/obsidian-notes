@@ -283,4 +283,4 @@ Given the scope of the app, I think it implements all of the necessary structure
 
 Done with an MVVM architecture. A development process to make the app clean, and testable.
 
-3 elements - activity fragments, view model, repository.
+3 elements - activity fragments, view model, repository. We get our data from the "room database" ???, which returns it to the repository, which is then passed to the view model, and can be then observed by activity fragments.
