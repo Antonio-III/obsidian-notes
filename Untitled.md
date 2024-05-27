@@ -76,7 +76,7 @@ New
 
     position: fixed;
 
-    bottom: 0.5rem;
+    bottom: 2rem;
 
     right: 0.5rem;
 
