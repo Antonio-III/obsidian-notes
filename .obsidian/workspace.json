@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8c716034378cd728",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linkedin Learning/Responsive Layout.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BSU/Emerging Technologies.md",
+                "file": "Linkedin Learning/Responsive Layout.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BSU/Emerging Technologies.md",
+                "file": "Linkedin Learning/Responsive Layout.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BSU/Emerging Technologies.md"
+                "file": "Linkedin Learning/Responsive Layout.md"
               }
             }
           },
@@ -181,8 +193,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "852e7ff3c6505462",
+  "active": "8c716034378cd728",
   "lastOpenFiles": [
+    "BSU/Code Lab II (Python).md",
     "BSU/Emerging Technologies.md",
     "Linkedin Learning/Responsive Layout.md",
     "Destiny.md",
@@ -192,7 +205,6 @@
     "BSU/Web Dev II (HTML, CSS, JS).md",
     "BSU/Smartphone Apps.md",
     "BSU/images/Emerging Technologies/Pew Research/Social Media Makes Population Susceptible to Manipulation.png",
-    "BSU/Code Lab II (Python).md",
     "Harvard/Py50 (2022)/Week 1 - Variables, Functions.md",
     "BSU/images/Emerging Technologies/Pew Research/Social Media Informs Citizens.png",
     "BSU/images/Emerging Technologies/Pew Research/Social Media in Democracy.png",
