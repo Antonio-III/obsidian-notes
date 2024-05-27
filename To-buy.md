@@ -5,4 +5,5 @@
 - [ ] shampoo (clear)
 - [ ] detergent
 - [ ] banana
-- [ ] 
+- [ ] toothpaste
+- [ ] toothbrush
