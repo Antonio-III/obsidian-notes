@@ -54,9 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2f0bd5581efdecf3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linkedin Learning/Responsive Layout.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linkedin Learning/Responsive Layout.md",
+                "file": "Untitled.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linkedin Learning/Responsive Layout.md"
+                "file": "Untitled.md"
               }
             }
           },
@@ -193,11 +205,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "8c716034378cd728",
+  "active": "2f0bd5581efdecf3",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Linkedin Learning/Responsive Layout.md",
     "BSU/Code Lab II (Python).md",
     "BSU/Emerging Technologies.md",
-    "Linkedin Learning/Responsive Layout.md",
     "Destiny.md",
     "DialogFlow.md",
     "MIT/Number Systems.md",
@@ -241,7 +254,6 @@
     "2024-04-16.md",
     "BSU/creative challenges.md",
     "Untitled 1.canvas",
-    "Harvard/Py50 (2022)/Week 2 - Conditionals.md",
-    "Harvard/Py50 (2022)/Week 4 - Exceptions.md"
+    "Harvard/Py50 (2022)/Week 2 - Conditionals.md"
   ]
 }
