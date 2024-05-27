@@ -110,3 +110,10 @@ Someone who claims to be a skeptic of a social/political issue will often commit
 They selectively apply their skepticism across a media entity. E.g. if a media channel reports on something they agree with, they will not be skeptical of that story whereas if it reports on something they disagree with, they will be skeptical. There's nothing wrong with agreeing/disagreeing with how a story is reported, but there creates an unhealthy skepticism when skepticism only occurs when something doesn't align with your personal beliefs.
 
 They will not move to a position that requires a critical re-evaluation of their beliefs. Instead, they will move "double-down" on their beliefs and reject any evidence that don't re-affirm their belief. An example is when you show a Vaccine Skeptic that mRNA vaccines perform well, they would rather be skeptical of the evidence than to be convinced of the effectiveness of the mRNA vaccine.
+
+
+
+# "Nick, no..." Destiny Reacts To Rekieta's Arraignment Livestream
+
+Something to think about addiction..
+https://youtu.be/PTjCp3RJ4ag?t=880

@@ -32,55 +32,26 @@
             }
           },
           {
-            "id": "852e7ff3c6505462",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BSU/Emerging Technologies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8c716034378cd728",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linkedin Learning/Responsive Layout.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "2f0bd5581efdecf3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "To do.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "bcf5ff08c91b9853",
+            "id": "affff482cc02c7f7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "To-buy.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -146,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "To-buy.md",
+                "file": "Destiny.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "To-buy.md",
+                "file": "Destiny.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -186,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "To-buy.md"
+                "file": "Destiny.md"
               }
             }
           },
@@ -217,16 +188,17 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "bcf5ff08c91b9853",
+  "active": "93b4c851ac5faee5",
   "lastOpenFiles": [
+    "MIT/Number Systems.md",
+    "BSU/Emerging Technologies.md",
+    "Linkedin Learning/Responsive Layout.md",
+    "To do.md",
     "To-buy.md",
     "Untitled.md",
-    "Linkedin Learning/Responsive Layout.md",
     "BSU/Code Lab II (Python).md",
-    "BSU/Emerging Technologies.md",
     "Destiny.md",
     "DialogFlow.md",
-    "MIT/Number Systems.md",
     "Vision Board.md",
     "BSU/Web Dev II (HTML, CSS, JS).md",
     "BSU/Smartphone Apps.md",
@@ -242,7 +214,6 @@
     "BSU/images/Emerging Technologies/Pew Research/Divided Political Opinions.png",
     "BSU/images/Emerging Technologies/Pew Research/Active Posters See Social Media as Good.png",
     "BSU/Creative Industry Challenge.md",
-    "To do.md",
     "Logs.md",
     "obsidian-notes",
     "Foundations of Algorithms/Lectures/Lecture 3.md",
