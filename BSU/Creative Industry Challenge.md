@@ -1,3 +1,5 @@
+# Databases
+
 relational db
 	tables to save data
 
@@ -96,4 +98,20 @@ Software engineers shall assist colleagues with their work; to promote adherence
 ## VIII. Self
 
 Software engineers shall deepen their understanding of this field; to improve their ability to create usable code; to not be unjustly prejudiced against someone; and to not influence other or themselves to violate any of the code.
- 
+
+# Assessment 2
+
+## Technical Description
+
+Implementing the site design based on its final prototype design relied on a strong fundamental knowledge of how layouts work in web development. One of these layouts is called `flex`. This enables the ability for a markup or HTML element to be arranged one-dimensionally. It can either make the flex items arranged horizontally or vertically. This is one of the design principles the implementation of the prototype was built upon. And it is that the elements are arranged in a one-dimensional manner.
+
+An instance of this one-dimensional arrangement is the container for all of the site's content. The site, in its whole, is divided into four main sections. These sections contain their respective content design, and thus their own arrangement of items. But the sections are collectively designed in a way such that they looked vertically placed on top of each other. Within each section is another container that also arranges its items one-dimensionally, either horizontally or vertically. The whole implementation of the design follows this pattern of arrangement.
+
+Another procedure of the implementation is to resize images that are used in the site. In this case, the method of resizing images is the use of `max-width`. This enables images that are too big to be readjusted to fit the intended size. 
+
+The site used animation
+
+
+## Statement on collab and individual contribution
+
+300-word document
