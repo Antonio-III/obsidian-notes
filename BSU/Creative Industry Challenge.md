@@ -113,3 +113,10 @@ We used animations in the implementation to visually appease potential customers
 
 Lastly, is the implementation of a chatbot for a user-interactive experience, and to potentially answer basic questions a customer may have. The chatbot itself has been programmed only to answer basic questions, like showing the menu or prices. Any topics outside the scope of its pre-defined goals will not result in any meaningful response. Adding the chatbot hasn't been difficult, as it openly supports web integration.
 
+## Statement on Collab
+
+  
+
+My role in this project was to be the main front-end developer for the implementation of the website. What this means is that I was the person that would primarily write the HTML and CSS. The details of what was to be written in the HTML/CSS is based on what the final UI prototype was, so I can't just write anything and everything for the implementation. 
+
+I didn't implement anything until after the presentation
