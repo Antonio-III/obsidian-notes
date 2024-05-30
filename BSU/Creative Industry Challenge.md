@@ -105,12 +105,13 @@ Software engineers shall deepen their understanding of this field; to improve th
 
 Implementing the site design based on its final prototype design relied on a strong fundamental knowledge of how layouts work in web development. One of these layouts is called `flex`. This enables the ability for a markup or HTML element to be arranged one-dimensionally. It can either make the flex items arranged horizontally or vertically. This is one of the design principles the implementation of the prototype was built upon. And it is that the elements are arranged in a one-dimensional manner.
 
-An instance of this one-dimensional arrangement is the container for all of the site's content. The site, in its whole, is divided into four main sections. These sections contain their respective content design, and thus their own arrangement of items. But the sections are collectively designed in a way such that they looked vertically placed on top of each other. Within each section is another container that also arranges its items one-dimensionally, either horizontally or vertically. The whole implementation of the design follows this pattern of arrangement.
+An instance of this one-dimensional arrangement is the container for all of the site's content. The site, in its whole, is divided into four main sections. These sections contain their respective content design, and thus their own arrangement of items. But the sections are collectively arranged in such a way that they looked vertically placed on top of each other. Within each section is another container that also arranges its items one-dimensionally, either horizontally or vertically. The whole implementation of the prototype follows this pattern of arrangement.
 
 Another procedure of the implementation is to resize images that are used in the site. In this case, the method of resizing images is the use of `max-width`. This enables images that are too big to be readjusted to fit the intended size. 
 
-The site used animation
+We used animations in the implementation to visually appease potential customers, and to make the aesthetics of the site more dynamic and lively. The animations were applied on a JavaScript object called `window` that calls a function upon scrolling the site. The window refers to the screen in which the JavaScript code is running, and upon scrolling through this screen, a function is called. The function itself detects if an arbitrary condition has been satisfied, which then adds a class that overwrites the `display` property of a DOM object.
 
+Lastly, is the implementation of a chatbot for a user-interactive experience, and to potentially answer basic questions a customer may have. The chatbot itself has been programmed only to answer basic questions, like showing the menu or prices. Any topics outside the scope of its pre-defined goals will not result in any meaningful response. Adding the chatbot hasn't been difficult, as it openly supports web integration.
 
 ## Statement on collab and individual contribution
 
