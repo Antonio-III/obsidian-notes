@@ -113,6 +113,3 @@ We used animations in the implementation to visually appease potential customers
 
 Lastly, is the implementation of a chatbot for a user-interactive experience, and to potentially answer basic questions a customer may have. The chatbot itself has been programmed only to answer basic questions, like showing the menu or prices. Any topics outside the scope of its pre-defined goals will not result in any meaningful response. Adding the chatbot hasn't been difficult, as it openly supports web integration.
 
-## Statement on collab and individual contribution
-
-300-word document
