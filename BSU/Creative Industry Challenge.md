@@ -115,8 +115,12 @@ Lastly, is the implementation of a chatbot for a user-interactive experience, an
 
 ## Statement on Collab
 
-  
+My role in this project was to be the main front-end developer for the implementation of the website. What this means is that I was the person that would primarily write the HTML and CSS. The details of what was to be written in the HTML/CSS is based on what the final UI prototype was, so I can't just write anything and everything for the implementation; it has to be constrained to what the UI designer wants the website to look like.  
 
-My role in this project was to be the main front-end developer for the implementation of the website. What this means is that I was the person that would primarily write the HTML and CSS. The details of what was to be written in the HTML/CSS is based on what the final UI prototype was, so I can't just write anything and everything for the implementation. 
+Though I didn't implement anything until after the pitch presentation, I was still able to catch up to the deadline without any setbacks or issues. I wasn't struggling when it comes to writing the markups and designing them to look like the final prototype. I owe my skills to my understanding of web layouts, as well as a general familiarity with the CSS properties and its interactions with the browser, other elements, and itself. 
 
-I didn't implement anything until after the presentation
+After completing the implementation of the final prototype design, our UI designer wanted to add support for low-width devices. I was the one who made the implementations as well. Again, I never struggled or felt like my current understanding of web development was insufficient when it came to implementing support for different devices.
+
+At this point of the project, I noticed that there were some features that were implemented but never really had any technical use. I raised this to other team members, which resulted in adding in new features and stripping old ones. In one of these added features was a chatbot. I raised the idea of leveraging my understanding of writing chatbots to implement a chatbot at the cost of removing one of the unused features of the website. The feature in question was an instance where I lacked the technical skills to be able to sufficiently implement the feature, so this feature either had to be removed or someone else has to do it. No one in the team could do it, so we scrapped it instead. 
+
+The chatbot is entirely written by me, with some help from other team members when it came to responses regarding questions. I was then able to successfully integrate this chatbot into our website, and the one instance where I wrote JS to be able to maximize/minimize the chatbot, in case the user did not feel like in
