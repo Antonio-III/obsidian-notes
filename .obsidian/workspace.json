@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BSU/Creative Industry Challenge.md",
+                "file": "Vision Board.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BSU/Creative Industry Challenge.md",
+                "file": "Vision Board.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BSU/Creative Industry Challenge.md",
+                "file": "Vision Board.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BSU/Creative Industry Challenge.md"
+                "file": "Vision Board.md"
               }
             }
           },
@@ -195,6 +195,7 @@
   },
   "active": "affff482cc02c7f7",
   "lastOpenFiles": [
+    "Untitled.md",
     "BSU/Creative Industry Challenge.md",
     "BSU/Smartphone Apps.md",
     "Destiny.md",
@@ -203,7 +204,6 @@
     "Linkedin Learning/Responsive Layout.md",
     "To do.md",
     "To-buy.md",
-    "Untitled.md",
     "BSU/Code Lab II (Python).md",
     "DialogFlow.md",
     "Vision Board.md",
