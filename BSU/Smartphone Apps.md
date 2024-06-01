@@ -339,7 +339,7 @@ And put this to your `manifests`:
 
 Create a new `package` in `com.example.notesapp` (the same folder where your `.kt` files are). Name it "di".
 
-Then create a new `kotlin/java class` file, and select `Object`. Name it "AppModule".
+Then create a new `kotlin class` file, and select `Object`. Name it "AppModule".
 
 Write this code into "AppModule":
 ```
@@ -376,3 +376,175 @@ Put this code in your `build.gradle.kts (:app)` file:
 	implementation("androidx.room:room-paging:$room_version") 
 	}
 ```
+
+In the same file, add this code in `plugins`:
+```
+	id("kotlin-parcelize")
+```
+
+Create a `package` inside `com.example.notesapp`. Name it "data". 
+
+Then create a `package` inside "data". Name it "entity".
+
+Inside "entity", create a `kotlin class` file, select `Data class`. Name it "Notes".
+
+Write this code inside the "Notes" class:
+```
+	package com.example.simplenotesapp.data.entity  
+	  
+	import android.os.Parcelable  
+	import androidx.room.Entity  
+	import androidx.room.PrimaryKey  
+	import kotlinx.android.parcel.Parcelize  
+	  
+	@Entity(tableName = "notes")  
+	@Parcelize  
+	data class Note(  
+	@PrimaryKey(autoGenerate = true) val id: Int,  
+	val title: String?,  
+	val content: String?,  
+	val date: Long  
+	):Parcelable
+```
+
+Create a `package` inside "data". Name it "database".
+
+Inside "database", create a `kotlin class` file, name it "NoteDatabase".
+
+Write this code inside "NoteDatabase":
+```
+	package com.example.simplenotesapp.data.database  
+	  
+	import androidx.room.Database  
+	import com.example.simplenotesapp.data.entity.Note  
+	  
+	@Database(entities = arrayOf(Note::class), version = 1)  
+	abstract class NoteDatabase: RoomDatabase() {  
+	}
+```
+
+Inside "data", create a new `package`, and name it "dao".
+
+Inside "dao", create a `kotlin class` file, select `interface`, and name it "NoteDao".
+
+In "NoteDao", write this code:
+```
+	package com.example.simplenotesapp.data.dao  
+	  
+	import androidx.room.Dao  
+	import androidx.room.Delete  
+	import androidx.room.Insert  
+	import androidx.room.Query  
+	import androidx.room.Update  
+	import com.example.simplenotesapp.data.entity.Note  
+	import kotlinx.coroutines.flow.Flow  
+	  
+	@Dao  
+	interface NoteDao {  
+	@Query("Select * from notes order by date desc")  
+	fun getAllNotes(): Flow<List<Note>>  
+	  
+	@Insert  
+	suspend fun insertNote(note: Note)  
+	  
+	@Update  
+	suspend fun updatedNote(note: Note)  
+	  
+	@Delete  
+	suspend fun deleteNote(note: Note)  
+	}
+```
+
+Inside "NoteDatabase", write this code:
+```
+	abstract fun noteDao(): NoteDao
+```
+
+Inside "AppModule", in "di", update the code with:
+```
+	package com.example.simplenotesapp.di  
+	  
+	import android.content.Context  
+	import androidx.room.Room  
+	import com.example.simplenotesapp.data.database.NoteDatabase  
+	import dagger.Module  
+	import dagger.Provides  
+	import dagger.hilt.InstallIn  
+	import dagger.hilt.android.qualifiers.ApplicationContext  
+	import dagger.hilt.components.SingletonComponent  
+	import javax.inject.Singleton  
+	  
+	@Module  
+	@InstallIn(SingletonComponent::class)  
+	object AppModule {  
+	  
+	@Provides  
+	@Singleton  
+	fun provideRoomDatabase(@ApplicationContext context: Context) =  
+	Room.databaseBuilder(context, NoteDatabase::class.java, "NoteDatabase").  
+	fallbackToDestructiveMigration().build()  
+	  
+	@Provides  
+	@Singleton  
+	fun provideNoteDao(db: NoteDatabase) = db.noteDao()  
+	}
+```
+
+## Set-up ViewModel
+
+In `com.example.simplenotesapp`, create a `package` called "viewmodel". 
+
+Inside "viewmodel", create a `kotlin class` file, and call it "NoteViewModel".
+
+Write this code into the `dependency` block of `build.gradle.kts (:app)`:
+```
+	implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.1")
+```
+
+Inside "NoteViewModel", write this code:
+```
+	package com.example.simplenotesapp.viewmodel  
+	  
+	import androidx.lifecycle.ViewModel  
+	import androidx.lifecycle.viewModelScope  
+	import com.example.simplenotesapp.data.dao.NoteDao  
+	import com.example.simplenotesapp.data.entity.Note  
+	import dagger.hilt.android.lifecycle.HiltViewModel  
+	import kotlinx.coroutines.channels.Channel  
+	import kotlinx.coroutines.flow.receiveAsFlow  
+	import kotlinx.coroutines.launch  
+	import javax.inject.Inject  
+	  
+	@HiltViewModel  
+	class NoteViewModel @Inject constructor(private val noteDao: NoteDao): ViewModel() {  
+	  
+	val notes = noteDao.getAllNotes()  
+	  
+	val notesChannel = Channel<NotesEvent>()  
+	val notesEvent = notesChannel.receiveAsFlow()  
+	fun insertNote(note: Note) = viewModelScope.launch {  
+	noteDao.insertNote(note)  
+	notesChannel.send(NotesEvent.NavigateToNotesFragment)  
+	}  
+	  
+	fun updateNote(note: Note) = viewModelScope.launch {  
+	noteDao.updatedNote(note)  
+	notesChannel.send(NotesEvent.NavigateToNotesFragment)  
+	}  
+	  
+	fun deleteNote(note: Note) = viewModelScope.launch {  
+	noteDao.deleteNote(note)  
+	notesChannel.send(NotesEvent.  
+	ShowUndoSnackBar("Note Deleted Successfully!", note))  
+	}  
+	  
+	sealed class NotesEvent{  
+	data class ShowUndoSnackBar(val msg: String, val note: Note): NotesEvent()  
+	object NavigateToNotesFragment: NotesEvent()  
+	}  
+	}
+```
+
+## Designing the UI
+
+In `res/layout`, create a `resource` file, and call it "fragment_notes".
