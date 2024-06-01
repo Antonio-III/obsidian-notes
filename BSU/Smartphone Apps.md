@@ -284,3 +284,78 @@ Given the scope of the app, I think it implements all of the necessary structure
 Done with an MVVM architecture. A development process to make the app clean, and testable.
 
 3 elements - activity fragments, view model, repository. We get our data from the "room database" ???, which returns it to the repository, which is then passed to the view model, and can be then observed by activity fragments.
+
+## Set-up Dependencies
+
+In `build.gradle (Project)`:
+```
+	plugins {  
+		...  
+		id("com.google.dagger.hilt.android") version "2.44" apply false  
+	}
+```
+
+
+
+In `build.gradle (Module)`:
+```
+	plugins {  
+		id ("kotlin-kapt")  
+		id("com.google.dagger.hilt.android")  
+	}
+	
+	android {  
+		...  
+	}
+	
+	dependencies {  
+		implementation("com.google.dagger:hilt-android:2.44")  
+		kapt("com.google.dagger:hilt-android-compiler:2.44")  
+	}  
+	  
+	// Allow references to generated code
+	kapt {  
+		correctErrorTypes = true  
+	}
+```
+
+Create a new `Kotlin Class.kt` file with this code:
+```
+// The name of the file is "NotesApplication"
+	package com.example.simplenotesapp  
+	import android.app.Application  
+	import dagger.hilt.android.HiltAndroidApp  
+	  
+	@HiltAndroidApp  
+	class NotesApplication: Application() {  
+	}
+```
+
+And put this to your `manifests`:
+```
+// The name of the class file is "NotesApplication"
+	android:name=".NotesApplication"
+```
+
+Create a new `package` in `com.example.notesapp` (the same folder where your `.kt` files are). Name it "di".
+
+Then create a new `kotlin/java class` file, and select `Object`. Name it "AppModule".
+
+Write this code into "AppModule":
+```
+	package com.example.simplenotesapp.di  
+	  
+	import dagger.Module  
+	import dagger.hilt.InstallIn  
+	import dagger.hilt.components.SingletonComponent  
+	  
+	@Module  
+	@InstallIn(SingletonComponent::class)  
+	object AppModule {  
+	}
+```
+
+## Set-up Room DB 
+
+Room provides compile-time verification of sql queries. Provides annotations which minimizes boilerplate code.
+

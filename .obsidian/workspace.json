@@ -54,9 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "47639a6d8bf09e69",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "BSU/Smartphone Apps.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Vision Board.md",
+                "file": "BSU/Smartphone Apps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Vision Board.md",
+                "file": "BSU/Smartphone Apps.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vision Board.md"
+                "file": "BSU/Smartphone Apps.md"
               }
             }
           },
@@ -193,8 +205,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "affff482cc02c7f7",
+  "active": "47639a6d8bf09e69",
   "lastOpenFiles": [
+    "Vision Board.md",
     "Untitled.md",
     "BSU/Creative Industry Challenge.md",
     "BSU/Smartphone Apps.md",
@@ -206,7 +219,6 @@
     "To-buy.md",
     "BSU/Code Lab II (Python).md",
     "DialogFlow.md",
-    "Vision Board.md",
     "BSU/Web Dev II (HTML, CSS, JS).md",
     "BSU/images/Emerging Technologies/Pew Research/Social Media Makes Population Susceptible to Manipulation.png",
     "Harvard/Py50 (2022)/Week 1 - Variables, Functions.md",
