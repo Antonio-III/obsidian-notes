@@ -359,3 +359,20 @@ Write this code into "AppModule":
 
 Room provides compile-time verification of sql queries. Provides annotations which minimizes boilerplate code.
 
+Put this code in your `build.gradle.kts (:app)` file:
+```
+	dependencies {  
+	val room_version = "2.6.1"  
+	implementation("androidx.room:room-runtime:$room_version")  
+	annotationProcessor("androidx.room:room-compiler:$room_version")  
+	  
+	kapt("androidx.room:room-compiler:2.6.1")  
+	  
+	implementation("androidx.room:room-ktx:$room_version")  
+	implementation("androidx.room:room-rxjava2:$room_version")  
+	implementation("androidx.room:room-rxjava3:$room_version")  
+	implementation("androidx.room:room-guava:$room_version")  
+	testImplementation("androidx.room:room-testing:$room_version")  
+	implementation("androidx.room:room-paging:$room_version") 
+	}
+```
