@@ -281,11 +281,29 @@ Given the scope of the app, I think it implements all of the necessary structure
 
 # Assessment 2 - Multi-view App
 
+## Scope
+
+- [ ] Must have logo
+
+- [ ] Must have a splash screen.
+
+- [ ] Project name should be the app's name ("volt").
+
+- [ ] Provide instructions through a popup activity.
+
+- [ ] Must have shared preferences.
+
+- [ ] Must have a 3-min walkthrough. First should be displaying the source code, and the next is demonstrating the app.
+
+- [ ] Share the code in a github repository.
+
+- [ ] 700-word document critical summary. 1: Conceptual goals. 2: How you structured the layout and design. 3: Technical decisions you made in the app. 4: Success, Limitation, and Recommendation. 
+## App 
 Done with an MVVM architecture. A development process to make the app clean, and testable.
 
 3 elements - activity fragments, view model, repository. We get our data from the "room database" ???, which returns it to the repository, which is then passed to the view model, and can be then observed by activity fragments.
 
-## Set-up Dependencies
+### Set-up Dependencies
 
 In `build.gradle (Project)`:
 ```
@@ -355,7 +373,7 @@ Write this code into "AppModule":
 	}
 ```
 
-## Set-up Room DB 
+### Set-up Room DB 
 
 Room provides compile-time verification of sql queries. Provides annotations which minimizes boilerplate code.
 
@@ -490,7 +508,7 @@ Inside "AppModule", in "di", update the code with:
 	}
 ```
 
-## Set-up ViewModel
+### Set-up ViewModel
 
 In `com.example.simplenotesapp`, create a `package` called "viewmodel". 
 
@@ -545,6 +563,6 @@ Inside "NoteViewModel", write this code:
 	}
 ```
 
-## Designing the UI
+### Designing the UI
 
 In `res/layout`, create a `resource` file, and call it "fragment_notes".
