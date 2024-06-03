@@ -66,9 +66,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "cd53a8a7f3c7768b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Movies.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -134,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BSU/Smartphone Apps.md",
+                "file": "Movies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BSU/Smartphone Apps.md",
+                "file": "Movies.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -174,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BSU/Smartphone Apps.md"
+                "file": "Movies.md"
               }
             }
           },
@@ -205,12 +217,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "47639a6d8bf09e69",
+  "active": "cd53a8a7f3c7768b",
   "lastOpenFiles": [
-    "Vision Board.md",
-    "Untitled.md",
-    "BSU/Creative Industry Challenge.md",
     "BSU/Smartphone Apps.md",
+    "Movies.md",
+    "Vision Board.md",
+    "BSU/Creative Industry Challenge.md",
     "Destiny.md",
     "MIT/Number Systems.md",
     "BSU/Emerging Technologies.md",

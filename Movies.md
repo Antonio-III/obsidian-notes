@@ -1,0 +1,117 @@
+# To watch
+
+## MOVIE COMPANY
+
+all a 24 movies
+
+## Shows
+
+ROTK
+Lost in Translation
+Kill Bill 1
+Pirates of the Caribbean
+Finding Nemo
+Oldboy
+City of God
+Dogville
+Memories of Murder
+Master and Commander
+Big Fish
+Elephant
+Monster
+Mytsic River
+Thirteen
+Goodbye Dragon Inn
+21 Grams
+Cold Mountain. widows,billions
+succession
+ray donovan
+damages
+power
+new amserdam
+the blacklist
+mr. pickles
+superjail
+tuca and bertie
+china il
+momma named me sheriff
+
+
+Elf, School of Rock, Bad Santa, Love Actually, Freaky Friday, Holes,
+weight of massive talent
+banshees of inisherin, limitless,barry
+
+Taxi Driver, Falling Down, Drive, The Matrix, Blade Runner 2049, Nightcrawler, American History X, Psycho, fight club, mobile suit gundam
+the boy in stripped pajamas, schindler's list, django unchained, 28 days later, 28 weeks later, the good the bad and ugly, total recall
+
+SHOWS
+
+parks and rec, the good place, modern family, community, fight club, memento
+kill bill, gladiator, the last house on the left. men (2022), bodies bodies bodies nope, the lighthouse. the evil dead (1981), evil dead 2, evil dead (2013), the descent, Bad Times at the El Royale, wrong turn the hills have eyes, hellraiser, the mist, the ring, candyman, oculus, land of the dead, the lodge, southbound, rec (2007), cargo (2017), girl with all the gifts (2016), 1922 (2017), candyman 2011, one flew over the cuckoos nest, shawshank redemption, clockwork orange, 2001 space odyssey, scary stories to tell in the dark, creep midsommar, jeepers creepers, The Men Who Stare at Goats, the batman,The Midnight Sky, The Silence of the Lambs (Kuzuların Sessizliği), taxi driver, hannibal, the godfather, scarface, forrest gump, O Brother, Where Art Thou?, Gravity 2013, Tomorrowland, riddick, dune, stuber, my spy, army of thieves, the grudge, 65, ju-on, don't breathe 2, the unholy, crawl 2019, the invitation 2022, the grudge 2, nathan for you, the rehearsal, staircase (2004). barry (2018-2023). black dynamite, sorry to bother you, fences, judas, the black messiah, raising dion, attack the block, house md, Carnivàle (2003), tar (2022), the green knight, ad astra, the last duel, blade runner 2049, scott pilgrim vs the world, high tension, veronica mars, smallville, outsiders (2016), the ruins 2008, jamie marks is dead 2014, swallowed 2022, office space, severance (INCOMPLETE), mad men, top gun: maverick, good omens, bad times at el royale, loudermilk, reno 911, gladiator, elysium, kung fu hustle, shaolin monk, paranorman, billy in the streets, i think you should leave, monty python, kidding (2018), knives out, triangle of sadness, the menu, the wailing, it follows, slugs 1988, painkiller , nightcrawlers 2014, se7en, 12 monkeys, emancipation, scavengers reign, zero zero zero, gomorrah,  gangs of london, jujutsi kaisen 0, death note, attack on titans, devilman crybaby, akira, cyberpunk, castlevania, chainsaw man, neon genesis evangelion, cowboy bebop, jojo, record of ragnarok, baki, kengan ashura, hajime no ippo, my hero academia, tokyo revengers, hunter x hunter, squid game, kaiju no 8., mob psycho
+
+
+
+----------------------------
+WATCHED
+
+65 - driver goes to earth 65 million years ago with 9-year-old girl to go back to their home planet. they fight dinos. asteroid was going to hit earth. left as soon as asteroid hits
+
+the artifice girl - 
+data to make -> concept model(1) that predicts |
+conc. model defines -> obj -> gather data and use to craft -> model(2) | 
+test model(2) by training/testing more data -> model(2) makes predictions
+
+tour de pharmacy - funny bear sex
+
+they cloned tyrone - they cloned tyrone
+
+the flash 2023 - time travel flash and batman
+
+transformers rise of the beasts ?? - 2023 dialogue, 1994 setting
+
+hidden strike - john cena and jackie chan save people from bad guys stealing oil. comedy and action movie.
+
+the passenger - a movie about a scrawny quiet dude led along by his co-worker who wants to "fix" him by confronting loose ends of his (scrawny dude's) past. scrawny dude was quiet, timid, gets told what to do, and he just doesn't act on his own. co-worker guy was the opposite. radicalized, confident, confrontational, claims to be in charge. 
+
+on the way to tying up the scrawny guy's loose ends, the co-worker was also revealed to have some trauma from the past, and that he wasn't very different from the scrawny dude. 
+
+Movie ends with the co-worker saying that he was never in charge. In fact, he was always led by his emotions—he gets violent and resorts to threatening to kill someone should the scrawny dude leave him. After this, he gets shot by the cops. Scrawny guy learned from this and he starts to open up and be more condifent of himself.
+
+corner office - office worker person narrates his life (inner monologue) of what he was thinking during certain scenes in the movie. As soon as he got hired, he discovers a room and later finds out that no one else can see the room, and the office worker was just standing where the door was supposed to be in a catatonic state. office guy was clearly ahead of everyone in his "division". He was always on time, organized, and could do the work his colleagues can't. 
+
+In the end, it was shown what was it like to witness him in the perspective of his colleagues—that he was just zoned out facing a wall.— And that no one can reach him there (the room).
+
+
+devil's peak = midwestern story about a guy who wants to leave with his girl to somewhere outside of their town. the father of the guy looks like walter white. ended with the guy and his girl leaving off somewhere. walter white dies.
+
+fast x - dominic toretto has a grown kid. jason momoa tries to take all his family away from him so he can suffer. (part 1 finale)
+
+movie ends with: 
+1. dominic with mines about to explode
+2. letty finds submarine in antarctic
+3. the rock being the next target of momoa
+
+inside man (2023) - detective "bobby bones" goes undercover to to expose a mob boss "roy demeo". was successful. roy dies. "gemini longue" raided by cops. based on a true story.
+
+atlanta - thick judge judy (or was she?)
+
+jack ryan - rip suleiman. ryan was about to run for president, too.
+
+jujutsu kaisen - s1: yuji and nobara kill 2 sibling monsters. 6/10
+s2: yuji kills patchface. 
+6/10
+
+jjk 0 - yuta joins jj-high. geto wants to take yuta's power. geto dies. 
+4/10
+
+wind breaker - literally sett's backstory
+UNFINISHED. ep. watched: 9/13
+
+baki - yujiro and baki shook hands like in predator (arnold schawrzenegger meme). Manga has more to offer but the anime adaptation is prolly over. 7/10
+
+
+
+
+
+
+
