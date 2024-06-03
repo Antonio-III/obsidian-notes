@@ -565,4 +565,40 @@ Inside "NoteViewModel", write this code:
 
 ### Designing the UI
 
-In `res/layout`, create a `resource` file, and call it "fragment_notes".
+In `res/layout`, create a `resource` file, and call it "fragment_notes". 
+
+After designing "fragment_notes" layout, create another `resource` file called "fragment_addedditnotes".
+
+```
+<EditText  
+android:id="@+id/editTextText2"  
+android:layout_width="0dp"  
+android:layout_height="0dp"  
+android:background="@android:color/transparent"  
+android:ems="10"  
+android:gravity="top"  
+android:hint="Content"  
+  
+android:inputType="textMultiLine"  
+app:layout_constraintBottom_toBottomOf="parent"  
+app:layout_constraintEnd_toEndOf="parent"  
+app:layout_constraintStart_toStartOf="parent"  
+app:layout_constraintTop_toBottomOf="@+id/title_edit" />
+```
+
+```
+<EditText  
+android:id="@+id/content_edit"  
+android:layout_width="0dp"  
+android:layout_height="0dp"  
+android:background="@android:color/transparent"  
+android:ems="10"  
+android:gravity="top"  
+android:hint="Content"  
+android:inputType="textMultiLine"  
+app:layout_constraintBottom_toBottomOf="parent"  
+app:layout_constraintEnd_toEndOf="parent"  
+  
+app:layout_constraintStart_toStartOf="parent"  
+app:layout_constraintTop_toBottomOf="@+id/title_edit" />
+```
