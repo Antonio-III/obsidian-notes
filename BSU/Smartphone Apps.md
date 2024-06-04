@@ -565,40 +565,53 @@ Inside "NoteViewModel", write this code:
 
 ### Designing the UI
 
-In `res/layout`, create a `resource` file, and call it "fragment_notes". 
+In `res/layout`, create a `resource` file, and call it "fragment_notes". Design the "home" screen of the app from here.
 
-After designing "fragment_notes" layout, create another `resource` file called "fragment_addedditnotes".
+After designing "fragment_notes" layout, create another `resource` file called "fragment_addedditnotes". Design the "writing notes" from here.
 
+Then, create another `resource` file and name it "item_notes".
+
+Then, create a new `Package` in `com.example.simplenotesapp`, and name it "ui". 
+
+In this new `package`, create a new `Kotlin class` file, name it "NoteFragment", and write this code:
 ```
-<EditText  
-android:id="@+id/editTextText2"  
-android:layout_width="0dp"  
-android:layout_height="0dp"  
-android:background="@android:color/transparent"  
-android:ems="10"  
-android:gravity="top"  
-android:hint="Content"  
-  
-android:inputType="textMultiLine"  
-app:layout_constraintBottom_toBottomOf="parent"  
-app:layout_constraintEnd_toEndOf="parent"  
-app:layout_constraintStart_toStartOf="parent"  
-app:layout_constraintTop_toBottomOf="@+id/title_edit" />
+	package com.example.simplenotesapp.ui  
+	  
+	import androidx.fragment.app.Fragment  
+	import com.example.simplenotesapp.R  
+	import dagger.hilt.android.AndroidEntryPoint  
+	  
+	@AndroidEntryPoint  
+	class NoteFragment: Fragment(R.layout.fragment_notes) {  
+	}
 ```
 
+In the same `package`, create another `Kotlin class` file, and name it "AddEditNoteFragment", and write this code:
 ```
-<EditText  
-android:id="@+id/content_edit"  
-android:layout_width="0dp"  
-android:layout_height="0dp"  
-android:background="@android:color/transparent"  
-android:ems="10"  
-android:gravity="top"  
-android:hint="Content"  
-android:inputType="textMultiLine"  
-app:layout_constraintBottom_toBottomOf="parent"  
-app:layout_constraintEnd_toEndOf="parent"  
-  
-app:layout_constraintStart_toStartOf="parent"  
-app:layout_constraintTop_toBottomOf="@+id/title_edit" />
+	package com.example.simplenotesapp.ui  
+	  
+	import androidx.fragment.app.Fragment  
+	import com.example.simplenotesapp.R  
+	import dagger.hilt.android.AndroidEntryPoint  
+	  
+	@AndroidEntryPoint  
+	class AddEditNoteFragment: Fragment(R.layout.fragment_addeddit_notes) {  
+	}
+```
+
+Then, go to `MainActivity.kt`, and annotate the class with `@AndroidEntryPoint`:
+```
+	package com.example.simplenotesapp  
+	  
+	import androidx.appcompat.app.AppCompatActivity  
+	import android.os.Bundle  
+	import dagger.hilt.android.AndroidEntryPoint  
+	  
+	@AndroidEntryPoint  
+	class MainActivity : AppCompatActivity() {  
+		override fun onCreate(savedInstanceState: Bundle?) {  
+		super.onCreate(savedInstanceState)  
+		setContentView(R.layout.activity_main)  
+		}  
+	}
 ```
