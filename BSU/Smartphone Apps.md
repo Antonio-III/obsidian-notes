@@ -355,9 +355,9 @@ And put this to your `manifests`:
 	android:name=".NotesApplication"
 ```
 
-Create a new `package` in `com.example.notesapp` (the same folder where your `.kt` files are). Name it "di".
+Create a new `package` in `com.example.notesapp` (the same folder where your `.kt` files are). name it: "di".
 
-Then create a new `kotlin class` file, and select `Object`. Name it "AppModule".
+Then create a new `kotlin class` file, and select `Object`. name it: "AppModule".
 
 Write this code into "AppModule":
 ```
@@ -400,11 +400,11 @@ In the same file, add this code in `plugins`:
 	id("kotlin-parcelize")
 ```
 
-Create a `package` inside `com.example.notesapp`. Name it "data". 
+Create a `package` inside `com.example.notesapp`. name it: "data". 
 
-Then create a `package` inside "data". Name it "entity".
+Then create a `package` inside "data". name it: "entity".
 
-Inside "entity", create a `kotlin class` file, select `Data class`. Name it "Notes".
+Inside "entity", create a `kotlin class` file, select `Data class`. name it: "Notes".
 
 Write this code inside the "Notes" class:
 ```
@@ -425,9 +425,9 @@ Write this code inside the "Notes" class:
 	):Parcelable
 ```
 
-Create a `package` inside "data". Name it "database".
+Create a `package` inside "data". name it: "database".
 
-Inside "database", create a `kotlin class` file, name it "NoteDatabase".
+Inside "database", create a `kotlin class` file, name it: "NoteDatabase".
 
 Write this code inside "NoteDatabase":
 ```
@@ -441,9 +441,9 @@ Write this code inside "NoteDatabase":
 	}
 ```
 
-Inside "data", create a new `package`, and name it "dao".
+Inside "data", create a new `package`, and name it: "dao".
 
-Inside "dao", create a `kotlin class` file, select `interface`, and name it "NoteDao".
+Inside "dao", create a `kotlin class` file, select `interface`, and name it: "NoteDao".
 
 In "NoteDao", write this code:
 ```
@@ -569,11 +569,11 @@ In `res/layout`, create a `resource` file, and call it "fragment_notes". Design 
 
 After designing "fragment_notes" layout, create another `resource` file called "fragment_addedditnotes". Design the "writing notes" from here.
 
-Then, create another `resource` file and name it "item_notes".
+Then, create another `resource` file and name it: "item_notes".
 
-Then, create a new `Package` in `com.example.simplenotesapp`, and name it "ui". 
+Then, create a new `Package` in `com.example.simplenotesapp`, and name it: "ui". 
 
-In this new `package`, create a new `Kotlin class` file, name it "NoteFragment", and write this code:
+In this new `package`, create a new `Kotlin class` file, name it: "NoteFragment", and write this code:
 ```
 	package com.example.simplenotesapp.ui  
 	  
@@ -586,7 +586,7 @@ In this new `package`, create a new `Kotlin class` file, name it "NoteFragment",
 	}
 ```
 
-In the same `package`, create another `Kotlin class` file, and name it "AddEditNoteFragment", and write this code:
+In the same `package`, create another `Kotlin class` file, and name it: "AddEditNoteFragment", and write this code:
 ```
 	package com.example.simplenotesapp.ui  
 	  
@@ -615,3 +615,90 @@ Then, go to `MainActivity.kt`, and annotate the class with `@AndroidEntryPoint`:
 		}  
 	}
 ```
+
+### Set up ViewBinding
+
+In the `build.gradle.kts (:app)` file, go to the `android{ }` block and write this code:
+```
+	buildFeatures{  
+		viewBinding = true  
+	}
+```
+
+Create a new `package` file in `com.example.simplenotesapp`, and name it: "adapter".
+
+In "adapter", create a new `Kotlin class` file, and name it: "NoteAdapter". In this file, write this code:
+```
+	package com.example.simplenotesapp.adapter  
+	  
+	import android.view.LayoutInflater  
+	import android.view.ViewGroup  
+	import androidx.recyclerview.widget.RecyclerView  
+	import com.example.simplenotesapp.data.entity.Note  
+	import com.example.simplenotesapp.databinding.ItemNotesBinding  
+	import java.text.SimpleDateFormat  
+	  
+	class NoteAdapter(private val mNotes: List<Note>, private val listener: 
+	OnNoteClickListener): RecyclerView.Adapter<NoteAdapter.ViewHolder>() {  
+	  
+		interface OnNoteClickListener{  
+			fun onNoteClick(note: Note)  
+			fun onNoteLongClick(note: Note)  
+		}  
+		
+		inner class ViewHolder(private val binding: ItemNotesBinding): 
+		RecyclerView.ViewHolder(binding.root){  
+		  
+			init {  
+				binding.apply{  
+					root.setOnClickListener{  
+						val position = adapterPosition  
+						if (position != RecyclerView.NO_POSITION){  
+							val note = mNotes[position]  
+							listener.onNoteClick(note)  
+						}  
+					}  
+			  
+					root.setOnLongClickListener{  
+						val position = adapterPosition  
+						if (position != RecyclerView.NO_POSITION){  
+								val note = mNotes[position]  
+								listener.onNoteLongClick(note)  
+						}  
+			  
+						true  
+					}  
+				}  
+			}  
+			
+			fun bind(note: Note){  
+				binding.apply{  
+					titleNote.text = note.title  
+					contentNote.text = note.content  
+					val formatter = SimpleDateFormat("dd/MM/yyyy")  
+					dateNote.text = formatter.format(note.date)  
+				}  
+			}  
+		}  
+		  
+		  
+		override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): 
+		ViewHolder {  
+		
+			val binding = ItemNotesBinding.inflate(LayoutInflater.from
+			(parent.context), parent, false)  
+			return ViewHolder(binding)  
+		}  
+		  
+		override fun getItemCount(): Int {  
+			return mNotes.size  
+		}  
+		  
+		override fun onBindViewHolder(holder: ViewHolder, position: Int) {  
+			with(mNotes[position]){  
+				holder.bind(this)  
+			}  
+		}  
+	}
+```
+
