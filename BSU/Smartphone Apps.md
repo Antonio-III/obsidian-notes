@@ -702,3 +702,12 @@ In "adapter", create a new `Kotlin class` file, and name it: "NoteAdapter". In t
 	}
 ```
 
+### Set up Navigation component
+
+In the `res` folder, create a new `resource` file, name it: "nav_graph", in the `resource type:` change it to `Navigation`. Allow to import the dependencies.
+
+Add the screens for "noteFragment" and "addEditNoteFragment", and connect them to each other.
+
+In "addEditNoteFragment", add an `Argument`, name it: "Note"; its type is `Custom Parcelable`; its class is `Note`. Check `nullable`, and add it.
+
+In "activity_main.xml", clear the screen, and drag-and-drop a `NavHostContainer`, and select on "nav_graph"
