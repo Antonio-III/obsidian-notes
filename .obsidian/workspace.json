@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Destiny.md",
+                "file": "BSU/Smartphone Apps.md",
                 "mode": "source",
                 "source": false
               }
@@ -67,8 +67,7 @@
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -205,13 +204,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "47639a6d8bf09e69",
+  "active": "93b4c851ac5faee5",
   "lastOpenFiles": [
-    "Movies.md",
+    "Destiny.md",
     "BSU/Smartphone Apps.md",
+    "Movies.md",
     "Vision Board.md",
     "BSU/Creative Industry Challenge.md",
-    "Destiny.md",
     "MIT/Number Systems.md",
     "BSU/Emerging Technologies.md",
     "Linkedin Learning/Responsive Layout.md",
