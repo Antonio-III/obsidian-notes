@@ -235,9 +235,11 @@ To go to the start of the mp4, `mediaPlayer.seekTo(milliseconds)`, milliseconds 
 Make the `scaleType` to `cropCenter` or something 
 
 
-# Critical Summary
+# Assessment 2 - NaN Calculator 
 
-## Conceptual Goals
+## Critical Summary
+
+### Conceptual Goals
 
 Since we were tasked with creating a NaN calculator app (i.e an app that outputs something based on an input, but must not be a number), the first thing that came to my mind was the thought of color combination. In most programming languages, colors are represented either by their hexadecimal form or by a function of rgb, taking 3 arguments: red, green and blue.
 
@@ -245,7 +247,7 @@ And how this works is that red, green, and blue are an 8-bit unsigned integer da
 
 And my app is supposed to make use of this concept, as there are many ways to mix-and-match primary colors, without necessarily outputting a number.
 
-## Aesthetic Choices
+### Aesthetic Choices
 
 The app is designed to be simple to use. At the very top is the name of the app, called "ColorMix", the word *Mix* is colored in differing intensities corresponding to red, green, and blue. I added the color on the latter word so the app doesn't just display a bland text referring to the title of the app.
 
@@ -255,15 +257,15 @@ At the bottom of the app is the resulting color, which has a bigger icon than th
 
 At the very bottom of the app is the "help" icon, showing steps on how to use the app. I put this at the bottom-left of the app as I don't think looking at the tutorial of the app is one of the primary functions, so it's just placed somewhere at the edge of the screen to be found by the user when they are looking for more information about the app.
 
-## Technical Description
+### Technical Description
 
 The main concept of the app (the idea of color mixing) comes from the way we represent colors in many programming languages; specifically, the use of hexadecimal representation or its rgb() form. Many programming languages, including Kotlin, accept the hexadecimal or its rgb() form, so I designed the app in a way that the user will be the one to input what goes in to the rgb() function, then the job of the app is to take in this input, turn it into its hexadecimal form, and change the background of an ImageView based on this hexadecimal form.
 
 Why I chose this is because there can be many combinations that can be generated, so even if the app is simple, you can't really say you've seen everything the app has to show unless you've seen all the colors possible in the color wheel. To put this into perspective, the amount of possible colors available is 256**3, which is equivalent to 16,777,216 colors.
 
-## Self-reflection
+### Self-reflection
 
-### Strengths
+#### Strengths
 
 I think the app does a great job of balancing the challenges of implementing data structures and algorithms, and user experience, with the icons being responsive to an input, as well as having an input button for added quality-of-life.
 
@@ -273,7 +275,7 @@ I think the app did a good job of handling errors as well. In the cases where a 
 
 I think the app is flexible and responsive; if the user does not want to input their own value, they can instead press a button to generate a number for them, and on top of this feature, is the responsiveness of the ImageView corresponding to that input. This provides user feedback and lets the user know that their inputs are being recognized by the app
 
-### Weaknesses
+#### Weaknesses
 
 Given the scope of the app, I think it implements all of the necessary structure pretty well, but there is one thing that can be improved upon, which is a way to copy the resulting color's hexadecimal form into the user's clipboard for use. It's one thing to see what the resulting color is and its hexadecimal form, and it's another to be able to do the same, but with the ability to use this outputted value for use.
 
@@ -915,3 +917,6 @@ Go to `data/entity/Note`, and write this code:
 	    val date: Long  
 	):Parcelable
 ```
+
+In "AndroidManifest.xml", find `android:theme` and change it to `"@style/Theme.AppCompat"`.
+
