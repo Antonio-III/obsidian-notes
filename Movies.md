@@ -113,15 +113,15 @@ S2: Omni Man misses his wife.
 
 Fargo (2014-ongoing) - A storytelling show about a series of people dying in different events, separated by seasons (in TV terms).
 
-S1: Generic murder spree of 1 guy in the midwest.
+S1: Generic murder spree of 1 guy in the mid-west.
 
 S2: Aliens or whatever
 
-S3: Some guy had bulemia.
+S3: Some guy had bulimia.
 
 S4: Chris Rock dies. Sad!
 
-S5: Unwatched
+S5: The man is forgiven.
 ## Anime 
 
 ### Completed

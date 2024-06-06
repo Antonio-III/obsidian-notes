@@ -61,13 +61,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BSU/Smartphone Apps.md",
+                "file": "Movies.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -133,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BSU/Smartphone Apps.md",
+                "file": "Movies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BSU/Smartphone Apps.md",
+                "file": "Movies.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -173,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BSU/Smartphone Apps.md"
+                "file": "Movies.md"
               }
             }
           },
@@ -204,10 +205,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "93b4c851ac5faee5",
+  "active": "47639a6d8bf09e69",
   "lastOpenFiles": [
-    "Destiny.md",
     "BSU/Smartphone Apps.md",
+    "Destiny.md",
     "Movies.md",
     "Vision Board.md",
     "BSU/Creative Industry Challenge.md",
