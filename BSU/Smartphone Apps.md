@@ -132,7 +132,7 @@ The joke is that it's common in Reddit communities to have the same post become 
 
 
 
-# Google Slides
+# [Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vTEfCZxZ876L1JpxVJsdM1I_g-36UPeQLwQPaWcep6KiS7TU9ChauVN3WEb_PWPJpAPHLuWCgeJz8_j/pub?start=false&loop=false&delayms=3000#slide=id.p)
 
 ## Android OS
 
