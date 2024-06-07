@@ -294,7 +294,7 @@ Given the scope of the app, I think it implements all of the necessary structure
 
 - [x] Project name should be the app's name ("equinox").
 
-- [ ] Provide instructions through a popup activity.
+- [x] Provide instructions through a popup activity.
 
 - [ ] Must have shared preferences.
 
