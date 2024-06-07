@@ -1286,3 +1286,24 @@ class ThemeViewModel: ViewModel() {
         app:srcCompat="@drawable/ic_accessibility" />  
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
+
+`themes.xml`:
+```
+<resources xmlns:tools="http://schemas.android.com/tools">  
+    <!-- Base application theme. -->  
+    <style name="Base.Theme.SimpleNotesApp" parent="Theme.Material3.DayNight">  
+        <!-- Customize your light theme here. -->  
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->    </style>  
+  
+ </resources>
+```
+
+`themes.xml (night)`:
+```
+<resources xmlns:tools="http://schemas.android.com/tools">  
+    <!-- Base application theme. -->  
+    <style name="Base.Theme.SimpleNotesApp" parent="Theme.Material3.DayNight">  
+        <!-- Customize your dark theme here. -->  
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->    </style>  
+</resources>
+```
