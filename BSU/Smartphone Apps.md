@@ -219,6 +219,9 @@ Adapter creates a `View` for each item in the data source. It then inserts the i
 
 - [ ] In `App/res/drawable`, create a `New` `Image asset`. 
 
+## Create new icons
+
+In `drawable`, create a new `Image Asset`. And in the `Icon Type`, change it to `Action Bar and Tab Icons`.
 ## Adding mp4
 
 in `App/res/`,  
@@ -285,11 +288,11 @@ Given the scope of the app, I think it implements all of the necessary structure
 
 ## Scope
 
-- [ ] Must have logo
+- [x] Must have logo
 
-- [ ] Must have a splash screen.
+- [x] Must have a splash screen.
 
-- [ ] Project name should be the app's name ("volt").
+- [x] Project name should be the app's name ("equinox").
 
 - [ ] Provide instructions through a popup activity.
 
