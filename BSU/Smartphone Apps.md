@@ -1210,7 +1210,7 @@ class ThemeViewModel: ViewModel() {
         android:label="@string/app_name"  
         android:roundIcon="@mipmap/ic_launcher_round"  
         android:supportsRtl="true"  
-        android:theme="@style/Theme.AppCompat.Light"  
+        android:theme="@style/Base.Theme.SimpleNotesApp"  
         tools:targetApi="31">  
         <activity            android:theme="@style/Theme.AppCompat.Light.NoActionBar"  
             android:label="Title Screen"  
@@ -1221,39 +1221,13 @@ class ThemeViewModel: ViewModel() {
   
                 <category android:name="android.intent.category.LAUNCHER" />  
             </intent-filter>        </activity>        <activity            android:name=".MainActivity"  
-            android:theme="@style/Theme.AppCompat.Light"  
+            android:theme="@style/Base.Theme.SimpleNotesApp"  
             android:exported="true">  
             <intent-filter>                <action android:name="android.intent.action.MAIN" />  
   
                 <category android:name="android.intent.category.LAUNCHER" />  
             </intent-filter>        </activity>    </application>  
 </manifest>
-```
-
-`activity_main.xml`:
-```
-<?xml version="1.0" encoding="utf-8"?>  
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"  
-    xmlns:app="http://schemas.android.com/apk/res-auto"  
-    xmlns:tools="http://schemas.android.com/tools"  
-    android:layout_width="match_parent"  
-    android:layout_height="match_parent"  
-    tools:context=".MainActivity">  
-  
-    <androidx.fragment.app.FragmentContainerView        android:id="@+id/nav_host"  
-        android:name="androidx.navigation.fragment.NavHostFragment"  
-        android:layout_width="0dp"  
-        android:layout_height="0dp"  
-        app:defaultNavHost="true"  
-        app:layout_constraintBottom_toBottomOf="parent"  
-        app:layout_constraintEnd_toEndOf="parent"  
-        app:layout_constraintHorizontal_bias="1.0"  
-        app:layout_constraintStart_toStartOf="parent"  
-        app:layout_constraintTop_toTopOf="parent"  
-        app:navGraph="@navigation/nav_graph" />  
-  
-  
-</androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
 `fragment_notes.xml`:
