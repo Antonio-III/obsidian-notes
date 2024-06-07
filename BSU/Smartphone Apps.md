@@ -927,7 +927,8 @@ In "AndroidManifest.xml", find `android:theme` and change it to `"@style/Theme.A
 
 ## Code (REMOVE LATER)
 
-I updated the code to this:
+
+### Kotlin files:
 
 `MainActivity.kt`:
 ```
@@ -936,6 +937,7 @@ package com.example.simplenotesapp
 import android.content.Context  
 import androidx.appcompat.app.AppCompatActivity  
 import android.os.Bundle  
+import android.util.Log  
 import androidx.appcompat.app.AppCompatDelegate  
 import androidx.core.content.edit  
 import androidx.lifecycle.ViewModelProvider  
@@ -957,16 +959,17 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {  
         super.onCreate(savedInstanceState)  
   
-        applySavedTheme()  
+        themeViewModel = ViewModelProvider(this).get(themeViewModel::class.java)  
+        themeViewModel.setTheme(isDarkModeEnabled())  
+        themeViewModel.isDarkMode.observe(this){isDarkMode ->  
+            applyTheme(isDarkMode)  
+        }  
   
         setContentView(R.layout.activity_main)  
   
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host) as NavHostFragment  
-  
         navController = navHostFragment.navController  
-  
         setupActionBarWithNavController(navController)  
-  
         navController.addOnDestinationChangedListener{  
             _, destination, _, ->  
             when (destination.id){  
@@ -975,45 +978,29 @@ class MainActivity : AppCompatActivity() {
             }  
         }  
   
-        themeViewModel = ViewModelProvider(this).get(ThemeViewModel::class.java)  
-        themeViewModel.themeChangeEvent.observe(this){  
-            toggleTheme()  
-        }  
-  
     }  
   
     override fun onSupportNavigateUp(): Boolean {  
         return super.onSupportNavigateUp() || navController.navigateUp()  
     }  
   
-    private fun applySavedTheme(){  
-        val isDarkMode = isDarkModeEnabled()  
+    private fun applyTheme(isDarkMode: Boolean){  
         AppCompatDelegate.setDefaultNightMode(if (isDarkMode) AppCompatDelegate.MODE_NIGHT_YES  
         else AppCompatDelegate.MODE_NIGHT_NO)  
+  
+        saveThemePreferences(isDarkMode)  
     }  
   
-    private fun toggleTheme(){  
-        val isDarkMode = !isDarkModeEnabled()  
-        setTheme(isDarkMode)  
-    }  
-  
-    private fun isDarkModeEnabled(): Boolean {  
-        val sharedPreferences = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)  
-        return sharedPreferences.getBoolean(KEY_IS_DARK_MODE, false)  
-    }  
-  
-    private fun setTheme(isDarkMode: Boolean){  
+    private fun saveThemePreferences(isDarkMode: Boolean){  
         val sharedPreferences = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)  
         sharedPreferences.edit{  
             putBoolean(KEY_IS_DARK_MODE, isDarkMode)  
         }  
-  
-        AppCompatDelegate.setDefaultNightMode(if (isDarkMode) AppCompatDelegate.MODE_NIGHT_YES  
-        else AppCompatDelegate.MODE_NIGHT_NO)  
-  
-        recreate()  
     }  
-  
+    private fun isDarkModeEnabled(): Boolean {  
+        val sharedPreferences = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)  
+        return sharedPreferences.getBoolean(KEY_IS_DARK_MODE, false)  
+    }  
 }
 ```
 --
@@ -1139,11 +1126,15 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel  
   
 class ThemeViewModel: ViewModel() {  
-    private val _themeChangeEvent = MutableLiveData<Unit>()  
-    val themeChangeEvent: LiveData<Unit> get() = _themeChangeEvent  
+    private val _isDarkMode = MutableLiveData<Boolean>()  
+    val isDarkMode: LiveData<Boolean> get() = _isDarkMode  
   
     fun toggleTheme(){  
-        _themeChangeEvent.value = Unit  
+        _isDarkMode.value = _isDarkMode.value!=true  
+    }  
+  
+    fun setTheme(isDark: Boolean){  
+        _isDarkMode.value = isDark  
     }  
 }
 ```
@@ -1199,5 +1190,125 @@ class ThemeViewModel: ViewModel() {
         app:layout_constraintBottom_toTopOf="@+id/theme_switch_button"  
         app:layout_constraintEnd_toEndOf="parent"  
         app:layout_constraintStart_toStartOf="parent" />  
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
+
+### Layout files:
+
+`AndroidManifest.xml`:
+
+```
+<?xml version="1.0" encoding="utf-8"?>  
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools">  
+  
+    <application        android:name=".NotesApplication"  
+        android:allowBackup="true"  
+        android:dataExtractionRules="@xml/data_extraction_rules"  
+        android:fullBackupContent="@xml/backup_rules"  
+        android:icon="@mipmap/ic_launcher"  
+        android:label="@string/app_name"  
+        android:roundIcon="@mipmap/ic_launcher_round"  
+        android:supportsRtl="true"  
+        android:theme="@style/Theme.AppCompat.Light"  
+        tools:targetApi="31">  
+        <activity            android:theme="@style/Theme.AppCompat.Light.NoActionBar"  
+            android:label="Title Screen"  
+            android:name=".SplashScreen"  
+            android:exported="true">  
+  
+            <intent-filter>                <action android:name="android.intent.action.MAIN" />  
+  
+                <category android:name="android.intent.category.LAUNCHER" />  
+            </intent-filter>        </activity>        <activity            android:name=".MainActivity"  
+            android:theme="@style/Theme.AppCompat.Light"  
+            android:exported="true">  
+            <intent-filter>                <action android:name="android.intent.action.MAIN" />  
+  
+                <category android:name="android.intent.category.LAUNCHER" />  
+            </intent-filter>        </activity>    </application>  
+</manifest>
+```
+
+`activity_main.xml`:
+```
+<?xml version="1.0" encoding="utf-8"?>  
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:app="http://schemas.android.com/apk/res-auto"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    tools:context=".MainActivity">  
+  
+    <androidx.fragment.app.FragmentContainerView        android:id="@+id/nav_host"  
+        android:name="androidx.navigation.fragment.NavHostFragment"  
+        android:layout_width="0dp"  
+        android:layout_height="0dp"  
+        app:defaultNavHost="true"  
+        app:layout_constraintBottom_toBottomOf="parent"  
+        app:layout_constraintEnd_toEndOf="parent"  
+        app:layout_constraintHorizontal_bias="1.0"  
+        app:layout_constraintStart_toStartOf="parent"  
+        app:layout_constraintTop_toTopOf="parent"  
+        app:navGraph="@navigation/nav_graph" />  
+  
+  
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
+
+`fragment_notes.xml`:
+```
+<?xml version="1.0" encoding="utf-8"?>  
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:app="http://schemas.android.com/apk/res-auto"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent">  
+  
+    <androidx.recyclerview.widget.RecyclerView        android:id="@+id/recyclerView_notes"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent"  
+        app:layout_constraintBottom_toBottomOf="parent"  
+        app:layout_constraintEnd_toEndOf="parent"  
+        app:layout_constraintHorizontal_bias="0.0"  
+        app:layout_constraintStart_toStartOf="parent"  
+        app:layout_constraintTop_toTopOf="parent"  
+        app:layout_constraintVertical_bias="1.0" />  
+  
+    <com.google.android.material.floatingactionbutton.FloatingActionButton        android:id="@+id/add_button"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_marginEnd="24dp"  
+        android:layout_marginBottom="24dp"  
+        android:clickable="true"  
+        app:layout_constraintBottom_toBottomOf="parent"  
+        app:layout_constraintEnd_toEndOf="parent"  
+        app:srcCompat="@android:drawable/ic_input_add"  
+        android:backgroundTint="#EADDFF"  
+        android:tint="#000000"/>  
+  
+    <com.google.android.material.floatingactionbutton.FloatingActionButton        android:id="@+id/help_popup"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_marginStart="24dp"  
+        android:layout_marginBottom="24dp"  
+        android:clickable="true"  
+        app:layout_constraintBottom_toBottomOf="parent"  
+        app:layout_constraintStart_toStartOf="parent"  
+        android:backgroundTint="#EADDFF"  
+        android:tint="#000000"  
+        app:srcCompat="@android:drawable/ic_menu_help" />  
+  
+    <com.google.android.material.floatingactionbutton.FloatingActionButton        android:id="@+id/options_popup"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_marginStart="24dp"  
+        android:layout_marginBottom="24dp"  
+        android:clickable="true"  
+        android:backgroundTint="#EADDFF"  
+        android:tint="#000000"  
+        app:layout_constraintBottom_toBottomOf="parent"  
+        app:layout_constraintStart_toEndOf="@+id/help_popup"  
+        app:srcCompat="@drawable/ic_accessibility" />  
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
