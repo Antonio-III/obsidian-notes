@@ -923,3 +923,281 @@ Go to `data/entity/Note`, and write this code:
 
 In "AndroidManifest.xml", find `android:theme` and change it to `"@style/Theme.AppCompat"`.
 
+
+
+## Code (REMOVE LATER)
+
+I updated the code to this:
+
+`MainActivity.kt`:
+```
+package com.example.simplenotesapp  
+  
+import android.content.Context  
+import androidx.appcompat.app.AppCompatActivity  
+import android.os.Bundle  
+import androidx.appcompat.app.AppCompatDelegate  
+import androidx.core.content.edit  
+import androidx.lifecycle.ViewModelProvider  
+import androidx.navigation.NavController  
+import androidx.navigation.fragment.NavHostFragment  
+import androidx.navigation.ui.setupActionBarWithNavController  
+import com.google.android.material.floatingactionbutton.FloatingActionButton  
+import dagger.hilt.android.AndroidEntryPoint  
+  
+@AndroidEntryPoint  
+class MainActivity : AppCompatActivity() {  
+    lateinit var navController: NavController  
+    lateinit var themeViewModel: ThemeViewModel  
+  
+    companion object {  
+        private const val PREFS_NAME = "theme_prefs"  
+        private const val KEY_IS_DARK_MODE = "is_dark_mode"  
+    }  
+    override fun onCreate(savedInstanceState: Bundle?) {  
+        super.onCreate(savedInstanceState)  
+  
+        applySavedTheme()  
+  
+        setContentView(R.layout.activity_main)  
+  
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host) as NavHostFragment  
+  
+        navController = navHostFragment.navController  
+  
+        setupActionBarWithNavController(navController)  
+  
+        navController.addOnDestinationChangedListener{  
+            _, destination, _, ->  
+            when (destination.id){  
+                R.id.noteFragment -> supportActionBar?.title = "Notes"  
+                R.id.addEditNoteFragment -> supportActionBar?.title = "Write note"  
+            }  
+        }  
+  
+        themeViewModel = ViewModelProvider(this).get(ThemeViewModel::class.java)  
+        themeViewModel.themeChangeEvent.observe(this){  
+            toggleTheme()  
+        }  
+  
+    }  
+  
+    override fun onSupportNavigateUp(): Boolean {  
+        return super.onSupportNavigateUp() || navController.navigateUp()  
+    }  
+  
+    private fun applySavedTheme(){  
+        val isDarkMode = isDarkModeEnabled()  
+        AppCompatDelegate.setDefaultNightMode(if (isDarkMode) AppCompatDelegate.MODE_NIGHT_YES  
+        else AppCompatDelegate.MODE_NIGHT_NO)  
+    }  
+  
+    private fun toggleTheme(){  
+        val isDarkMode = !isDarkModeEnabled()  
+        setTheme(isDarkMode)  
+    }  
+  
+    private fun isDarkModeEnabled(): Boolean {  
+        val sharedPreferences = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)  
+        return sharedPreferences.getBoolean(KEY_IS_DARK_MODE, false)  
+    }  
+  
+    private fun setTheme(isDarkMode: Boolean){  
+        val sharedPreferences = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)  
+        sharedPreferences.edit{  
+            putBoolean(KEY_IS_DARK_MODE, isDarkMode)  
+        }  
+  
+        AppCompatDelegate.setDefaultNightMode(if (isDarkMode) AppCompatDelegate.MODE_NIGHT_YES  
+        else AppCompatDelegate.MODE_NIGHT_NO)  
+  
+        recreate()  
+    }  
+  
+}
+```
+--
+
+`NoteFragment.kt`:
+```
+package com.example.simplenotesapp.ui  
+  
+import android.content.Context  
+import android.os.Bundle  
+import android.view.LayoutInflater  
+import android.view.View  
+import android.view.ViewGroup  
+import android.widget.PopupWindow  
+import androidx.appcompat.app.AppCompatDelegate  
+import androidx.core.content.edit  
+import androidx.fragment.app.Fragment  
+import androidx.fragment.app.viewModels  
+import androidx.lifecycle.ViewModelProvider  
+import androidx.lifecycle.lifecycleScope  
+import androidx.navigation.fragment.findNavController  
+import androidx.recyclerview.widget.GridLayoutManager  
+import com.example.simplenotesapp.R  
+import com.example.simplenotesapp.ThemeViewModel  
+import com.example.simplenotesapp.adapter.NoteAdapter  
+import com.example.simplenotesapp.data.entity.Note  
+import com.example.simplenotesapp.databinding.FragmentNotesBinding  
+import com.example.simplenotesapp.viewmodel.NoteViewModel  
+import com.google.android.material.floatingactionbutton.FloatingActionButton  
+import com.google.android.material.snackbar.Snackbar  
+import dagger.hilt.android.AndroidEntryPoint  
+import kotlinx.coroutines.launch  
+  
+const val GRID_NOTES_SPAN: Int = 2  
+const val STARTING_X: Int = 0  
+const val STARTING_Y: Int = 2  
+@AndroidEntryPoint  
+class NoteFragment: Fragment(R.layout.fragment_notes), NoteAdapter.OnNoteClickListener {  
+    private val viewModel by viewModels<NoteViewModel>()  
+    private lateinit var themeViewModel: ThemeViewModel  
+  
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {  
+        super.onViewCreated(view, savedInstanceState)  
+  
+        val binding = FragmentNotesBinding.bind(requireView())  
+        themeViewModel = ViewModelProvider(requireActivity()).get(ThemeViewModel::class.java)  
+  
+  
+        binding.apply {  
+            recyclerViewNotes.layoutManager = GridLayoutManager(context, GRID_NOTES_SPAN)  
+            recyclerViewNotes.setHasFixedSize(true)  
+  
+            addButton.setOnClickListener{  
+                val action = NoteFragmentDirections.actionNoteFragmentToAddEditNoteFragment(null)  
+                findNavController().navigate(action)  
+            }  
+  
+            viewLifecycleOwner.lifecycleScope.launch {  
+                viewModel.notes.collect{notes ->  
+                    val adapter = NoteAdapter(notes, this@NoteFragment)  
+                    recyclerViewNotes.adapter = adapter  
+                }  
+            }  
+            viewLifecycleOwner.lifecycleScope.launch {  
+                viewModel.notesEvent.collect{event ->  
+                    if (event is NoteViewModel.NotesEvent.ShowUndoSnackBar){  
+                        Snackbar.make(requireView(), event.msg, Snackbar.LENGTH_LONG).setAction("Undo"){  
+                            viewModel.insertNote(event.note)  
+                        }.show()  
+                    }  
+                }  
+            }  
+            helpPopup.setOnClickListener{  
+                showPopup(R.layout.popup_help)  
+            }  
+  
+            optionsPopup.setOnClickListener{  
+                showPopup(R.layout.popup_options)  
+            }  
+        }    }  
+  
+    override fun onNoteClick(note: Note) {  
+        val action = NoteFragmentDirections.actionNoteFragmentToAddEditNoteFragment(note)  
+        findNavController().navigate(action)  
+    }  
+  
+    override fun onNoteLongClick(note: Note) {  
+        viewModel.deleteNote(note)  
+    }  
+  
+    private fun showPopup(layoutId: Int){  
+        val inflater: LayoutInflater = LayoutInflater.from(context)  
+        val popupView: View = inflater.inflate(layoutId, null)  
+  
+        val popupWindow = PopupWindow(popupView, ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT, true)  
+  
+        val closePopup = popupView.findViewById<FloatingActionButton>(R.id.close_popup)  
+        closePopup.setOnClickListener{  
+            popupWindow.dismiss()  
+        }  
+  
+        if (layoutId == R.layout.popup_options){  
+            val themeSwitchButton = popupView.findViewById<FloatingActionButton>(R.id.theme_switch_button)  
+  
+            themeSwitchButton.setOnClickListener{  
+                themeViewModel.toggleTheme()  
+                popupWindow.dismiss()  
+            }  
+        }  
+  
+        popupWindow.showAtLocation(requireView(), android.view.Gravity.CENTER, STARTING_X, STARTING_Y)  
+    }  
+}
+```
+--
+
+`ThemeViewModel.kt`:
+```
+package com.example.simplenotesapp  
+  
+import androidx.lifecycle.LiveData  
+import androidx.lifecycle.MutableLiveData  
+import androidx.lifecycle.ViewModel  
+  
+class ThemeViewModel: ViewModel() {  
+    private val _themeChangeEvent = MutableLiveData<Unit>()  
+    val themeChangeEvent: LiveData<Unit> get() = _themeChangeEvent  
+  
+    fun toggleTheme(){  
+        _themeChangeEvent.value = Unit  
+    }  
+}
+```
+--
+
+`popup_options.xml`:
+
+```
+<?xml version="1.0" encoding="utf-8"?>  
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:app="http://schemas.android.com/apk/res-auto"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:background="#EADDFF">  
+  
+    <com.google.android.material.floatingactionbutton.FloatingActionButton        android:id="@+id/theme_switch_button"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_marginStart="128dp"  
+        android:layout_marginTop="128dp"  
+        android:layout_marginEnd="128dp"  
+        android:layout_marginBottom="128dp"  
+        android:backgroundTint="#EADDFF"  
+        android:clickable="true"  
+        android:tint="#000000"  
+        app:layout_constraintBottom_toBottomOf="parent"  
+        app:layout_constraintEnd_toEndOf="parent"  
+        app:layout_constraintStart_toStartOf="parent"  
+        app:layout_constraintTop_toTopOf="parent"  
+        app:srcCompat="@drawable/ic_darkmode" />  
+  
+    <com.google.android.material.floatingactionbutton.FloatingActionButton        android:id="@+id/close_popup"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_marginStart="24dp"  
+        android:layout_marginBottom="24dp"  
+        android:backgroundTint="#EADDFF"  
+        android:clickable="true"  
+        android:tint="#000000"  
+        app:layout_constraintBottom_toBottomOf="parent"  
+        app:layout_constraintStart_toStartOf="parent"  
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />  
+  
+    <TextView        android:id="@+id/label"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_marginBottom="32dp"  
+        android:fontFamily="@font/open_sans_regular"  
+        android:text="Dark Mode"  
+        android:textColor="#000000"  
+        android:textSize="30sp"  
+        app:layout_constraintBottom_toTopOf="@+id/theme_switch_button"  
+        app:layout_constraintEnd_toEndOf="parent"  
+        app:layout_constraintStart_toStartOf="parent" />  
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
