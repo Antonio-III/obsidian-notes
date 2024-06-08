@@ -930,80 +930,231 @@ In "AndroidManifest.xml", find `android:theme` and change it to `"@style/Theme.A
 
 ### Kotlin files:
 
-`MainActivity.kt`:
+`NoteAdapter.kt`:
 ```
-package com.example.simplenotesapp  
+package com.example.simplenotesapp.adapter  
   
-import android.content.Context  
-import androidx.appcompat.app.AppCompatActivity  
-import android.os.Bundle  
-import android.util.Log  
-import androidx.appcompat.app.AppCompatDelegate  
-import androidx.core.content.edit  
-import androidx.lifecycle.ViewModelProvider  
-import androidx.navigation.NavController  
-import androidx.navigation.fragment.NavHostFragment  
-import androidx.navigation.ui.setupActionBarWithNavController  
-import com.google.android.material.floatingactionbutton.FloatingActionButton  
-import dagger.hilt.android.AndroidEntryPoint  
+import android.view.LayoutInflater  
+import android.view.ViewGroup  
+import androidx.recyclerview.widget.RecyclerView  
+import com.example.simplenotesapp.data.entity.Note  
+import com.example.simplenotesapp.databinding.ItemNotesBinding  
+import java.text.SimpleDateFormat  
   
-@AndroidEntryPoint  
-class MainActivity : AppCompatActivity() {  
-    lateinit var navController: NavController  
-    lateinit var themeViewModel: ThemeViewModel  
+class NoteAdapter(private val mNotes: List<Note>, private val listener: OnNoteClickListener): RecyclerView.Adapter<NoteAdapter.ViewHolder>() {  
   
-    companion object {  
-        private const val PREFS_NAME = "theme_prefs"  
-        private const val KEY_IS_DARK_MODE = "is_dark_mode"  
+    interface OnNoteClickListener{  
+        fun onNoteClick(note: Note)  
+        fun onNoteLongClick(note: Note)  
     }  
-    override fun onCreate(savedInstanceState: Bundle?) {  
-        super.onCreate(savedInstanceState)  
   
-        themeViewModel = ViewModelProvider(this).get(themeViewModel::class.java)  
-        themeViewModel.setTheme(isDarkModeEnabled())  
-        themeViewModel.isDarkMode.observe(this){isDarkMode ->  
-            applyTheme(isDarkMode)  
-        }  
+    inner class ViewHolder(private val binding: ItemNotesBinding): RecyclerView.ViewHolder(binding.root){  
   
-        setContentView(R.layout.activity_main)  
+        init {  
+            binding.apply{  
+                root.setOnClickListener{  
+                    val position = adapterPosition  
+                    if (position != RecyclerView.NO_POSITION){  
+                        val note = mNotes[position]  
+                        listener.onNoteClick(note)  
+                    }  
+                }  
   
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host) as NavHostFragment  
-        navController = navHostFragment.navController  
-        setupActionBarWithNavController(navController)  
-        navController.addOnDestinationChangedListener{  
-            _, destination, _, ->  
-            when (destination.id){  
-                R.id.noteFragment -> supportActionBar?.title = "Notes"  
-                R.id.addEditNoteFragment -> supportActionBar?.title = "Write note"  
+                root.setOnLongClickListener{  
+                    val position = adapterPosition  
+                    if (position != RecyclerView.NO_POSITION){  
+                        val note = mNotes[position]  
+                        listener.onNoteLongClick(note)  
+                    }  
+  
+                    true  
+                }  
+            }        }  
+  
+        fun bind(note: Note){  
+            binding.apply{  
+                titleNote.text = note.title  
+                contentNote.text = note.content  
+                val formatter = SimpleDateFormat("dd/MM/yyyy")  
+                dateNote.text = formatter.format(note.date)  
             }  
         }  
-  
     }  
   
-    override fun onSupportNavigateUp(): Boolean {  
-        return super.onSupportNavigateUp() || navController.navigateUp()  
+  
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {  
+        val binding = ItemNotesBinding.inflate(LayoutInflater.from(parent.context), parent, false)  
+        return ViewHolder(binding)  
     }  
   
-    private fun applyTheme(isDarkMode: Boolean){  
-        AppCompatDelegate.setDefaultNightMode(if (isDarkMode) AppCompatDelegate.MODE_NIGHT_YES  
-        else AppCompatDelegate.MODE_NIGHT_NO)  
-  
-        saveThemePreferences(isDarkMode)  
+    override fun getItemCount(): Int {  
+        return mNotes.size  
     }  
   
-    private fun saveThemePreferences(isDarkMode: Boolean){  
-        val sharedPreferences = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)  
-        sharedPreferences.edit{  
-            putBoolean(KEY_IS_DARK_MODE, isDarkMode)  
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {  
+        with(mNotes[position]){  
+            holder.bind(this)  
         }  
-    }  
-    private fun isDarkModeEnabled(): Boolean {  
-        val sharedPreferences = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)  
-        return sharedPreferences.getBoolean(KEY_IS_DARK_MODE, false)  
     }  
 }
 ```
---
+---
+
+`NoteDao.kt`:
+```
+package com.example.simplenotesapp.data.dao  
+  
+import androidx.room.Dao  
+import androidx.room.Delete  
+import androidx.room.Insert  
+import androidx.room.Query  
+import androidx.room.Update  
+import com.example.simplenotesapp.data.entity.Note  
+import kotlinx.coroutines.flow.Flow  
+  
+@Dao  
+interface NoteDao {  
+    @Query("Select * from notes ORDER BY date Desc")  
+    fun getAllNotes(): Flow<List<Note>>  
+  
+    @Insert  
+    suspend fun insertNote(note: Note)  
+  
+    @Update  
+    suspend fun updatedNote(note: Note)  
+  
+    @Delete  
+    suspend fun deleteNote(note: Note)  
+}
+```
+---
+
+`NoteDatabase.kt`:
+```
+package com.example.simplenotesapp.data.database  
+  
+import androidx.room.Database  
+import androidx.room.RoomDatabase  
+import com.example.simplenotesapp.data.dao.NoteDao  
+import com.example.simplenotesapp.data.entity.Note  
+  
+@Database(entities = arrayOf(Note::class), version = 1)  
+abstract class NoteDatabase: RoomDatabase() {  
+    abstract fun noteDao(): NoteDao  
+}
+```
+---
+
+`Note.kt`:
+```
+package com.example.simplenotesapp.data.entity  
+  
+import android.os.Parcelable  
+import androidx.room.Entity  
+import androidx.room.PrimaryKey  
+import kotlinx.android.parcel.Parcelize  
+  
+@Entity(tableName = "notes")  
+@Parcelize  
+data class Note(  
+    @PrimaryKey(autoGenerate = true) val id: Int = 0,  
+    val title: String?,  
+    val content: String?,  
+    val date: Long  
+):Parcelable
+```
+---
+
+`AppModule.kt`:
+```
+package com.example.simplenotesapp.di  
+  
+import android.content.Context  
+import androidx.room.Room  
+import com.example.simplenotesapp.data.database.NoteDatabase  
+import dagger.Module  
+import dagger.Provides  
+import dagger.hilt.InstallIn  
+import dagger.hilt.android.qualifiers.ApplicationContext  
+import dagger.hilt.components.SingletonComponent  
+import javax.inject.Singleton  
+  
+@Module  
+@InstallIn(SingletonComponent::class)  
+object AppModule {  
+  
+    @Provides  
+    @Singleton    fun provideRoomDatabase(@ApplicationContext context: Context) = Room.databaseBuilder(context, NoteDatabase::class.java, "NoteDatabase").fallbackToDestructiveMigration().build()  
+  
+    @Provides  
+    @Singleton    fun provideNoteDao(db: NoteDatabase) = db.noteDao()  
+}
+```
+---
+
+`AddEditNoteFragment.kt`:
+```
+package com.example.simplenotesapp.ui  
+  
+import android.os.Bundle  
+import android.view.View  
+import androidx.fragment.app.Fragment  
+import androidx.fragment.app.viewModels  
+import androidx.lifecycle.lifecycleScope  
+import androidx.navigation.fragment.findNavController  
+import androidx.navigation.fragment.navArgs  
+import com.example.simplenotesapp.R  
+import com.example.simplenotesapp.data.entity.Note  
+import com.example.simplenotesapp.databinding.FragmentAddedditNotesBinding  
+import com.example.simplenotesapp.databinding.FragmentNotesBinding  
+import com.example.simplenotesapp.viewmodel.NoteViewModel  
+import dagger.hilt.android.AndroidEntryPoint  
+import kotlinx.coroutines.launch  
+  
+@AndroidEntryPoint  
+class AddEditNoteFragment: Fragment(R.layout.fragment_addeddit_notes) {  
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {  
+        super.onViewCreated(view, savedInstanceState)  
+  
+        val viewModel by viewModels<NoteViewModel>()  
+        val binding = FragmentAddedditNotesBinding.bind(requireView())  
+        val args: AddEditNoteFragmentArgs by navArgs()  
+        val note = args.note  
+  
+        if (note != null){  
+            binding.apply {  
+                titleEdit.setText(note.title)  
+                contentEdit.setText(note.content)  
+                saveButton.setOnClickListener{  
+                    val title = titleEdit.text.toString()  
+                    val content = contentEdit.text.toString()  
+                    val updatedNote = note.copy(title = title, content = content, date = System.currentTimeMillis())  
+                    viewModel.updateNote(updatedNote)  
+                }  
+            }        }  
+  
+        else{  
+            binding.apply {  
+                saveButton.setOnClickListener{  
+                    val title = titleEdit.text.toString()  
+                    val content = contentEdit.text.toString()  
+                    val note = Note(title = title, content = content, date = System.currentTimeMillis())  
+                    viewModel.insertNote(note)  
+                }  
+            }        }  
+  
+        viewLifecycleOwner.lifecycleScope.launch {  
+            viewModel.notesEvent.collect{event ->  
+                if (event is NoteViewModel.NotesEvent.NavigateToNotesFragment){  
+                    val action = AddEditNoteFragmentDirections.actionAddEditNoteFragmentToNoteFragment()  
+                    findNavController().navigate(action)  
+                }  
+  
+            }  
+        }    }  
+}
+```
+---
 
 `NoteFragment.kt`:
 ```
@@ -1077,8 +1228,8 @@ class NoteFragment: Fragment(R.layout.fragment_notes), NoteAdapter.OnNoteClickLi
                 showPopup(R.layout.popup_help)  
             }  
   
-            optionsPopup.setOnClickListener{  
-                showPopup(R.layout.popup_options)  
+            changeTheme.setOnClickListener{  
+                themeViewModel.toggleTheme()  
             }  
         }    }  
   
@@ -1102,20 +1253,197 @@ class NoteFragment: Fragment(R.layout.fragment_notes), NoteAdapter.OnNoteClickLi
             popupWindow.dismiss()  
         }  
   
-        if (layoutId == R.layout.popup_options){  
-            val themeSwitchButton = popupView.findViewById<FloatingActionButton>(R.id.theme_switch_button)  
-  
-            themeSwitchButton.setOnClickListener{  
-                themeViewModel.toggleTheme()  
-                popupWindow.dismiss()  
-            }  
-        }  
-  
         popupWindow.showAtLocation(requireView(), android.view.Gravity.CENTER, STARTING_X, STARTING_Y)  
     }  
 }
 ```
---
+---
+
+`NoteViewModel.kt`:
+```
+package com.example.simplenotesapp.viewmodel  
+  
+import androidx.lifecycle.ViewModel  
+import androidx.lifecycle.viewModelScope  
+import com.example.simplenotesapp.data.dao.NoteDao  
+import com.example.simplenotesapp.data.entity.Note  
+import dagger.hilt.android.lifecycle.HiltViewModel  
+import kotlinx.coroutines.channels.Channel  
+import kotlinx.coroutines.flow.receiveAsFlow  
+import kotlinx.coroutines.launch  
+import javax.inject.Inject  
+  
+@HiltViewModel  
+class NoteViewModel @Inject constructor(private val noteDao: NoteDao): ViewModel() {  
+  
+    val notes = noteDao.getAllNotes()  
+    val notesChannel = Channel<NotesEvent>()  
+    val notesEvent = notesChannel.receiveAsFlow()  
+  
+    fun insertNote(note: Note) = viewModelScope.launch {  
+        noteDao.insertNote(note)  
+        notesChannel.send(NotesEvent.NavigateToNotesFragment)  
+    }  
+  
+    fun updateNote(note: Note) = viewModelScope.launch {  
+        noteDao.updatedNote(note)  
+        notesChannel.send(NotesEvent.NavigateToNotesFragment)  
+    }  
+  
+    fun deleteNote(note: Note) = viewModelScope.launch {  
+        noteDao.deleteNote(note)  
+        notesChannel.send(NotesEvent.ShowUndoSnackBar("Note Deleted Successfully!", note))  
+    }  
+  
+    sealed class NotesEvent{  
+        data class ShowUndoSnackBar(val msg: String, val note: Note): NotesEvent()  
+        object NavigateToNotesFragment: NotesEvent()  
+    }  
+}
+```
+---
+
+`MainActivity.kt`:
+```
+package com.example.simplenotesapp  
+  
+import android.content.Context  
+import androidx.appcompat.app.AppCompatActivity  
+import android.os.Bundle  
+import android.util.Log  
+import androidx.appcompat.app.AppCompatDelegate  
+import androidx.core.content.edit  
+import androidx.lifecycle.ViewModelProvider  
+import androidx.navigation.NavController  
+import androidx.navigation.fragment.NavHostFragment  
+import androidx.navigation.ui.setupActionBarWithNavController  
+import com.google.android.material.floatingactionbutton.FloatingActionButton  
+import dagger.hilt.android.AndroidEntryPoint  
+  
+@AndroidEntryPoint  
+class MainActivity : AppCompatActivity() {  
+    lateinit var navController: NavController  
+    lateinit var themeViewModel: ThemeViewModel  
+  
+    companion object {  
+        private const val PREFS_NAME = "theme_prefs"  
+        private const val KEY_IS_DARK_MODE = "is_dark_mode"  
+    }  
+    override fun onCreate(savedInstanceState: Bundle?) {  
+        super.onCreate(savedInstanceState)  
+  
+        themeViewModel = ViewModelProvider(this).get(ThemeViewModel::class.java)  
+        themeViewModel.setTheme(isDarkModeEnabled())  
+        themeViewModel.isDarkMode.observe(this){isDarkMode ->  
+            applyTheme(isDarkMode)  
+        }  
+  
+        setContentView(R.layout.activity_main)  
+  
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host) as NavHostFragment  
+        navController = navHostFragment.navController  
+        setupActionBarWithNavController(navController)  
+        navController.addOnDestinationChangedListener{  
+            _, destination, _, ->  
+            when (destination.id){  
+                R.id.noteFragment -> supportActionBar?.title = "Notes"  
+                R.id.addEditNoteFragment -> supportActionBar?.title = "Write note"  
+            }  
+        }  
+  
+    }  
+  
+    override fun onSupportNavigateUp(): Boolean {  
+        return super.onSupportNavigateUp() || navController.navigateUp()  
+    }  
+  
+    private fun applyTheme(isDarkMode: Boolean){  
+        AppCompatDelegate.setDefaultNightMode(if (isDarkMode) AppCompatDelegate.MODE_NIGHT_YES  
+        else AppCompatDelegate.MODE_NIGHT_NO)  
+  
+        saveThemePreferences(isDarkMode)  
+    }  
+  
+    private fun saveThemePreferences(isDarkMode: Boolean){  
+        val sharedPreferences = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)  
+        sharedPreferences.edit{  
+            putBoolean(KEY_IS_DARK_MODE, isDarkMode)  
+        }  
+    }  
+    private fun isDarkModeEnabled(): Boolean {  
+        val sharedPreferences = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)  
+        return sharedPreferences.getBoolean(KEY_IS_DARK_MODE, false)  
+    }  
+}
+```
+---
+
+`NotesApplication.kt`:
+```
+package com.example.simplenotesapp  
+  
+import android.app.Application  
+import dagger.hilt.android.HiltAndroidApp  
+  
+@HiltAndroidApp  
+class NotesApplication: Application() {  
+}
+```
+---
+
+`SplashScreen.kt`:
+```
+package com.example.simplenotesapp  
+  
+import android.content.Intent  
+import android.graphics.Color  
+import android.os.Bundle  
+import android.os.Handler  
+import android.os.Looper  
+import android.text.SpannableString  
+import android.text.Spanned  
+import android.text.style.ForegroundColorSpan  
+import android.widget.TextView  
+import androidx.activity.enableEdgeToEdge  
+import androidx.appcompat.app.AppCompatActivity  
+import androidx.core.view.ViewCompat  
+import androidx.core.view.WindowInsetsCompat  
+  
+  
+val SPLASH_DURATION : Long = 3000 // in milliseconds  
+class SplashScreen : AppCompatActivity() {  
+    private lateinit var textEquinox: TextView  
+    private lateinit var textNotes: TextView  
+    override fun onCreate(savedInstanceState: Bundle?) {  
+        super.onCreate(savedInstanceState)  
+        enableEdgeToEdge()  
+        setContentView(R.layout.activity_splash_screen)  
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->  
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())  
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)  
+            insets  
+        }  
+  
+        Handler(Looper.getMainLooper()).postDelayed({  
+            val intent = Intent(this, MainActivity::class.java)  
+            startActivity(intent)  
+        }, SPLASH_DURATION)  
+  
+        textEquinox = findViewById(R.id.text_equinox)  
+        textNotes = findViewById(R.id.text_notes)  
+  
+        val spanEquinox = SpannableString("Equinox")  
+        spanEquinox.setSpan(ForegroundColorSpan(Color.WHITE), 0, 4, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)  
+        textEquinox.text = spanEquinox  
+  
+  
+        val spanNotes = SpannableString("notes")  
+        spanNotes.setSpan(ForegroundColorSpan(Color.WHITE), 2, 5, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)  
+        textNotes.text = spanNotes  
+    }  
+}
+```
+---
 
 `ThemeViewModel.kt`:
 ```
@@ -1138,60 +1466,7 @@ class ThemeViewModel: ViewModel() {
     }  
 }
 ```
---
 
-`popup_options.xml`:
-
-```
-<?xml version="1.0" encoding="utf-8"?>  
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"  
-    xmlns:app="http://schemas.android.com/apk/res-auto"  
-    xmlns:tools="http://schemas.android.com/tools"  
-    android:layout_width="match_parent"  
-    android:layout_height="match_parent"  
-    android:background="#EADDFF">  
-  
-    <com.google.android.material.floatingactionbutton.FloatingActionButton        android:id="@+id/theme_switch_button"  
-        android:layout_width="wrap_content"  
-        android:layout_height="wrap_content"  
-        android:layout_marginStart="128dp"  
-        android:layout_marginTop="128dp"  
-        android:layout_marginEnd="128dp"  
-        android:layout_marginBottom="128dp"  
-        android:backgroundTint="#EADDFF"  
-        android:clickable="true"  
-        android:tint="#000000"  
-        app:layout_constraintBottom_toBottomOf="parent"  
-        app:layout_constraintEnd_toEndOf="parent"  
-        app:layout_constraintStart_toStartOf="parent"  
-        app:layout_constraintTop_toTopOf="parent"  
-        app:srcCompat="@drawable/ic_darkmode" />  
-  
-    <com.google.android.material.floatingactionbutton.FloatingActionButton        android:id="@+id/close_popup"  
-        android:layout_width="wrap_content"  
-        android:layout_height="wrap_content"  
-        android:layout_marginStart="24dp"  
-        android:layout_marginBottom="24dp"  
-        android:backgroundTint="#EADDFF"  
-        android:clickable="true"  
-        android:tint="#000000"  
-        app:layout_constraintBottom_toBottomOf="parent"  
-        app:layout_constraintStart_toStartOf="parent"  
-        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />  
-  
-    <TextView        android:id="@+id/label"  
-        android:layout_width="wrap_content"  
-        android:layout_height="wrap_content"  
-        android:layout_marginBottom="32dp"  
-        android:fontFamily="@font/open_sans_regular"  
-        android:text="Dark Mode"  
-        android:textColor="#000000"  
-        android:textSize="30sp"  
-        app:layout_constraintBottom_toTopOf="@+id/theme_switch_button"  
-        app:layout_constraintEnd_toEndOf="parent"  
-        app:layout_constraintStart_toStartOf="parent" />  
-</androidx.constraintlayout.widget.ConstraintLayout>
-```
 
 ### Layout files:
 
@@ -1228,63 +1503,6 @@ class ThemeViewModel: ViewModel() {
                 <category android:name="android.intent.category.LAUNCHER" />  
             </intent-filter>        </activity>    </application>  
 </manifest>
-```
-
-`fragment_notes.xml`:
-```
-<?xml version="1.0" encoding="utf-8"?>  
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"  
-    xmlns:app="http://schemas.android.com/apk/res-auto"  
-    xmlns:tools="http://schemas.android.com/tools"  
-    android:layout_width="match_parent"  
-    android:layout_height="match_parent">  
-  
-    <androidx.recyclerview.widget.RecyclerView        android:id="@+id/recyclerView_notes"  
-        android:layout_width="match_parent"  
-        android:layout_height="match_parent"  
-        app:layout_constraintBottom_toBottomOf="parent"  
-        app:layout_constraintEnd_toEndOf="parent"  
-        app:layout_constraintHorizontal_bias="0.0"  
-        app:layout_constraintStart_toStartOf="parent"  
-        app:layout_constraintTop_toTopOf="parent"  
-        app:layout_constraintVertical_bias="1.0" />  
-  
-    <com.google.android.material.floatingactionbutton.FloatingActionButton        android:id="@+id/add_button"  
-        android:layout_width="wrap_content"  
-        android:layout_height="wrap_content"  
-        android:layout_marginEnd="24dp"  
-        android:layout_marginBottom="24dp"  
-        android:clickable="true"  
-        app:layout_constraintBottom_toBottomOf="parent"  
-        app:layout_constraintEnd_toEndOf="parent"  
-        app:srcCompat="@android:drawable/ic_input_add"  
-        android:backgroundTint="#EADDFF"  
-        android:tint="#000000"/>  
-  
-    <com.google.android.material.floatingactionbutton.FloatingActionButton        android:id="@+id/help_popup"  
-        android:layout_width="wrap_content"  
-        android:layout_height="wrap_content"  
-        android:layout_marginStart="24dp"  
-        android:layout_marginBottom="24dp"  
-        android:clickable="true"  
-        app:layout_constraintBottom_toBottomOf="parent"  
-        app:layout_constraintStart_toStartOf="parent"  
-        android:backgroundTint="#EADDFF"  
-        android:tint="#000000"  
-        app:srcCompat="@android:drawable/ic_menu_help" />  
-  
-    <com.google.android.material.floatingactionbutton.FloatingActionButton        android:id="@+id/options_popup"  
-        android:layout_width="wrap_content"  
-        android:layout_height="wrap_content"  
-        android:layout_marginStart="24dp"  
-        android:layout_marginBottom="24dp"  
-        android:clickable="true"  
-        android:backgroundTint="#EADDFF"  
-        android:tint="#000000"  
-        app:layout_constraintBottom_toBottomOf="parent"  
-        app:layout_constraintStart_toEndOf="@+id/help_popup"  
-        app:srcCompat="@drawable/ic_accessibility" />  
-</androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
 `themes.xml`:
