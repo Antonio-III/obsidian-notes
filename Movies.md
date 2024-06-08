@@ -152,3 +152,6 @@ Jujutsu Kaisen 0 (2021) - Yuta joins jj-high. Geto wants to take Yuta's power. G
 Wind Breaker (2024-ongoing) - Literally Sett's backstory
 S1: UNFINISHED. 
 last episode watched: 10/13
+
+Solo Leveling (2024) - Arise.
+10/10
