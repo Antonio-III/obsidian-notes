@@ -298,7 +298,7 @@ Given the scope of the app, I think it implements all of the necessary structure
 
 - [x] Must have shared preferences.
 
-- [ ] Must have a 3-min walkthrough. First should be displaying the source code, and the next is demonstrating the app.
+- [x] Must have a 3-min walkthrough. First should be displaying the source code, and the next is demonstrating the app.
 
 - [x] Share the code in a github repository.
 
@@ -929,18 +929,18 @@ In "AndroidManifest.xml", find `android:theme` and change it to `"@style/Theme.A
 
 ### Conceptual Goals
 
-When thinking for what my second app should be, I wanted to make something can be useful; something that can be used outside of just being a project to submit for school. I wanted an app that had some utility. This is the main themes behind why I created the apps the way they are. 
+When thinking about what my second app should be, I wanted to make something that can be useful; something that can be used outside of just being a project to submit for school. I wanted an app that had some utility. This is the main theme behind why I created the apps the way they are.
 
-I found myself using a notes application "Obsidian", so I thought: "Maybe I should make a notes application, as well". I later realized that the task to create an app like this, with the current knowledge I have, was going to be impossible to do on my own. But this despite this, I pressed on with my plan to create a "notes" application, despite most of the app's logic being borrowed from a series of YouTube videos.
+I found myself using a notes application "Obsidian", so I thought: "Maybe I should make a notes application, as well". I later realized that the task to create an app like this, with the current knowledge I have, was going to be impossible to do on my own. But despite this, I pressed on with my plan to create a "notes" application, despite most of the app's logic being borrowed from a series of YouTube videos.
 
 
 ### Layout and Design
 
-The app's design is very simple. It uses a RecyclerView, which uses a GridLayoutManager which is why you can see if you have 2 notes, they are arranged side-by-side. This RecyclerView allows for reusing of Views when they are scrolled off the screen, hence the name "RecyclerView". I did not hardcode the layout of the design; instead, the RecyclerView does all the layout managing. 
+The app's design is very simple. It uses a RecyclerView, which uses a GridLayoutManager which is why you can see if you have 2 notes, they are arranged side-by-side. This RecyclerView allows for reusing Views when they are scrolled off the screen, hence the name "RecyclerView". I did not hardcode the layout of the design; instead, the RecyclerView does all the layout management.
 
 There are a few buttons on the app: The "help" button, the "theme" button, and the "add note" button. These buttons are the only allowed actions a user can make other than reading the notes or editing them. I've put them in the bottom since this is where "action" buttons are being put primarily nowadays. Just like the "back", "home", "opened apps" buttons in android phones being put at the bottom, I've also decided to put the 3 buttons at the bottom.
-
-From what you can see in the app, the "help" and "theme" buttons are both on the left side of the screen, whereas the "add notes" button is on the right. This is because the "add notes" button performs a primary action, like adding a new note, whereas the other 2 buttons show a PopupView or changes the theme of the app. Bottom line: The "add notes" button is part of the core design of the app, whereas the other 2 buttons are for improving the user experience. I thought it would be best to make that distinction and put the buttons separately.
+  
+From what you can see in the app, the "help" and "theme" buttons are both on the left side of the screen, whereas the "add notes" button is on the right. This is because the "add notes" button performs a primary action, like adding a new note, whereas the other 2 buttons show a PopupView and the other changes the theme of the app. Bottom line: The "add notes" button is part of the core design of the app, whereas the other 2 buttons are for improving the user experience. I thought it would be best to make that distinction and put the buttons separately.
 
 ### Technical Decisions
 
@@ -948,28 +948,28 @@ The app uses a few dependencies, mainly: "Hilt" and "Room" dependencies. These d
 
 The app creates a Room database that manages a local SQLite database. This is how the app is keeping all the notes persistently, by using local storage data. Deleting the app may delete all the notes as well. The app is able to insert, delete, and query the notes. These functions have been annotated by the Room dependency, so the code is actually from the dependency itself; it is not built by me.
 
-The app has a Data class that represents the contents of the notes, which is annotated by "Room". There is a ViewModel that interacts with one of the class to perform "insert", "delete", and "update" operations. These functions are database operations, which interacts with the created database upon installing the app. 
+The app has a Data class that represents the contents of the notes, which is annotated by "Room". There is a ViewModel that interacts with one of the classes to perform "insert", "delete", and "update" operations. These functions are database operations, which interact with the created database upon installing the app.
 
 How the RecyclerView works is by using an adapter to get the data from the created database, which then binds the data into the views, which is how the user can see what they've written on the app after creating a note. And when the user writes on a note, it is either updated or inserted as a new entry into the database.
 
 There is also a feature on the app where if the user long-clicks a note, it is automatically deleted. After deleting a note, there is a "grace" period where the user can undo the action; clicking on undo reinserts the note back.
 
-
 ### Self-reflection
 
-#### Success 
+#### Success
 
 The app that I made satisfied my want to make a usable app that goes beyond than just a simple school project app. It went above-and-beyond to what I was trying to accomplish and I feel that this is enough for my second app project.
 
 #### Limitations
 
-Making this app made me realize how much I needed to know before making a simple notes app; I simply do not know enough about how the app works and why it works. I was just being handheld by the tutorial that I followed. 
+Making this app made me realize how much I needed to know before making a simple notes app; I simply do not know enough about how the app works and why it works. I was just being handheld by the tutorial that I followed.
 
-I hope I could find the time to learn more about how this app works.
+I hope I can find the time to learn more about how this app works.
 
 #### Recommendation
 
 Next time I should be prepared to make an app that could satisfy school requirements without having to rely on tutorials to implement the core concepts I want. I either make it on my own or I don't.
+
 
 ## Video Script
 

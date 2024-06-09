@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "93b4c851ac5faee5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BSU/Smartphone Apps.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "86f95fe4c6524eb7",
             "type": "leaf",
             "state": {
@@ -133,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BSU/Smartphone Apps.md",
+                "file": "MIT/Number Systems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BSU/Smartphone Apps.md",
+                "file": "MIT/Number Systems.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -173,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BSU/Smartphone Apps.md"
+                "file": "MIT/Number Systems.md"
               }
             }
           },
@@ -204,13 +192,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "93b4c851ac5faee5",
+  "active": "86f95fe4c6524eb7",
   "lastOpenFiles": [
+    "BSU/Smartphone Apps.md",
+    "Android software notes.md",
+    "General notes.md",
     "MIT/Number Systems.md",
     "To do.md",
     "Vision Board.md",
     "Movies.md",
-    "BSU/Smartphone Apps.md",
     "Destiny.md",
     "BSU/Creative Industry Challenge.md",
     "BSU/Emerging Technologies.md",
@@ -251,8 +241,6 @@
     "Harvard/Py50 (2022)/Hints.md",
     "font combinations.md",
     "Codewars.md",
-    "2024-04-16.md",
-    "BSU/creative challenges.md",
     "Untitled 1.canvas"
   ]
 }
