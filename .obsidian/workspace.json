@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MIT/Number Systems.md",
+                "file": "Movies.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MIT/Number Systems.md",
+                "file": "Movies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MIT/Number Systems.md",
+                "file": "Movies.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MIT/Number Systems.md"
+                "file": "Movies.md"
               }
             }
           },
@@ -194,12 +194,15 @@
   },
   "active": "86f95fe4c6524eb7",
   "lastOpenFiles": [
+    "Codewars.md",
+    "Logs.md",
+    "font combinations.md",
+    "Vision Board.md",
+    "MIT/Number Systems.md",
     "BSU/Smartphone Apps.md",
     "Android software notes.md",
     "General notes.md",
-    "MIT/Number Systems.md",
     "To do.md",
-    "Vision Board.md",
     "Movies.md",
     "Destiny.md",
     "BSU/Creative Industry Challenge.md",
@@ -220,7 +223,6 @@
     "BSU/images/Emerging Technologies/Pew Research/Effective at Raising Awareness.png",
     "BSU/images/Emerging Technologies/Pew Research/Divided Political Opinions.png",
     "BSU/images/Emerging Technologies/Pew Research/Active Posters See Social Media as Good.png",
-    "Logs.md",
     "obsidian-notes",
     "Foundations of Algorithms/Lectures/Lecture 3.md",
     "Templater/Subscript.md",
@@ -239,8 +241,6 @@
     "Foundations of Algorithms/Images/2023",
     "Linkedin Learning/Untitled",
     "Harvard/Py50 (2022)/Hints.md",
-    "font combinations.md",
-    "Codewars.md",
     "Untitled 1.canvas"
   ]
 }
