@@ -66,9 +66,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6547c654cbe4cb12",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.3"
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -205,7 +215,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "47639a6d8bf09e69",
+  "active": "6547c654cbe4cb12",
   "lastOpenFiles": [
     "BSU/Smartphone Apps.md",
     "Vision Board.md",
