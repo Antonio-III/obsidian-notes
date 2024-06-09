@@ -973,6 +973,15 @@ Next time I should be prepared to make an app that could satisfy school requirem
 
 ## Video Script
 
-This is my multi-view application. It is a notes-taking app. What this means is that you can create a Note that contains a title and its contents. 
+This is my multi-view application. It is a notes-taking app. What this means is that you can create a note that contains a header and body. 
 
-After creating the note, the contents will be written in a local database to store the data. This means the data you've written will persist in the app as long as you don't delete it 
+After creating the note, the note's contents will be written in a local database to store the data. This means the content you've written will persist in the app as long as you don't delete the application.
+
+The data is displayed through a RecyclerView with an adapter. The adapter communicates with the database, and outputs the data into the RecyclerView, and the RecyclerView creates the respective views to represent each note.
+
+The RecyclerView is used to display the app in a by-2 grid layout. When the app has a lot of notes, it removes the Views of notes that are off-screen and use this View to create views for the ones that are on-screen, hence the name: "RecyclerView". At least, this is my understanding of it. 
+
+Most of the code uses annotations, which are responsible for creating the boilerplate code of the core mechanics of the app. The rest of the code is written to bind events on the items in the layout to make the app functional.
+
+The app has shared preferences, which is a button to change to dark/light mode, and a PopupView to show instructions to the user.
+
