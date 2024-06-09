@@ -66,19 +66,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "6547c654cbe4cb12",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.3"
-              }
-            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -144,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Movies.md",
+                "file": "BSU/Smartphone Apps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Movies.md",
+                "file": "BSU/Smartphone Apps.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -184,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Movies.md"
+                "file": "BSU/Smartphone Apps.md"
               }
             }
           },
@@ -215,17 +204,17 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "6547c654cbe4cb12",
+  "active": "93b4c851ac5faee5",
   "lastOpenFiles": [
-    "BSU/Smartphone Apps.md",
+    "MIT/Number Systems.md",
+    "To do.md",
     "Vision Board.md",
     "Movies.md",
+    "BSU/Smartphone Apps.md",
     "Destiny.md",
     "BSU/Creative Industry Challenge.md",
-    "MIT/Number Systems.md",
     "BSU/Emerging Technologies.md",
     "Linkedin Learning/Responsive Layout.md",
-    "To do.md",
     "To-buy.md",
     "BSU/Code Lab II (Python).md",
     "DialogFlow.md",

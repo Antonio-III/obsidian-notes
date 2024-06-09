@@ -302,7 +302,7 @@ Given the scope of the app, I think it implements all of the necessary structure
 
 - [ ] Share the code in a github repository.
 
-- [ ] 700-word document critical summary. 1: Conceptual goals. 2: How you structured the layout and design. 3: Technical decisions you made in the app. 4: Success, Limitation, and Recommendation. 
+- [x] 700-word document critical summary. 1: Conceptual goals. 2: How you structured the layout and design. 3: Technical decisions you made in the app. 4: Success, Limitation, and Recommendation. 
 ## App 
 Done with an MVVM architecture. A development process to make the app clean, and testable.
 
@@ -1555,3 +1555,19 @@ How the RecyclerView works is by using an adapter to get the data from the creat
 
 There is also a feature on the app where if the user long-clicks a note, it is automatically deleted. After deleting a note, there is a "grace" period where the user can undo the action; clicking on undo reinserts the note back.
 
+
+### Self-reflection
+
+#### Success 
+
+The app that I made satisfied my want to make a usable app that goes beyond than just a simple school project app. It went above-and-beyond to what I was trying to accomplish and I feel that this is enough for my second app project.
+
+#### Limitations
+
+Making this app made me realize how much I needed to know before making a simple notes app; I simply do not know enough about how the app works and why it works. I was just being handheld by the tutorial that I followed. 
+
+I hope I could find the time to learn more about how this app works.
+
+#### Recommendation
+
+Next time I should be prepared to make an app that could satisfy school requirements without having to rely on tutorials to implement the core concepts I want. I either make it on my own or I don't.
