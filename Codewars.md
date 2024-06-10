@@ -193,10 +193,9 @@ def valid_braces(string,iteration=0):
     # (ie the current index is the last meaning there is no possible pair for it to have
     # so it will always be an invalid brace)
     return False
-
-# A valid brace should eventually have 0 length with more than 1 iteration because 
-# the for loop should at least find 1 pair in `full`, causing the recursion and finding a new pair
-# in the new string, eventually crossing out all the pairs.
+	# A valid brace should eventually have 0 length with more than 1 iteration because 
+	# the for loop should at least find 1 pair in `full`, causing the recursion and finding a new pair
+	# in the new string, eventually crossing out all the pairs.
 ```
 
 

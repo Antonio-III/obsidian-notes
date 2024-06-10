@@ -57,8 +57,8 @@ Example: The binary **1101.101**<sub>2</sub>:
 
 In most computers, the smallest unit we can use is a **byte**. The most significant bit (msb) is the the highest place value of that byte, and least significant bit (lsb) is the least.
 
-> [!question]- What is the value of the bit pattern 11111111<sub>2</sub>?
-> 255. In 8 bits, the highest number you can reach is 255.
+> [!question]- What is the value of the unsigned bit pattern 11111111<sub>2</sub>?
+> 255\. In 8 bits, the highest number you can reach is 255.
 
 
 
