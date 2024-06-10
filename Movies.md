@@ -166,6 +166,6 @@ Viral Hit (2024) - A show about how to make money in YouTube. Very Western. Quir
 S1: Big-tiddy gf was about to get hit by a car. 
 9/10
 
-Record of Ragnarok (2022) - Man vs God
+Record of Ragnarok (2021) - Man vs God
 S1: 
 ?/10
