@@ -79,21 +79,25 @@ Example: The number 1025<sub>10</sub> stored in 2 bytes.
 IBM mainframes use big-endian, while most modern computers use little-endian. PowerPC (a RISC ISA) understands both systems.
 
 The endian system can be used to represent the bit order in a byte. For example, the number 1101<sub>2</sub>:
-	In big-endian representation, it is stored as 1101<sub>2</sub>, which is equivalent to: 1 * 2\*\*3 + 1 * 2\*\*2 + 0 * 2\*\*1 + 1 * 2\*\*0 = 13<sub>10</sub>.
-	In small-endian representation, it is stored as 1011<sub>2</sub> (reverse), which is equivalent to: 1 * 2\*\*0 + 0 * 2\*\*1 + 1 * 2\*\*2 + 1 * 2\*\*3 = 13<sub>10</sub>.
+	In big-endian representation, it is stored as 1101<sub>2</sub>, which is equivalent to: 
+	$1 * 2\*\*3 + 1 * 2\*\*2 + 0 * 2\*\*1 + 1 * 2\*\*0 = 13<sub>10</sub>$.
+	In small-endian representation, it is stored as 1011<sub>2</sub> (reverse), which is equivalent to: 
+	$1 * 2^0 + 0 * 2^1 + 1 * 2^2 + 1 * 2^3 = 13_10$.
 	You can see in the big-endian, the highest place value is stored first (leftmost), and in small-endian, the lowest place value is stored first (leftmost).
 
 
 # Operation on numbers
 
 Base 10:
-```	
+
+```
 	11  <- Carry Area
 	145
 +	256
 ---------
 	401 <- Sum Area
 ```
+
 
 The algorithm is to start from **right** to **left**. We add the 2 lowest-significant digit, which are 14**5** and 25**6**. 
 
@@ -122,11 +126,18 @@ If the top number is less than the bottom number, we look at the top number's ne
 
 Example:
 ```
-	    3 13 15 <- New Values	
+	    3 13 15  <- New Values	
 		4  4  5  <- Top Number
 	-   2  5  6  <- Bottom Number
 		---------
 		1  8  9
 ```
+
+
+In computer hardware, binary addition is implemented. Therefore, we can use the addition operation when subtracting, by making one of the numbers **negative**. 
+
+$x - y$ can be rewritten as: $x + (-y)$.
+
+
 
 
