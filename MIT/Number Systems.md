@@ -78,7 +78,10 @@ Example: The number 1025<sub>10</sub> stored in 2 bytes.
 
 IBM mainframes use big-endian, while most modern computers use little-endian. PowerPC (a RISC ISA) understands both systems.
 
-The endian system might be used to represent the bit order in a byte (???).
+The endian system can be used to represent the bit order in a byte. For example, the number 1101<sub>2</sub>:
+	In big-endian representation, it is stored as 1101<sub>2</sub>, which is equivalent to: 1 * 2\*\*3 + 1 * 2\*\*2 + 0 * 2\*\*1 + 1 * 2\*\*0 = 13<sub>10</sub>.
+	In small-endian representation, it is stored as 1011<sub>2</sub> (reverse), which is equivalent to: 1 * 2\*\*0 + 0 * 2\*\*1 + 1 * 2\*\*2 + 1 * 2\*\*3 = 13<sub>10</sub>.
+	You can see in the big-endian, the highest place value is stored first (leftmost), and in small-endian, the lowest place value is stored first (leftmost).
 
 
 # Operation on numbers
