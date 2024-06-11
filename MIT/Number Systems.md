@@ -106,9 +106,27 @@ The same principle applies to Base 2.
 Base 2:
 
 ```
-	    1 
-	11100100
-+   00000101
+	    1    <- Carry Area
+	11100100 <- First Number
++   00000101 <- Second Number
 --------------
-	11101001
+	11101001 <- Sum Area
 ```
+
+> [!question] Perform the operation above but use base 10 representation.
+> First Number is 228<sub>10</sub>, and Second Number is 5<sub>10</sub>, this results in the sum being 233<sub>10</sub>.
+  
+Decimal subtraction works similarly as decimal addition; the numbers are aligned, and the operation starts from right to left. The difference is how the arithmetic is performed. In decimal addition, we add regardless of which number is on top and bottom. In decimal subtraction, we reduce the **top** number by the amount of the **bottom** number. 
+
+If the top number is less than the bottom number, we look at the top number's next significant digit, reduce it by 1, and add the radix (base) to the borrower. If this is not possible, a heuristic (a problem-solving shortcut) is to order the bigger number at the top, and the smaller at the bottom, and perform the subtraction. The sign of the bigger number shall be the sign of the resulting difference.
+
+Example:
+```
+	    3 13 15 <- New Values	
+		4  4  5  <- Top Number
+	-   2  5  6  <- Bottom Number
+		---------
+		1  8  9
+```
+
+
