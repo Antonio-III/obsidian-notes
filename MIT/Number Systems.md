@@ -10,7 +10,7 @@ In any number system, the counting always starts at **0**.
 Decimal forms in this note will be represented as **N**<sub>10</sub>; with N being any integer.
 
 Example: The number **1,234**<sub>10</sub> (1234, in base 10):
-	This can be represented as: 1\*(10\*\*3) + 2 \*(10\*\*2) + 3 \*(10\*\*1) + 4 \*(10\*\*0). This is the same number in an **expanded form**.
+	This can be represented as: $1*(10^3) + 2 *(10^2) + 3 *(10^1) + 4 *(10^0)$. This is the same number in an **expanded form**.
 	**1**<sub>10</sub> is in the **thousands** place; exponent of 3. 
 	**2**<sub>10</sub> is in the **hundreds** place; exponent of 2.
 	**3**<sub>10</sub> is in the **tens** place; exponent of 1.
@@ -18,7 +18,7 @@ Example: The number **1,234**<sub>10</sub> (1234, in base 10):
 
 
 Example 2: The number **1234.567**<sub>10</sub> :
-	This can be represented as: 1\*10\*\*3 + 2 \*10\*\*2 + 3 \*10\*\*1 + 4 \*10\*\*0 + 5 \*10\*\***-1** + 6 \*10\*\***-2** + 7 \*10\*\***-3**
+	This can be represented as: $1 * 10^3 + 2 * 10^2 + 3 * 10^1 + 4 * 10^0 + 5 * 10^{-1} + 6 * 10^{-2} + 7 * 10^{-3}$
 	**5**<sub>10</sub>  is in the **tenths** place; exponent of -1.
 	**6**<sub>10</sub> is in the **hundredths** place; exponent of -2.
 	**7**<sub>10</sub> is in the **thousandths** place; exponent of -3.
@@ -34,12 +34,12 @@ A bit is the **smallest** piece of information stored in a computer. The 2 symbo
 This number system also uses **place values** to represent bigger numbers and more information.
 
 Example: The binary **1101**<sub>2</sub> (1101<sub>10</sub>, in base 2 context):
-	This can be represented as: 1\*2\*\*3 + 1 \*2\*\*2 + 0 \*2\*\*1 + 1 \*2\*\*0.
+	This can be represented as: $1* 2^3 + 1 * 2^2 + 0 * 2^1 + 1 * 2^0$.
 	This is the number 13<sub>10</sub>.
 
 
 Example: The binary **1101.101**<sub>2</sub>: 
-	This can be represented as: 1\*2\*\*3 + 1 \*2\*\*2 + 0 \*2\*\*1 + 1 \*2\*\*0 + 1 \*2\*\*-1 + 0 \*2\*\*-2  + 1 \*2\*\*-3
+	This can be represented as: $1 * 2^3 + 1 * 2^2 + 0 * 2^1 + 1 * 2^0 + 1 * 2^{-1} + 0 * 2^{-2} + 1 * 2^{-3}$.
 	This is the number 13.625<sub>10</sub>.
 
 
@@ -80,10 +80,10 @@ IBM mainframes use big-endian, while most modern computers use little-endian. Po
 
 The endian system can be used to represent the bit order in a byte. For example, the number 1101<sub>2</sub>:
 	In big-endian representation, it is stored as 1101<sub>2</sub>, which is equivalent to: 
-	$1 * 2\*\*3 + 1 * 2\*\*2 + 0 * 2\*\*1 + 1 * 2\*\*0 = 13<sub>10</sub>$.
+	$1 * 2^3 + 1 * 2^2 + 0 * 2^1 + 1 * 2^0 = 13_{10}$.
 	In small-endian representation, it is stored as 1011<sub>2</sub> (reverse), which is equivalent to: 
-	$1 * 2^0 + 0 * 2^1 + 1 * 2^2 + 1 * 2^3 = 13_10$.
-	You can see in the big-endian, the highest place value is stored first (leftmost), and in small-endian, the lowest place value is stored first (leftmost).
+	$1 * 2^0 + 0 * 2^1 + 1 * 2^2 + 1 * 2^3 = 13_{10}$.
+	As you can see in the big-endian, the highest place value is stored first (leftmost), and in small-endian, the lowest place value is stored first (leftmost).
 
 
 # Operation on numbers
