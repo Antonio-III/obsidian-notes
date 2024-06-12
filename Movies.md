@@ -60,7 +60,7 @@ the eminence in shadow
 monster (2004-2005)
 pluto
 vinland saga
-
+psycho pass
 
 
 # Watched
