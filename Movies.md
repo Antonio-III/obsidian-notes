@@ -54,7 +54,7 @@ the boy in stripped pajamas, schindler's list, django unchained, 28 days later, 
 parks and rec, the good place, modern family, community, fight club, memento
 kill bill, gladiator, the last house on the left. men (2022), bodies bodies bodies nope, the lighthouse. the evil dead (1981), evil dead 2, evil dead (2013), the descent, Bad Times at the El Royale, wrong turn the hills have eyes, hellraiser, the mist, the ring, candyman, oculus, land of the dead, the lodge, southbound, rec (2007), cargo (2017), girl with all the gifts (2016), 1922 (2017), candyman 2011, one flew over the cuckoos nest, shawshank redemption, clockwork orange, 2001 space odyssey, scary stories to tell in the dark, creep midsommar, jeepers creepers, The Men Who Stare at Goats, the batman,The Midnight Sky, The Silence of the Lambs (Kuzuların Sessizliği), taxi driver, hannibal, the godfather, scarface, forrest gump, O Brother, Where Art Thou?, Gravity 2013, Tomorrowland, riddick, dune, stuber, my spy, army of thieves, the grudge, 65, ju-on, don't breathe 2, the unholy, crawl 2019, the invitation 2022, the grudge 2, nathan for you, the rehearsal, staircase (2004). barry (2018-2023). black dynamite, sorry to bother you, fences, judas, the black messiah, raising dion, attack the block, house md, Carnivàle (2003), tar (2022), the green knight, ad astra, the last duel, blade runner 2049, scott pilgrim vs the world, high tension, veronica mars, smallville, outsiders (2016), the ruins 2008, jamie marks is dead 2014, swallowed 2022, office space, severance (INCOMPLETE), mad men, top gun: maverick, good omens, bad times at el royale, loudermilk, reno 911, gladiator, elysium, kung fu hustle, shaolin monk, paranorman, billy in the streets, i think you should leave, monty python, kidding (2018), knives out, triangle of sadness, the menu, the wailing, it follows, slugs 1988, painkiller , nightcrawlers 2014, se7en, 12 monkeys, emancipation, scavengers reign, zero zero zero, gomorrah,  gangs of london, flash, arrow, gen v, 
 
-death note, attack on titans, devilman crybaby, akira, cyberpunk, castlevania, chainsaw man, neon genesis evangelion, cowboy bebop, jojo, record of ragnarok, baki (2001), kengan ashura, hajime no ippo, my hero academia, tokyo revengers, hunter x hunter, squid game, kaiju no 8., mob psycho, haven't you heard? I'm sakamoto, nichijou, k-on!!, komi can't communicate, hellsing, gantz, samurai champloo, gintama, god of highschool
+death note, attack on titans, devilman crybaby, akira, cyberpunk, castlevania, chainsaw man, neon genesis evangelion, cowboy bebop, jojo, baki (2001), kengan ashura, hajime no ippo, my hero academia, tokyo revengers, hunter x hunter, squid game, kaiju no 8., mob psycho, haven't you heard? I'm sakamoto, nichijou, k-on!!, komi can't communicate, hellsing, gantz, samurai champloo, gintama, god of highschool
 
 the eminence in shadow
 monster (2004-2005)
@@ -169,6 +169,9 @@ Viral Hit (2024) - A show about how to make money in YouTube. Very Western. Quir
 S1: Big-tiddy gf was about to get hit by a car. 
 9/10
 
-Record of Ragnarok (2021) - Man vs God
-S1: 
-?/10
+Record of Ragnarok (2021) - Man vs God for humanity's survival
+S1: Yasuo wins.
+8/10
+
+S2: Buddha wins.
+8/10
