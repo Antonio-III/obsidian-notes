@@ -170,8 +170,8 @@ S1: Big-tiddy gf was about to get hit by a car.
 9/10
 
 Record of Ragnarok (2021) - Man vs God for humanity's survival
-S1: Yasuo wins.
+S1: Yasuo wins. Man: 1. God: 2.
 8/10
 
-S2: Buddha wins.
+S2: Buddha wins. Man: 3. God: 3
 8/10
