@@ -151,24 +151,24 @@ There are a few ways to implement this.
 
 This form represents negative numbers by using the leftmost bit as the notation bit. 0 in the leftmost bit means the number is positive, 1 is negative. The remaining bits determine the absolute (or magnitude) value of the number.
 
-| Bit pattern, 4 bits | Number<sub>10</sub> |
-| :-----------------: | :-----------------: |
-|        0000         |          0          |
-|        0001         |          1          |
-|        0010         |          2          |
-|        0011         |          3          |
-|        0100         |          4          |
-|        0101         |          5          |
-|        0110         |          6          |
-|        0111         |          7          |
-|        1000         |         -0          |
-|        1001         |         -1          |
-|        1010         |         -2          |
-|        1011         |         -3          |
-|        1100         |         -4          |
-|        1101         |         -5          |
-|        1110         |         -6          |
-|        1111         |         -7          |
+| Bit pattern, 4 bits | Number<sub>10</sub>, unsigned | Number<sub>10</sub>, signed magnitude |
+| :-----------------: | :---------------------------: | :-----------------------------------: |
+|        0000         |               0               |                   0                   |
+|        0001         |               1               |                   1                   |
+|        0010         |               2               |                   2                   |
+|        0011         |               3               |                   3                   |
+|        0100         |               4               |                   4                   |
+|        0101         |               5               |                   5                   |
+|        0110         |               6               |                   6                   |
+|        0111         |               7               |                   7                   |
+|        1000         |               8               |                  -0                   |
+|        1001         |               9               |                  -1                   |
+|        1010         |              10               |                  -2                   |
+|        1011         |              11               |                  -3                   |
+|        1100         |              12               |                  -4                   |
+|        1101         |              13               |                  -5                   |
+|        1110         |              14               |                  -6                   |
+|        1111         |              15               |                  -7                   |
 
 The downside to this representation is that the amount of available numbers is halved, since we have to save the leftmost bit as the sign bit; there will be 2 zero representations; and subtraction cannot be performed using $x + -(y)$.
 
@@ -181,3 +181,36 @@ For example, adding -1<sub>10</sub> and 1<sub>10</sub> results in -2<sub>10</sub
 ```
 
 
+## One's Complement
+
+This form represents a negative number by inverting all the bits in place from its unsigned form. 
+
+| Bit pattern, 4 bits | Number<sub>10</sub>, unsigned | Number<sub>10</sub>, one's complement |
+| :-----------------: | :---------------------------: | :-----------------------------------: |
+|        0000         |               0               |                   0                   |
+|        0001         |               1               |                   1                   |
+|        0010         |               2               |                   2                   |
+|        0011         |               3               |                   3                   |
+|        0100         |               4               |                   4                   |
+|        0101         |               5               |                   5                   |
+|        0110         |               6               |                   6                   |
+|        0111         |               7               |                   7                   |
+|        1000         |               8               |                  -7                   |
+|        1001         |               9               |                  -6                   |
+|        1010         |              10               |                  -5                   |
+|        1011         |              11               |                  -4                   |
+|        1100         |              12               |                  -3                   |
+|        1101         |              13               |                  -2                   |
+|        1110         |              14               |                  -1                   |
+|        1111         |              15               |                   0                   |
+
+The downside of this is the same as the Signed Magnitude Representation's downsides; it has 2 representations of zeroes, and subtraction does not work with $x + -y$. 
+
+For example, adding -2<sub>10</sub> and 3<sub>10</sub> results in 0<sub>10</sub>, when it should be -1<sub>10</sub>.
+
+```
+	1101
++	0011
+----------
+  1 0000
+```
