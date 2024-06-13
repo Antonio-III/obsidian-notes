@@ -104,6 +104,12 @@ Movie ends with:
 
 Inside Man (2023) - Detective "bobby bones" goes undercover to to expose a mob boss "Roy Demeo". Was successful. Roy dies. "Gemini Longue" raided by cops. Based on a true story.
 
+
+Sorry to Bother You (2018) - Main character became a horse. It was a story about trying to get paid enough to live comfortably. The MC rose at his telemarketing job with his "white voice", leaving behind his friends that are on strike. He eventually got money, but lost Ice Spice (girlfriend). He decides to come back to his friends and Ice Spice, and leave his new life behind because he saw people becoming horses.
+8/10
+
+
+
 ## Shows
 
 
