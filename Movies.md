@@ -42,7 +42,6 @@ china il
 momma named me sheriff
 sorry to bother you
 bosch (2014)
-gen v (2023)
 Elf, School of Rock, Bad Santa, Love Actually, Freaky Friday, Holes,
 weight of massive talent
 banshees of inisherin, limitless,barry
@@ -175,3 +174,7 @@ S1: Yasuo wins. Man: 1. God: 2.
 
 S2: Buddha wins. Man: 3. God: 3
 8/10
+
+Gen V (2023) - The Boys spinoff.
+S1: "What a bunch of cunts." - Karl Urban
+6/10
