@@ -140,4 +140,44 @@ $x - y$ can be rewritten as: $x + (-y)$.
 
 
 
+# Negative Numbers
+
+
+Negative numbers are formed with a `-` followed by the absolute value of a number. Negative numbers --if we want them to work with positive numbers-- need to have the sign in the bit pattern.
+
+There are a few ways to implement this.
+
+## Signed Magnitude Representation
+
+This form represents negative numbers by using the leftmost bit as the notation bit. 0 in the leftmost bit means the number is positive, 1 is negative. The remaining bits determine the absolute (or magnitude) value of the number.
+
+| Bit pattern, 4 bits | Number<sub>10</sub> |
+| :-----------------: | :-----------------: |
+|        0000         |          0          |
+|        0001         |          1          |
+|        0010         |          2          |
+|        0011         |          3          |
+|        0100         |          4          |
+|        0101         |          5          |
+|        0110         |          6          |
+|        0111         |          7          |
+|        1000         |         -0          |
+|        1001         |         -1          |
+|        1010         |         -2          |
+|        1011         |         -3          |
+|        1100         |         -4          |
+|        1101         |         -5          |
+|        1110         |         -6          |
+|        1111         |         -7          |
+
+The downside to this representation is that the amount of available numbers is halved, since we have to save the leftmost bit as the sign bit; there will be 2 zero representations; and subtraction cannot be performed using $x + -(y)$.
+
+For example, adding -1<sub>10</sub> and 1<sub>10</sub> results in -2<sub>10</sub>: 
+```
+	1001
++   0001 
+-----------
+	1010
+```
+
 
