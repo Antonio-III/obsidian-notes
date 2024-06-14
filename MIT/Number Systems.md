@@ -273,3 +273,7 @@ How -8<sub>10</sub> came to be represented is not possible to explain through it
  5<sub>10</sub> is 0101<sub>2</sub> because: $-0 * 2^3 + 1 * 2^2 + 0 * 2^1 + 1 * 2^0 = 5$
 
 
+## Excess Notation
+
+This form represents a signed number $n$ by the bit pattern of the unsigned number $un + K$, where $K$ for a $w$-bit binary word is $2^{n-1}$. For example: The excess-$K$ for a 4-bit number is $2^3 = 8$. 
+
