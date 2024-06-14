@@ -277,3 +277,9 @@ How -8<sub>10</sub> came to be represented is not possible to explain through it
 
 This form represents a signed number $n$ by the bit pattern of the unsigned number $un + K$, where $K$ for a $w$-bit binary word is $2^{n-1}$. For example: The excess-$K$ for a 4-bit number is $2^3 = 8$. 
 
+We can also use the two's complement of a given $n$ 
+For example, the $2_{10}$ in excess-8 notation is:
+```
+
+```
+
