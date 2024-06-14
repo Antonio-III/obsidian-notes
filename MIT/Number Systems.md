@@ -241,9 +241,11 @@ For example, lets subtract 19<sub>10</sub> by -3<sub>10</sub>, this should resul
 
 ## Two's Complement
 
-Two's complement form can be obtained by inverting all the bits of an unsigned binary number and adding 1<sub>2</sub> to the result. This also works when trying to find the complementary (opposite) value of a given two's complement.
+Two's complement form can be obtained by inverting all the bits of an unsigned binary number and adding 1<sub>2</sub> to the result. However, there is an easier way to understand how two's complement works: The most significant bit is coded to have a negative sign, and the rest of the place values are equal to unsigned's place values. When determining the value of a two's bit pattern, we add all of the relevant bits, while keeping in mind that the most significant bit is negative.
 
-In this form, $x + -y$ is possible without extra steps; and there is only 1 representation of zero, meaning 1 more number can be represented. But, there is 1 drawback to this: The complementary value of the biggest absolute number is itself. This means that it has no "two's form" because its two's form is itself; so the algorithm is useless when determining values
+In this form, $x + -y$ is possible without extra steps; and there is only 1 representation of zero, meaning 1 more number can be represented. 
+
+The difference between two's and one's is that the most significant bit of two's represents a negative number of unsigned's equivalent place value, whereas one's just inverts unsigned's bits with no regard for place values arithmetic.
 
 | Bit pattern, 4 bits | Number<sub>10</sub>, unsigned | Number<sub>10</sub>, two's complement |
 | :-----------------: | :---------------------------: | :-----------------------------------: |
@@ -264,7 +266,10 @@ In this form, $x + -y$ is possible without extra steps; and there is only 1 repr
 |        1110         |              14               |                  -2                   |
 |        1111         |              15               |                  -1                   |
 
-How -8<sub>10</sub> came to be represented is not possible to explain through its conversion algorithm, as its complementary value is itself. However, there is an easier way to understand how two's complement works: The most significant bit is coded to have a negative sign, and the rest of the place values are equal to unsigned's place values. When determining the value of a two's bit pattern, we add all of the relevant bits, while keeping in mind that the most significant bit is negative.
+How -8<sub>10</sub> came to be represented is not possible to explain through its conversion algorithm, as its complementary value is itself. But, we can use its place value rules when converting any two's form to base 10; which is that the most significant bit is negative.
 
 -8<sub>10</sub> is 1000<sub>2</sub> because: $-1 * 2^3 + 0 * 2^2 + 0 * 2^1 + 0 * 2^0 = -8$
--7<sub>10</sub> is 1001<sub>2</sub> because: $-1 * 2^3 + 0 * 2^2 + 0 * 2^1 + 
+-7<sub>10</sub> is 1001<sub>2</sub> because: $-1 * 2^3 + 0 * 2^2 + 0 * 2^1 + 1 * 2^0 = -7$
+ 5<sub>10</sub> is 0101<sub>2</sub> because: $-0 * 2^3 + 1 * 2^2 + 0 * 2^1 + 1 * 2^0 = 5$
+
+
