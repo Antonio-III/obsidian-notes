@@ -212,5 +212,33 @@ For example, adding -2<sub>10</sub> and 3<sub>10</sub> results in 0<sub>10</sub>
 	1101
 +	0011
 ----------
-  1 0000
+  1|0000  <-- Result
+  ^
+  End-around Carry
 ```
+
+However, it is possible to perform this operation by adding the End-around Carry to the result. This makes the answer 1<sub>10</sub>. 
+
+It is also possible to perform subtraction. We perform this similarly to how we subtract in base 10; we align the numbers by their place value, and use borrow if the top value is less than the bottom value. If there are not enough place values, we "imagine" an extra place value to borrow from, and put a 1 to the left of the result. This 1 is then subtracted from the result to get the correct answer.
+
+For example, lets subtract 19<sub>10</sub> by -3<sub>10</sub>, this should result in 22<sub>10</sub>:
+```
+  0 1 1 1 2 1 2      <-- New Values	
+	0 0 0 1 0 0 1 1  <-- Top Value
+-   1 1 1 1 1 1 0 0  <-- Bottom Value
+-----------------------
+  1|0 0 0 1 0 1 1 1  <-- Result, incomplete (23)
+  ^
+  End-around Borrow
+```
+
+```
+	0 0 0 1 0 1 1 1
+-   0 0 0 0 0 0 0 1
+----------------------
+    0 0 0 1 0 1 1 0  <-- Result (22)
+```
+
+## Two's Complement
+
+Two's complement form can be obtained by inverting all the bits of an unsigned binary number and adding 1 to the result.
