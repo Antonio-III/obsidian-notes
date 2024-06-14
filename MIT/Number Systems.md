@@ -219,7 +219,7 @@ For example, adding -2<sub>10</sub> and 3<sub>10</sub> results in 0<sub>10</sub>
 
 However, it is possible to perform this operation by adding the End-around Carry to the result. This makes the answer 1<sub>10</sub>. 
 
-It is also possible to perform subtraction. We perform this similarly to how we subtract in base 10; we align the numbers by their place value, and use borrow if the top value is less than the bottom value. If there are not enough place values, we "imagine" an extra place value to borrow from, and put a 1 to the left of the result. This 1 is then subtracted from the result to get the correct answer.
+It is also possible to perform subtraction. We perform this similarly to how we subtract in base 10; we align the numbers by their place value, and use borrow if the top value is less than the bottom value. If there are not enough place values, we "imagine" an extra place value to borrow from, and put a 1<sub>2</sub> to the left of the result. This 1<sub>2</sub> is then subtracted from the result to get the correct answer.
 
 For example, lets subtract 19<sub>10</sub> by -3<sub>10</sub>, this should result in 22<sub>10</sub>:
 ```
@@ -241,4 +241,30 @@ For example, lets subtract 19<sub>10</sub> by -3<sub>10</sub>, this should resul
 
 ## Two's Complement
 
-Two's complement form can be obtained by inverting all the bits of an unsigned binary number and adding 1 to the result.
+Two's complement form can be obtained by inverting all the bits of an unsigned binary number and adding 1<sub>2</sub> to the result. This also works when trying to find the complementary (opposite) value of a given two's complement.
+
+In this form, $x + -y$ is possible without extra steps; and there is only 1 representation of zero, meaning 1 more number can be represented. But, there is 1 drawback to this: The complementary value of the biggest absolute number is itself. This means that it has no "two's form" because its two's form is itself; so the algorithm is useless when determining values
+
+| Bit pattern, 4 bits | Number<sub>10</sub>, unsigned | Number<sub>10</sub>, two's complement |
+| :-----------------: | :---------------------------: | :-----------------------------------: |
+|        0000         |               0               |                   0                   |
+|        0001         |               1               |                   1                   |
+|        0010         |               2               |                   2                   |
+|        0011         |               3               |                   3                   |
+|        0100         |               4               |                   4                   |
+|        0101         |               5               |                   5                   |
+|        0110         |               6               |                   6                   |
+|        0111         |               7               |                   7                   |
+|        1000         |               8               |                  -8                   |
+|        1001         |               9               |                  -7                   |
+|        1010         |              10               |                  -6                   |
+|        1011         |              11               |                  -5                   |
+|        1100         |              12               |                  -4                   |
+|        1101         |              13               |                  -3                   |
+|        1110         |              14               |                  -2                   |
+|        1111         |              15               |                  -1                   |
+
+How -8<sub>10</sub> came to be represented is not possible to explain through its conversion algorithm, as its complementary value is itself. However, there is an easier way to understand how two's complement works: The most significant bit is coded to have a negative sign, and the rest of the place values are equal to unsigned's place values. When determining the value of a two's bit pattern, we add all of the relevant bits, while keeping in mind that the most significant bit is negative.
+
+-8<sub>10</sub> is 1000<sub>2</sub> because: $-1 * 2^3 + 0 * 2^2 + 0 * 2^1 + 0 * 2^0 = -8$
+-7<sub>10</sub> is 1001<sub>2</sub> because: $-1 * 2^3 + 0 * 2^2 + 0 * 2^1 + 
