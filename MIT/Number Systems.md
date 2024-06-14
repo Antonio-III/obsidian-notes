@@ -279,7 +279,12 @@ This form represents a signed number $n$ by the bit pattern of the unsigned numb
 
 We can also use the two's complement of a given $n$ 
 For example, the $2_{10}$ in excess-8 notation is:
-```
 
-```
-
+$$
+\begin{aligned}
+2_{10} &= 0010_2 \ (unsigned) \\
+0010_2 \ &= \ !0010_2 + 1_2 \\ 
+1101_2 + 1_2 &= 1110_2 \ (two's \ complement) \\
+1110_2 &= \ !msb + other \ signficant \ digits
+\end{aligned}
+$$
