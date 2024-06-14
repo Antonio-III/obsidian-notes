@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MIT/Number Systems.md",
+                "file": "Movies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MIT/Number Systems.md",
+                "file": "Movies.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MIT/Number Systems.md"
+                "file": "Movies.md"
               }
             }
           },
@@ -169,7 +168,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "283238a470e2b9d3",
+  "active": "86f95fe4c6524eb7",
   "lastOpenFiles": [
     "MIT/Number Systems.md",
     "Movies.md",
