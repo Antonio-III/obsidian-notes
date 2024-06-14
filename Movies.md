@@ -151,6 +151,7 @@ Baki Hanma (2021-2023) - Yujiro and Baki shook hands like in predator (Arnold Sc
 Lookism (2022) - Main character and fat Eminem sang together. 
 10/10
 
+The God of High School (2020) 
 ### Incomplete
 
 Jujutsu Kaisen (2020-ongoing) - Sorcery or some shit
@@ -165,7 +166,7 @@ Jujutsu Kaisen 0 (2021) - Yuta joins jj-high. Geto wants to take Yuta's power. G
 
 Wind Breaker (2024) - Literally Sett's backstory
 S1: UNFINISHED. 
-last episode watched: 10/13
+last episode watched: 11/13
 
 Solo Leveling (2024) - Arise.
 S1: He said "arise".
