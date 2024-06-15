@@ -1,7 +1,7 @@
 
 # Decimal Number System
 
-Decimal means **base 10**, hence the prefix **dec**. In this number system, the digits that can be used to count are 0,1,2,3,4,5,6,7,8,9. These are **10** symbols. 
+Decimal means **base 10**, hence the prefix **dec**. In this number system, the digits that can be used to count are 0,1,2,3,4,5,6,7,8,9. These are **10** symbols.
 
 When a number system is **at least equal to** the base, **place values** are used to allocate bigger numbers.
 
@@ -303,6 +303,14 @@ $$
 Bit \ pattern &= 1000_2, bits \ used = 4 \\
 unsigned(Bit \ pattern, base \ 10) &= 8_{10} \\
 n &= 4 \ (bits \ used), K = 2^{n-1}\\
-excess \ 8 \ (Bit \ pattern, base \ 10) &= unsigned(Bit \ pattern, base \ 10) - K 
+excess \ 8 \ (Bit \ pattern, base \ 10) &= unsigned(Bit \ pattern, base \ 10) - K \\
+excess \ 8 \ (Bit \ pattern, base \ 10) &= 8_{10} - 8_{10} \\
+excess \ 8 \ (Bit \ pattern, base \ 10) &= 0_{10}
 \end{align}
 $$
+
+## Floating-point Notation
+
+This form is used to represent integers that are bigger than the maximum unsigned value that can be held by a bit pattern. In 8-bits, the maximum value that can be held is 255, and we can use floating points to represent 300<sub>10</sub> with $00000011_2 * 100_{10}$ [[Footnotes#^3ed9b8|??]] 
+
+## Large Integers

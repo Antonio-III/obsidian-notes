@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "ec615c6e4b497d92",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Footnotes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "1bf1696c100ff952",
             "type": "leaf",
             "state": {
@@ -43,8 +55,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MIT/Number Systems.md",
+                "file": "Movies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MIT/Number Systems.md",
+                "file": "Movies.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -150,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MIT/Number Systems.md"
+                "file": "Movies.md"
               }
             }
           },
@@ -181,11 +192,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "283238a470e2b9d3",
+  "active": "86f95fe4c6524eb7",
   "lastOpenFiles": [
-    "Movies.md",
-    "Harvard/Py50 (2022)/Week 5 - Libraries.md",
     "MIT/Number Systems.md",
+    "Footnotes.md",
+    "^.md",
+    "Movies.md",
+    "^9e273f.md",
+    "Harvard/Py50 (2022)/Week 5 - Libraries.md",
     "To do.md",
     "Codewars.md",
     "Destiny.md",
@@ -219,14 +233,11 @@
     "Templater/Superscript.md",
     "Untitled",
     "Templater",
-    "MIT.md",
     "MIT",
     "Foundations of Algorithms/Images/2023/Lecture 4",
     "Untitled.canvas",
-    "Foundations of Algorithms/Lectures/Lecture 2.md",
     "Foundations of Algorithms/Images/2023/Lecture 3",
     "Foundations of Algorithms/Lectures",
-    "Harvard/Terminal.md",
     "Foundations of Algorithms/Images/2023/Lecture 2",
     "Foundations of Algorithms/Images/2023",
     "Linkedin Learning/Untitled",
