@@ -272,19 +272,19 @@ How -8<sub>10</sub> came to be represented is not possible to explain through it
 -7<sub>10</sub> is 1001<sub>2</sub> because: $-1 * 2^3 + 0 * 2^2 + 0 * 2^1 + 1 * 2^0 = -7$
  5<sub>10</sub> is 0101<sub>2</sub> because: $-0 * 2^3 + 1 * 2^2 + 0 * 2^1 + 1 * 2^0 = 5$
 
+It should be noted that the representation for a positive number within two's form should be equal to unsigned's representation, with added bits if it is the biggest number from unsigned.
 
 ## Excess Notation
 
-This form represents a signed number $n$ by the bit pattern of the unsigned number $un + K$, where $K$ for a $w$-bit binary word is $2^{n-1}$. For example: The excess-$K$ for a 4-bit number is $2^3 = 8$. 
+This form represents a signed number $n$ by the bit pattern of the unsigned number $(n + K)$, where $K$ for an $h$-bit binary word is $2^{e-1}$. For example: The excess-$K$ for a 4-bit number is $2^3 = 8$. 
 
-We can also use the two's complement of a given $n$ 
-For example, the $2_{10}$ in excess-8 notation is:
+We can also use the two's complement of a given $n$, and invert its most significant bit.
+
+For example, $2_{10}$ in excess-8 notation is:
 
 $$
 \begin{aligned}
-2_{10} &= 0010_2 \ (unsigned) \\
-0010_2 \ &= \ !0010_2 + 1_2 \\ 
-1101_2 + 1_2 &= 1110_2 \ (two's \ complement) \\
-1110_2 &= \ !msb + other \ signficant \ digits
+2_{10} &= 0010_2 \ &(unsigned, two's) \\
+0010_2 \ &= \ !(0)010_2 = 1010 \ &(excess\ 8)
 \end{aligned}
 $$
