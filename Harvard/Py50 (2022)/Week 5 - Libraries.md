@@ -1,19 +1,20 @@
 
-Files of code **other people have written** that you can use in your own file of code. Having libraries is an ability to share code with others. It does so by way of **modules**.
+Files of code that have been written that you can use in your own program. Python has this feature. Having libraries is an ability to share code with others. It does so by way of 
+**modules**. 
 
 
 # Modules
 
 A Python file with at least 1 or more functions, and other features as well. The purpose of modules is to encourage code reusability, so programmers don't have to "reinvent the wheel". 
 
-If you find yourself copy-pasting functions from an old project, odds are you can put that function into a library that you can **load into** your programs from now.
+If you find yourself copy-pasting functions from an old project, you can put that function into a library that you can **load into** your programs from now on.
 
-These modules give functions that you don't have access to by default, like `print()` and `input()`.  These default functions are **built-in** to Python. In the case of modules, these functions are tucked away, so you have to be explicit when loading them into the computer's memory.
+These modules give functions that you don't have access to by default, unlike `print()` and `input()`.  These default functions are **built-in** to Python. In the case of modules, these functions are tucked away, so you have to be explicit when loading them into the computer's memory.
 
 
 # `random.py
 
-By installing the Python interpreter, you will most likely have a `random.py` module in your hard drive, that someone else wrote, that you have access to. So while you can "reinvent the wheel" to achieve randomness, it's better to use someone else's code to waste less time.
+By installing the Python interpreter, you will have other modules installed as well. One of these modules is called: `random.py`. And while you can "reinvent the wheel" to achieve randomness, it's better to use someone else's code to waste less time.
 
 Documentation:
 	https://docs.python.org/3/library/random.html

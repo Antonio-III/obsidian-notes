@@ -276,11 +276,12 @@ It should be noted that the representation for a positive number within two's fo
 
 ## Excess Notation
 
-This form represents a signed number $n$ by the bit pattern of the unsigned number $(n + K)$, where $K$ for an $h$-bit binary word is $2^{e-1}$. For example: The excess-$K$ for a 4-bit number is $2^3 = 8$. 
+This form represents a signed number $n$ by the bit pattern of the unsigned number 
+$(n + K)$, where $K$ for an $h$-bit binary word is 2<sup>e-1</sup>. For example: The excess-K for a 4-bit number is 2<sup>3</sup> = 8. 
 
 We can also use the two's complement of a given $n$, and invert its most significant bit.
 
-For example, $2_{10}$ in excess-8 notation is:
+For example, 2<sub>10</sub> in excess-8 notation is:
 
 $$
 \begin{aligned}
