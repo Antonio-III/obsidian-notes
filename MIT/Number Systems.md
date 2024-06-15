@@ -289,3 +289,20 @@ $$
 0010_2 \ &= \ !(0)010_2 = 1010 \ &(excess\ 8)
 \end{aligned}
 $$
+
+> [!question] What is the range of numbers that can be represented using Excess-2<sup> n-1</sup> notation?
+> 2<sup>n-1</sup> - 1 ~ -2<sup>n-1</sup>.
+
+## Bias Notation
+
+The Excess Notation is a special case of Bias Notation. For example: Excess-8 makes any unsigned bit pattern reduced by 8 to obtain its excess-8-equivalent numeric value for that particular bit pattern.  
+
+In this example, 1000<sub>2</sub> in unsigned form is 8<sub>10</sub>, but is 0<sub>10</sub> in excess-8 form.
+$$
+\begin{align}
+Bit \ pattern &= 1000_2, bits \ used = 4 \\
+unsigned(Bit \ pattern, base \ 10) &= 8_{10} \\
+n &= 4 \ (bits \ used), K = 2^{n-1}\\
+excess \ 8 \ (Bit \ pattern, base \ 10) &= unsigned(Bit \ pattern, base \ 10) - K 
+\end{align}
+$$

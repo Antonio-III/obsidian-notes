@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Harvard/Py50 (2022)/Week 5 - Libraries.md",
+                "file": "MIT/Number Systems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Harvard/Py50 (2022)/Week 5 - Libraries.md",
+                "file": "MIT/Number Systems.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Harvard/Py50 (2022)/Week 5 - Libraries.md"
+                "file": "MIT/Number Systems.md"
               }
             }
           },
@@ -181,10 +181,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1bf1696c100ff952",
+  "active": "283238a470e2b9d3",
   "lastOpenFiles": [
-    "MIT/Number Systems.md",
     "Movies.md",
+    "Harvard/Py50 (2022)/Week 5 - Libraries.md",
+    "MIT/Number Systems.md",
     "To do.md",
     "Codewars.md",
     "Destiny.md",
@@ -229,7 +230,6 @@
     "Foundations of Algorithms/Images/2023/Lecture 2",
     "Foundations of Algorithms/Images/2023",
     "Linkedin Learning/Untitled",
-    "Harvard/Py50 (2022)/Hints.md",
     "Untitled 1.canvas"
   ]
 }
