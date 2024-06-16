@@ -151,7 +151,7 @@ Baki Hanma (2021-2023) - Yujiro and Baki shook hands like in predator (Arnold Sc
 Lookism (2022) - Main character and fat Eminem sang together. 
 10/10
 
-The God of High School (2020) - Wukong (MC) defeats some guy.
+The God of High School (2020) - Wukong (MC) defeats bad guy.
 7/10
 ### Incomplete
 
