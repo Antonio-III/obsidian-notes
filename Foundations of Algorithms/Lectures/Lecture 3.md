@@ -68,7 +68,7 @@ int main(int argc, char *argv[]){
 }
 ```
 
-[[#^4fb75d|What happens in the program?]]
+[[#What happens in the program?]]
 
 `#define MAX_CLASS_SIZE 50` finds and replaces instances of `MAX_CLASS_SIZE` with `50`. Before the compiler compiles the text file, it runs a `pre-processor` and it replaces instances of the constant (`MAX_CLASS_SIZE`) with the given data (`50`).
 
@@ -89,11 +89,11 @@ Whenever using `scanf`, always put an ambersand (`&`) before the variable name t
 
 In the example, whatever is inputted by the user, after formatting, `scanf` will assign it to `class_size`.
 
-## if/else compared to Python
+## What happens in the program?
 
 What ends up happening in the program is the computer evaluates `50`.  In C, you can have an assignment expression (`x=50`) be evaluated, whereby the computer evaluates the receiver of the assigment (`x`), after the assigment. 
 
-And in boolean context, any non-zero is considered `True`, which means the code block of this statement executes, outputting `"Class is full"`.  ^4fb75d
+And in boolean context, any non-zero is considered `True`, which means the code block of this statement executes, outputting `"Class is full"`. 
 
 However, this is different from the UNIX convention of returning exit statuses where a `0` indicates a successful exit, and `1` does not.
 

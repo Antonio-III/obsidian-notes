@@ -67,6 +67,15 @@
       "key": "ArrowUp"
     }
   ],
+  "templater-obsidian:Templater/Underline.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "-"
+    }
+  ],
   "editor:insert-mathblock": [
     {
       "modifiers": [

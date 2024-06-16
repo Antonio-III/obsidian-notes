@@ -314,3 +314,45 @@ $$
 This form is used to represent integers that are bigger than the maximum unsigned value that can be held by a bit pattern. In 8-bits, the maximum value that can be held is 255, and we can use floating points to represent 300<sub>10</sub> with $00000011_2 * 100_{10}$ [[Footnotes#^3ed9b8|??]] 
 
 ## Large Integers
+
+We have a number: 1234567<sub>10</sub>. This number requires 7 place values to represent. 
+
+> [!question] How would we represent this number if we only have 4 place values to represent the full number? 
+> 1234000<sub>10</sub>. It would be represented as: $1234_{10} * 10^3$. This form is called: exponential form.
+> 
+
+In the context of integers, here are rules to determine if a number is significant:
+1. Any number except 0 is significant.
+2. A 0 is only significant if it is between the numbers 1~9.
+3. 0 is insignificant if it comes before numbers 1~9.
+
+> [!question] What are the significant digits of 0012340<sub>10</sub>?
+> 00<u>12340</u><sub>10</sub>.
+
+
+### Exponential Form
+
+This form has 2 parts: mantissa, and exponent.
+
+The mantissa represents the significant digits, and the exponent represents the power of the base (radix) to which it is raised by.
+
+In the example,
+$$
+\begin{align}
+1234_{10} \ (mantissa) * 10 \ (base)^{3 \ (exponent)}
+\end{align}
+$$
+
+There are 2 ways to represent an exponential form: 
+- Scientific notation - $1.234_{10} * 10^{3 + 3 \ (digits \ that \ were \ originally \ ommited + significant \ digits \ to \ the \ right \ of \ the \ decimal \  point) }$.
+- Normalized notation - $0.1234_{10} * 10^{7 \ (number \ of \ place \ values \ of \ the \ original \ number)}$. 
+
+
+# Real Numbers
+
+Real numbers can be understood as:
+```python
+real_numbers = { {rational_nums}, {irrational_nums} }
+```
+
+It is a set that contains rational and irrational numbers. Rational numbers are any numbers that can be represented as: `a/b, b != 0`.

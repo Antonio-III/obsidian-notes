@@ -23,7 +23,8 @@
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
     "Templater/Subscript.md",
-    "Templater/Superscript.md"
+    "Templater/Superscript.md",
+    "Templater/Underline.md"
   ],
   "startup_templates": [],
   "enable_ribbon_icon": true
