@@ -355,4 +355,4 @@ Real numbers can be understood as:
 real_numbers = { {rational_nums}, {irrational_nums} }
 ```
 
-It is a set that contains rational and irrational numbers. Rational numbers are any numbers that can be represented as: `a/b, b != 0`.
+It is a set that contains rational and irrational numbers. Rational numbers are any numbers that can be represented as: $a/b, b \ != 0$. 

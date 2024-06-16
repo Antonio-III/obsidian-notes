@@ -42,33 +42,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "e5f0e0969c866a50",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Templater/Underline.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a4556bfd4278b490",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Foundations of Algorithms/Lectures/Lecture 3.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -134,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Foundations of Algorithms/Lectures/Lecture 3.md",
+                "file": "MIT/Number Systems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Foundations of Algorithms/Lectures/Lecture 3.md",
+                "file": "MIT/Number Systems.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -174,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Foundations of Algorithms/Lectures/Lecture 3.md"
+                "file": "MIT/Number Systems.md"
               }
             }
           },
@@ -205,11 +181,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a4556bfd4278b490",
+  "active": "283238a470e2b9d3",
   "lastOpenFiles": [
-    "Templater/Underline.md",
-    "MIT/Number Systems.md",
     "Harvard/Py50 (2022)/Week 5 - Libraries.md",
+    "Templater/Underline.md",
+    "Foundations of Algorithms/Lectures/Lecture 3.md",
+    "MIT/Number Systems.md",
     "Footnotes.md",
     "Templater/Superscript.md",
     "Templater/Subscript.md",
@@ -233,7 +210,6 @@
     "DialogFlow.md",
     "BSU/Web Dev II (HTML, CSS, JS).md",
     "BSU/images/Emerging Technologies/Pew Research/Social Media Makes Population Susceptible to Manipulation.png",
-    "Harvard/Py50 (2022)/Week 1 - Variables, Functions.md",
     "BSU/images/Emerging Technologies/Pew Research/Social Media Informs Citizens.png",
     "BSU/images/Emerging Technologies/Pew Research/Social Media in Democracy.png",
     "BSU/images/Emerging Technologies/Pew Research/Social Media has been a ___.png",

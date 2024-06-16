@@ -326,3 +326,8 @@ Output:
 big=2147483647, bp1=-2147483648, bt2=-2, bp1t2=0
 ```
 
+> [!question] How did the values came to be?
+> In any word size, the biggest positive number is **1 absolute value lower** than the absolute value of the biggest negative. In 32 bits, 2147483647<sub>10</sub> is 1 value lower than 2147483648<sub>10</sub>. 
+> `bp1` - It is negative in this case because it uses two's complement form, where the most significant bit has a negative sign.
+> `bt2` - In any word size, multiplying the biggest positive number with 2 will always result in -2<sub>10</sub>. This is due to the nature of addition in binary arithmetic.
+> bp1t2 - In any word size, when the most significant bit is added to itself, the result will always be 0<sub>10</sub>. This is due to a lack of bits to represent the carry of 1.
