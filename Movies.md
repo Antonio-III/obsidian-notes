@@ -153,6 +153,9 @@ Lookism (2022) - Main character and fat Eminem sang together.
 
 The God of High School (2020) - Wukong (MC) defeats bad guy.
 7/10
+
+Tokyo Revengers (2021) - Time traveling powers to save some girl through preventing gang shit from happening.
+S1: /24
 ### Incomplete
 
 Jujutsu Kaisen (2020-ongoing) - Sorcery or some shit
