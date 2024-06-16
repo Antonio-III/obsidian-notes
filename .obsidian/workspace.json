@@ -37,14 +37,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Harvard/Py50 (2022)/Week 5 - Libraries.md",
+                "file": "Foundations of Algorithms/Lectures/Lecture 3.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MIT/Number Systems.md",
+                "file": "Foundations of Algorithms/Lectures/Lecture 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MIT/Number Systems.md",
+                "file": "Foundations of Algorithms/Lectures/Lecture 3.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MIT/Number Systems.md"
+                "file": "Foundations of Algorithms/Lectures/Lecture 3.md"
               }
             }
           },
@@ -181,12 +181,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "283238a470e2b9d3",
+  "active": "1bf1696c100ff952",
   "lastOpenFiles": [
     "Harvard/Py50 (2022)/Week 5 - Libraries.md",
+    "MIT/Number Systems.md",
     "Templater/Underline.md",
     "Foundations of Algorithms/Lectures/Lecture 3.md",
-    "MIT/Number Systems.md",
     "Footnotes.md",
     "Templater/Superscript.md",
     "Templater/Subscript.md",
