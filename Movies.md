@@ -153,9 +153,6 @@ Lookism (2022) - Main character and fat Eminem sang together.
 
 The God of High School (2020) - Wukong (MC) defeats bad guy.
 7/10
-
-Tokyo Revengers (2021) - Time traveling powers to save some girl through preventing gang shit from happening.
-S1: 22/24
 ### Incomplete
 
 Jujutsu Kaisen (2020-ongoing) - Sorcery or some shit
@@ -193,12 +190,17 @@ S1: "What a bunch of cunts." - Karl Urban. Main character has a power to blow up
 
 Tokyo Revengers (2021-ongoing) - A show about an MC having an ability to time travel by shaking hands with police guy. He uses this power to save some girl. He tries to accomplish this by rising through the ranks of the gang that killed the girl. 
 
-Pacing is slow, so there's a few rinse-and-repeat events happening: MC goes into the past to "save everyone" -> accomplish that goal -> back to present -> realizes it's not enough to save the girl -> cries -> meets police guy -> add a new goal to accomplish -> MC goes into the past to "save everyone". 
+Pacing is slow, so there's a few rinse-and-repeat events happening: 
 
-MC sees a new character -> doubts if they were the same person in the past/present. ->
-Cries every other scene ->.
+(1) MC goes into the past to "save everyone" -> accomplish that goal -> back to present -> realizes it's not enough to save the girl -> cries -> meets police guy -> add a new goal to accomplish -> (1). 
 
-Also, 1 character dies in the present after going back to the present.
+(2) MC sees a new character -> doubts if they were the same person in the past/present. -> (2).
 
-S1: Some guy dies (He accomplished his latest goal and went into the present).
+(3) In any scenario, MC says he hasn't changed anything, but the future did.
+
+Also, 1 of his friends die in the present after going back to the present, cumulatively.
+
+S1: His friend dies (He accomplished his latest goal and went into the present).
 7/10
+
+S2: 3/13
