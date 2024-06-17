@@ -43,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Movies.md",
+                "file": "MIT/Number Systems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Movies.md",
+                "file": "MIT/Number Systems.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -149,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Movies.md"
+                "file": "MIT/Number Systems.md"
               }
             }
           },
@@ -180,11 +181,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "86f95fe4c6524eb7",
+  "active": "283238a470e2b9d3",
   "lastOpenFiles": [
-    "MIT/Number Systems.md",
-    "Movies.md",
     "Foundations of Algorithms/Lectures/Lecture 3.md",
+    "Movies.md",
+    "MIT/Number Systems.md",
     "Harvard/Py50 (2022)/Week 5 - Libraries.md",
     "Templater/Underline.md",
     "Footnotes.md",
