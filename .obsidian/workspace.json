@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Foundations of Algorithms/Lectures/Lecture 3.md",
+                "file": "Movies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Foundations of Algorithms/Lectures/Lecture 3.md",
+                "file": "Movies.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -150,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Foundations of Algorithms/Lectures/Lecture 3.md"
+                "file": "Movies.md"
               }
             }
           },
@@ -181,12 +180,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1bf1696c100ff952",
+  "active": "86f95fe4c6524eb7",
   "lastOpenFiles": [
+    "Foundations of Algorithms/Lectures/Lecture 3.md",
     "Harvard/Py50 (2022)/Week 5 - Libraries.md",
     "MIT/Number Systems.md",
     "Templater/Underline.md",
-    "Foundations of Algorithms/Lectures/Lecture 3.md",
     "Footnotes.md",
     "Templater/Superscript.md",
     "Templater/Subscript.md",
