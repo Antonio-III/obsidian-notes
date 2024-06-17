@@ -198,6 +198,8 @@ Pacing is slow, so there's a few rinse-and-repeat events happening:
 
 (3) In any scenario, MC says he hasn't changed anything, but the future did.
 
+(4) MC is a moron. He forgets key details that were just mentioned in the last episode.
+
 Also, 1 of his friends die in the present after going back to the present, cumulatively.
 
 S1: His friend dies (He accomplished his latest goal and went into the present).
