@@ -157,13 +157,13 @@ The God of High School (2020) - Wukong (MC) defeats bad guy.
 
 Jujutsu Kaisen (2020-ongoing) - Sorcery or some shit
 S1: Yuji and Nobara kill 2 sibling monsters. 
-9/10
+7/10
 
 S2: Yuji kills Patchface. 
-10/10
+6/10
 
 Jujutsu Kaisen 0 (2021) - Yuta joins jj-high. Geto wants to take Yuta's power. Geto dies. 
-7/10
+5/10
 
 Wind Breaker (2024) - Literally Sett's backstory
 S1: UNFINISHED. 
