@@ -190,3 +190,15 @@ S2: Buddha wins. Man: 3. God: 3
 Gen V (2023) - The Boys spinoff.
 S1: "What a bunch of cunts." - Karl Urban. Main character has a power to blow up people's heads. MC has a mid backstory, and the 3 other characters were more mid. Ending was that Homelander "laser eyed" the MC. Then, MC and co. woke up to a room they can't get out.  
 4/10
+
+Tokyo Revengers (2021-ongoing) - A show about an MC having an ability to time travel by shaking hands with police guy. He uses this power to save some girl. He tries to accomplish this by rising through the ranks of the gang that killed the girl. 
+
+Pacing is slow, so there's a few rinse-and-repeat events happening: MC goes into the past to "save everyone" -> accomplish that goal -> back to present -> realizes it's not enough to save the girl -> cries -> meets police guy -> add a new goal to accomplish -> MC goes into the past to "save everyone". 
+
+MC sees a new character -> doubts if they were the same person in the past/present. ->
+Cries every other scene ->.
+
+Also, 1 character dies in the present after going back to the present.
+
+S1: Some guy dies (He accomplished his latest goal and went into the present).
+7/10
