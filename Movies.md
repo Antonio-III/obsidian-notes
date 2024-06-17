@@ -205,4 +205,5 @@ Also, 1 of his friends die in the present after going back to the present, cumul
 S1: His friend dies (He accomplished his latest goal and went into the present).
 7/10
 
-S2: 3/13
+S2: Nerd guy (Arch-nemesis of MC) is a time traveler, too?
+8/10
