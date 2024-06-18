@@ -141,6 +141,9 @@ S3: Some guy had bulimia.
 S4: Chris Rock dies. Sad!
 
 S5: The man is forgiven.
+
+The Boys (2019-ongoing) - Superhero shit
+S4: 3/10
 ## Anime 
 
 ### Completed
