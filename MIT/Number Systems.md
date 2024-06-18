@@ -359,16 +359,60 @@ It is a set that contains rational and irrational numbers. Rational numbers are 
 
 There are 3 ways a real number can be represented in computers:
 
-Fixed-point Notation. This form puts the decimal point arbitrarily between the digits. 10.82<sub>10</sub> can be represented as:
+## Fixed-point Notation 
+
+This form puts the decimal point arbitrarily between the digits. 10.82<sub>10</sub> can be represented as, in decimal form:
 $$
 \begin{align}
 1 * 10^1 + 0 * 10^0 + 8 * 10^{-1} + 2 * 10^{-2}
 \end{align}
 $$
 
-The source material did not explain how this can be represented by computers.[[Footnotes#^9102e2|*]]
+Consider this 8-bit pattern:
 
-Rational Notation. Represents real numbers as a ratio of two integers, except irrational numbers.[[Footnotes#^9102e2|*]]
+| a<sub>7</sub> | a<sub>6</sub> | a<sub>5</sub> | a<sub>4</sub> | a<sub>3</sub> | a<sub>2</sub> | a<sub>1</sub> | a<sub>0</sub> |
+| :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
 
-Floating-point Notation. It can be either in scientific or normalized form
+Arbitrarily, let's assign the first 4 (a<sub>7</sub>~a<sub>4</sub>) as the integers in two's complement form. And the last 4 are in unsigned binary form. 
+
+Note that if a bit is on the right of the decimal point, its place value is $radix^{-1}$. This means that the bit in unsigned form **after** the decimal point is always 0.5<sub>10</sub>. Note that the value of a bit's place value is always **half** of the preceding bit's value.
+
+
+This means that the bit pattern can be seen as:
+
+| a<sub>7</sub> | a<sub>6</sub> | a<sub>5</sub> | a<sub>4</sub> |  .  | a<sub>3</sub> | a<sub>2</sub> | a<sub>1</sub> | a<sub>0</sub> |
+| :-----------: | :-----------: | :-----------: | :-----------: | :-: | :-----------: | :-----------: | :-----------: | :-----------: |
+
+| a<sub>7</sub>,a<sub>6</sub>,a<sub>5</sub>,a<sub>4</sub> | Value |
+| :-----------------------------------------------------: | :---: |
+|                         0 0 0 0                         |       |
+|                         0 0 0 1                         |       |
+|                         0 0 1 0                         |       |
+|                         0 0 1 1                         |       |
+|                         0 1 0 0                         |       |
+|                         0 1 0 1                         |       |
+|                         0 1 1 0                         |       |
+|                         0 1 1 1                         |       |
+|                         1 0 0 0                         |       |
+|                                                         |       |
+|                                                         |       |
+|                                                         |       |
+|                                                         |       |
+|                                                         |       |
+|                                                         |       |
+|                                                         |       |
+|                                                         |       |
+|                                                         |       |
+
+
+
+## Rational Notation
+
+Represents real numbers as a ratio of two integers, except irrational numbers.[[Footnotes#^9102e2|*]]
+
+## Floating-point Notation 
+
+It can be in scientific or normalized form.
+
+
 
