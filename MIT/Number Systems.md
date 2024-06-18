@@ -356,3 +356,19 @@ real_numbers = { {rational_nums}, {irrational_nums} }
 ```
 
 It is a set that contains rational and irrational numbers. Rational numbers are any numbers that can be represented as: $(a\ /\ b),\ b \ != 0$. Irrational numbers are those who cannot be represented as: $(a\ /\ b),\ b \ != 0$. These are numbers whose decimal ends, like $\pi$.
+
+There are 3 ways a real number can be represented in computers:
+
+Fixed-point Notation. This form puts the decimal point arbitrarily between the digits. 10.82<sub>10</sub> can be represented as:
+$$
+\begin{align}
+1 * 10^1 + 0 * 10^0 + 8 * 10^{-1} + 2 * 10^{-2}
+\end{align}
+$$
+
+The source material did not explain how this can be represented by computers.[[Footnotes#^9102e2|*]]
+
+Rational Notation. Represents real numbers as a ratio of two integers, except irrational numbers.[[Footnotes#^9102e2|*]]
+
+Floating-point Notation. It can be either in scientific or normalized form
+
