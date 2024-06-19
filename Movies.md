@@ -210,3 +210,6 @@ S1: His friend dies (He accomplished his latest goal and went into the present).
 
 S2: Nerd guy (Arch-nemesis of MC) is a time traveler, too?
 8/10
+
+S3: Nerd guy wasn't a time traveler. He just wanted to be like MC. Cinema.
+8/10
