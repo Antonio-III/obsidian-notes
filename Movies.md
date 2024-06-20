@@ -156,6 +156,11 @@ Lookism (2022) - Main character and fat Eminem sang together.
 
 The God of High School (2020) - Wukong (MC) defeats bad guy.
 7/10
+
+Death Note (2006~2007) - Absolute Cinema.
+10/10
+
+
 ### Incomplete
 
 Jujutsu Kaisen (2020-ongoing) - Sorcery or some shit
