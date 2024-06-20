@@ -387,22 +387,35 @@ This means that the bit pattern can be seen as:
 | :-----------------------------------------------------------------------: | :---: | :---------------------------------------------------------------: | :---: |
 |                                  0 0 0 0                                  |   0   |                              0 0 0 0                              |  .0   |
 |                                  0 0 0 1                                  |   1   |                              0 0 0 1                              | .0625 |
-|                                  0 0 1 0                                  |   2   |                              0 0 1 0                              | .1875 |
-|                                  0 0 1 1                                  |   3   |                              0 0 1 1                              | .250  |
-|                                  0 1 0 0                                  |   4   |                              0 1 0 0                              | .3125 |
-|                                  0 1 0 1                                  |   5   |                              0 1 0 1                              | .375  |
-|                                  0 1 1 0                                  |   6   |                              0 1 1 0                              | .4375 |
-|                                  0 1 1 1                                  |   7   |                              0 1 1 1                              |  .5   |
-|                                  1 0 0 0                                  |  -8   |                              1 0 0 0                              |  -8   |
-|                                  1 0 0 1                                  |  -7   |                              1 0 0 1                              |  -7   |
-|                                  1 0 1 0                                  |  -6   |                              1 0 1 0                              |  -6   |
-|                                  1 0 1 1                                  |  -5   |                              1 0 1 1                              |  -5   |
-|                                  1 1 0 0                                  |  -4   |                              1 1 0 0                              |  -4   |
-|                                  1 1 0 1                                  |  -3   |                              1 1 0 1                              |  -3   |
-|                                  1 1 1 0                                  |  -2   |                              1 1 1 0                              |  -2   |
-|                                  1 1 1 1                                  |  -1   |                              1 1 1 1                              |  -1   |
+|                                  0 0 1 0                                  |   2   |                              0 0 1 0                              | .125  |
+|                                  0 0 1 1                                  |   3   |                              0 0 1 1                              | .1875 |
+|                                  0 1 0 0                                  |   4   |                              0 1 0 0                              | .250  |
+|                                  0 1 0 1                                  |   5   |                              0 1 0 1                              | .3125 |
+|                                  0 1 1 0                                  |   6   |                              0 1 1 0                              | .375  |
+|                                  0 1 1 1                                  |   7   |                              0 1 1 1                              | .4375 |
+|                                  1 0 0 0                                  |  -8   |                              1 0 0 0                              |  .5   |
+|                                  1 0 0 1                                  |  -7   |                              1 0 0 1                              | .5625 |
+|                                  1 0 1 0                                  |  -6   |                              1 0 1 0                              | .625  |
+|                                  1 0 1 1                                  |  -5   |                              1 0 1 1                              | .6875 |
+|                                  1 1 0 0                                  |  -4   |                              1 1 0 0                              | .750  |
+|                                  1 1 0 1                                  |  -3   |                              1 1 0 1                              | .8125 |
+|                                  1 1 1 0                                  |  -2   |                              1 1 1 0                              | .875  |
+|                                  1 1 1 1                                  |  -1   |                              1 1 1 1                              | .9375 |
+
+> [!question] What is the range (least~most) of values that this table can make?
+> -8.9375<sub>10</sub>~7.9375<sub>10</sub>.  
+
+> [!question] What is the precision (first value after 0) of the notation?
+> 0.0625<sub>10</sub>.
 
 
+For programs to understand how to interpret a bit string to be a fixed-point notation, they use standards; specifically, the IEEE standard.
+
+> [question] What is the value represented by 1101.1110<sub>2</sub>? The integer is in two's complements, and the fractional is unsigned.
+> -3.875<sub>10</sub>.
+
+
+## Modified Significance Rules
 
 
 ## Rational Notation
