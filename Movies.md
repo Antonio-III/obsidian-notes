@@ -218,3 +218,7 @@ S2: Nerd guy (Arch-nemesis of MC) is a time traveler, too?
 
 S3: Nerd guy wasn't a time traveler. He just wanted to be like MC. Absolute cinema.
 8/10
+
+Attack on TItan (2013~2023) - Attack on titans.
+
+S1: 7/24
