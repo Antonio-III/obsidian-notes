@@ -42,8 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "cd764b326c45661a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Anaden Notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -109,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Movies.md",
+                "file": "Anaden Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Movies.md",
+                "file": "Anaden Notes.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -149,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Movies.md"
+                "file": "Anaden Notes.md"
               }
             }
           },
@@ -180,10 +193,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "86f95fe4c6524eb7",
+  "active": "cd764b326c45661a",
   "lastOpenFiles": [
-    "MIT/Number Systems.md",
+    "Anaden Notes.md",
     "Movies.md",
+    "MIT/Number Systems.md",
     "Footnotes.md",
     "Foundations of Algorithms/Lectures/Lecture 3.md",
     "Harvard/Py50 (2022)/Week 5 - Libraries.md",
@@ -207,7 +221,6 @@
     "To-buy.md",
     "BSU/Code Lab II (Python).md",
     "DialogFlow.md",
-    "BSU/Web Dev II (HTML, CSS, JS).md",
     "BSU/images/Emerging Technologies/Pew Research/Social Media Makes Population Susceptible to Manipulation.png",
     "BSU/images/Emerging Technologies/Pew Research/Social Media Informs Citizens.png",
     "BSU/images/Emerging Technologies/Pew Research/Social Media in Democracy.png",
