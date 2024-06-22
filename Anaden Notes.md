@@ -18,17 +18,17 @@ deliverance sword
 
 GRASTA DPS best-in-slot
 
--T3 POWER OF AGONY	(+30% PAIN-DMG)       
-	+ AWAKEN ZONE	(+15% DMG IN AWAKENED ZONE)
+-T3 POWER OF AGONY (+30% PAIN-DMG)       
+	+ AWAKEN ZONE (+15% DMG IN AWAKENED ZONE)
 
--T3 POWER OF VENOM 		(+30% POI-DMG)       
-	+ AWAKEN ZONE	(+15% DMG IN AWAKENED ZONE)
+-T3 POWER OF VENOM (+30% POI-DMG)       
+	+ AWAKEN ZONE (+15% DMG IN AWAKENED ZONE)
 
--T3 POWER OF FATE	(+46% TYPE ATK)           
-	+ ROSE THORNS	(+15% DMG +50% COST)
+-T3 POWER OF FATE (+46% TYPE ATK)           
+	+ ROSE THORNS (+15% DMG +50% COST)
 
--T3 DEADLY BLOW		(+30% CRIT. DMG) 
-	+ BULLSEYE	(+50% DMG OUTSIDE AF)
+-T3 DEADLY BLOW (+30% CRIT. DMG) 
+	+ BULLSEYE (+50% DMG OUTSIDE AF)
 
 EXTRA GRASTA 
 
@@ -45,34 +45,33 @@ GRASTAS 2ND best-in-slot
 -T3 WEAK POINT STRIKE (+30% DMG ON WEAK)
 	+ DORMANT ORE (+20% DMG ON WEAK)
 
-ORES 2ND B-I-S
-
-+ DORMANT ORE		(+5% PAIN/POISON)
-+ 0N-DEBUFF ORE		(+50% DMG)
-+ LAST STAND ORE	(+30% DMG PER ENEMY STARTING AT 2)
-+ L/S PWR/INT/SPD	(+18 PWR/INT/SPD)
+ORES 
++ ON-DEBUFF ORE (+50% DMG)
++ L/S - PWR/INT/SPD (+18 PWR/INT/SPD)
 
 
 SUPPORT (STAT STICK)
 
--T3 ENHANCE AT 80% HP WEAPON	(+40%) 
+-T3 ENHANCE AT 80% HP WEAPON (+40%) 
 	+ DORMANT ORE (SHAREABLE)
 
--T3 ENHANCE AT MAX HP WEAPON	(+30%) 
+-T3 ENHANCE AT MAX HP (WEAPON) (+30%) 
 	+ DORMANT ORE (SHAREABLE)
 
--T3 ENHANCE AT MAX HP PERSONALITY	(+30%)
+-T3 ENHANCE AT MAX HP (PERSONALITY) (+30%)
 	+ DORMANT ORE (SHAREABLE)
 
--T3 POWER OF - MATCHING WEAPON	(+30%)	 
+-T3 POWER OF -- (WEAPON)	(+30%)	 
 	+ DORMANT ORE (SHAREABLE)
 
--T3 ALMIGHTY POWER PERSONALITY	(+25%) 
+-T3 ALMIGHTY POWER (PERSONALITY)	(+25%) 
  	+ DORMANT ORE (SHAREABLE)
 
--T3 ENHANCE AT MAX HP ELEMENT-SHARABLE (%5)	
+-T3 ENHANCE AT MAX HP (ELEMENT) -SHARABLE (%5)	
 	+ DORMANT ORE (+5% DMG)
-----------------
+
+
+## Farm 
 
 GRASTA FARM CHECKLIST
 
@@ -102,157 +101,60 @@ POWER OF (20% TYPE)
 --SWORD
 
 
---
-
-NOTES
-
-Oak Wood = Oak
-
-GREEN VILLAGE BARUOKI 
-https://altema.jp/anaden/baruokimap-611
 
 
--Basil
--Oak Wood
+# Map
 
-NUAR PLAIN 
-https://altema.jp/anaden/nuaruheigenmap-625
+~~Strikethrough~~ means all treasures in that map have been collected; 100% completion
 
--Iron Sand
--Migmatite
+## Present 
 
-BARUOKI UNDERGROUND CAVERNS
-https://altema.jp/anaden/barukiotikakudomap-634
+### Migleina 
 
--Oak Wood
--Iron Sand
--Migmatite
+[BARUOKI](https://altema.jp/anaden/baruokimap-611)
 
---
+[NUAR PLAIN](https://altema.jp/anaden/nuaruheigenmap-625)
 
-MOONLIGHT FOREST 
-https://altema.jp/anaden/tukikagenomorimap-636
+[BARUOKI UNDERGROUND CAVERNS](https://altema.jp/anaden/barukiotikakudomap-634)
 
--Iron Sand
--Migmatite
--Oak Wood
+[MOONLIGHT FOREST](https://altema.jp/anaden/tukikagenomorimap-636)
 
---
+## Future
 
-ELZION AIRPORT 
-https://altema.jp/anaden/erujionairportmap-639
+### Migleina
 
--Tourmaline
--Floating Store
--Blue Code
+[ELZION AIRPORT](https://altema.jp/anaden/erujionairportmap-639)
 
-DAWN CITY ELZION
-https://altema.jp/anaden/shokotosimap-642
+[DAWN CITY ELZION](https://altema.jp/anaden/shokotosimap-642)
 
--Floating Metal Stone
--Blue Code
--Tourmaline
+[ABANDONED ROAD ROUTE 99](https://altema.jp/anaden/haidoroot99map-647)
 
-ABANDONED ROAD ROUTE 99
-https://altema.jp/anaden/haidoroot99map-647
+[INDUSTRIAL CITY RUINS](https://altema.jp/anaden/kougyoutosihaikyomap-651)
 
--Blue Code
--Tourmaline
--Floating Metal Stone
+## Past 
 
---
+### Migleina
 
-INDUSTRIAL CITY RUINS
-https://altema.jp/anaden/kougyoutosihaikyomap-651
+[ZOL PLAINS](https://altema.jp/anaden/zoruheigenmap-655)
 
--Floating Metal Stone
--Tourmaline
--Blue Code
+[FIRE VILLAGE RATLE](https://altema.jp/anaden/hinomuraratorumap-667)
 
---
+[VASSIEU MOUNTAINS](https://altema.jp/anaden/vashusangakumap-675)
 
-NOTES
-
--Odori Grass = DANCING GRASS
--Odorimodoki = DANCING TREE
--Cole        = BLACK COAL
--Ruby Shard  = RUBY FRAGMENT
-
-
-ZOL PLAINS
-https://altema.jp/anaden/zoruheigenmap-655
-
--Cole
--Ruby Shard
--Odorimodoki
--Odori Grass
-
-FIRE VILLAGE RATLE
-https://altema.jp/anaden/hinomuraratorumap-667
-
--Cole
--Ruby Shard
--Salvia
--Odorimodoki
-
-VASSIEU MOUNTAINS
-https://altema.jp/anaden/vashusangakumap-675
-
--Odorimodoki
--Odori Grass
--Ruby Shard
--Cole
--Ruby Fragment
-
-NADARA VOLCANO
-https://altema.jp/anaden/nadarakazanmap-680
+[NADARA VOLCANO](https://altema.jp/anaden/nadarakazanmap-680)
 5 = LEAF BANGLE
 
--Cole
--Ruby Shard
+[LAKE TIILEN](https://altema.jp/anaden/thirenkodoumap-689)
 
---
+[ACTEUL](https://altema.jp/anaden/mizunomiyakoakuthurumap-693)
 
-LAKE TIILEN
-https://altema.jp/anaden/thirenkodoumap-689
+[DERISMO HIGHROAD](https://altema.jp/anaden/derisumokaidomap-707)
 
--Pink Flower
--Natural Water
--Copper Powder
+[PALSIFAL PALACE](https://altema.jp/anaden/parusifarukyudenmap-711)
 
-ACTEUL
-https://altema.jp/anaden/mizunomiyakoakuthurumap-693
+[MAN-EATING MARSH](https://altema.jp/anaden/hitokuinumamap-716)
 
--Natural Water
--Copper Powder
-
-DERISMO HIGHROAD
-https://altema.jp/anaden/derisumokaidomap-707
-
--Cryophyton
--Transparent Drop
--Round Stone
-
-
-PALSIFAL PALACE
-https://altema.jp/anaden/parusifarukyudenmap-711
-
--Round Stone
--Brick Shards
-
---
-
-MAN-EATING MARSH
-https://altema.jp/anaden/hitokuinumamap-716
-
--Blue Liquid
--Red Liquid
--Green Liquid
-
---
-
-KERURI HIGHROAD
-https://altema.jp/anaden/kerurinomitimap-714
+[KERURI HIGHROAD](https://altema.jp/anaden/kerurinomitimap-714)
 
 -Ocher Seed
 -Smoky Quartz
@@ -947,8 +849,9 @@ https://altema.jp/anaden/suityurakuenmap
 VANDE OCEAN
 https://altema.jp/anaden/vandekaimap
 
-DIERKUUL ISLAND
-https://altema.jp/anaden/derikurutoumap
+~~[DIERKUUL ISLAND](https://altema.jp/anaden/derikurutoumap)~~
+
+~~[DIERKUUL ISLAND - FACTORY TOWER](https://altema.jp/anaden/derikurutoumap)~~
 
 SHORE RUNNER
 https://altema.jp/anaden/taikaioudanressya
@@ -1134,9 +1037,7 @@ MEMHELBA
 FORBIDDEN CAVE
 ???
 
-----------------------------
-
-ANOTHER DUNGEON
+# Another Dungeon
 
 TOTO THEATER WORLD
 https://altema.jp/anaden/tototheatreland
@@ -1188,9 +1089,9 @@ Q1:     FRAG OF SUPP
 Q2:     MURMUR
 Q3:     MURMUR
 Q3 - 2: CRYSTAL OF SUPP
-------------------------------
 
-INCOMPLETE CONTENT
+
+# INCOMPLETE CONTENT
 
 CROWN OF THE PALE DAWN
 https://altema.jp/anaden/yaeiryouri
@@ -1200,4 +1101,4 @@ https://altema.jp/anaden/tailssimulation
 SONG OF SWORD AND LOST WINGS
 https://altema.jp/anaden/kennouta
 
-LORD OF MANA
+LORD OF MANA quest
