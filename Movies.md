@@ -221,4 +221,4 @@ S3: Nerd guy wasn't a time traveler. He just wanted to be like MC. Absolute cine
 
 Attack on TItan (2013~2023) - Attack on titans.
 
-S1: 7/24
+S1: 9/24
