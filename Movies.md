@@ -165,6 +165,7 @@ Attack on TItan (2013~2023) - Attack on titans.
 S1: Female titan captured.
 9/10
 
+S2: 5/12
 ### Incomplete
 
 Jujutsu Kaisen (2020-ongoing) - Sorcery or some shit
