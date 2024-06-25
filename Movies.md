@@ -165,7 +165,11 @@ Attack on TItan (2013~2023) - Attack on titans.
 S1: Female titan captured.
 9/10
 
-S2: 5/12
+S2: Titans are humans. Beast Titan speaks.
+9/10
+
+S3: Titans are people of a certain race that committed crimes (??).
+10/10
 ### Incomplete
 
 Jujutsu Kaisen (2020-ongoing) - Sorcery or some shit
