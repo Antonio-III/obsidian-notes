@@ -148,37 +148,31 @@ S4: 4/10
 
 ### Completed
 
-Baki Hanma (2021-2023) - Yujiro and Baki shook hands like in predator (Arnold Schawrzenegger meme). Manga has more to offer but the anime adaptation is probably over. 
-7/10
+Baki Hanma (2021~2023) - Yujiro and Baki shook hands like in predator (Arnold Schawrzenegger meme). Manga has more to offer but the anime adaptation is probably over. 
+	7/10
 
 Lookism (2022) - Main character and fat Eminem sang together. 
-10/10
+	10/10
 
 The God of High School (2020) - Wukong (MC) defeats bad guy.
-7/10
+	7/10
 
 Death Note (2006~2007) - Absolute Cinema.
-10/10
+	10/10
 
-Attack on TItan (2013~2023) - Attack on titans.
-
-S1: Female titan captured.
-9/10
-
-S2: Titans are humans. Beast Titan speaks.
-9/10
-
-S3: (Exposition dump) Titans are people of a certain race that committed crimes against groups of people.
-10/10
-
-S4, part 1: MC was about to fight Armored Titan and Jaw Titan. A buildup to the next part.
-8/10
-
-S4, part 2: Big titans walk on people.
-7/10
-
-S4, part 3: They reached a world without titans; except the place MC was buried in was a place to get titan powers, again; and the cycle continues (Civilizations don't know how to stop killing themselves). Cinema.
-7/10
+Attack on Titan (2013~2023) - Attack on titans.
+	S1: Female titan captured.
+		9/10
+	S2: Titans are humans. Beast Titan speaks.
+		9/10
+	S3: (Exposition dump) Titans are people of a certain race that committed crimes against groups of people.
+		10/10
+	S4, part 1: MC was about to fight Armored Titan and Jaw Titan. A buildup to the next part.
+		8/10
+	S4, part 2: Big titans walk on people.
+		7/10	
+	S4, part 3: They reached a world without titans; except the place MC was buried in was a place to get titan powers, again; and the cycle continues (Civilizations don't know how to stop killing themselves). Cinema.
+		7/10
 
 ### Incomplete
 
@@ -212,29 +206,21 @@ S2: Buddha wins. Man: 3. God: 3
 8/10
 
 Gen V (2023) - The Boys spinoff.
-S1: "What a bunch of cunts." - Karl Urban. Main character has a power to blow up people's heads. MC has a mid backstory, and the 3 other characters were more mid. Ending was that Homelander "laser eyed" the MC. Then, MC and co. woke up to a room they can't get out.  
-4/10
+	S1: "What a bunch of cunts." - Karl Urban. Main character has a power to blow up people's heads. MC has a mid backstory, and the 3 other characters were more mid. Ending was that Homelander "laser eyed" the MC. Then, MC and co. woke up to a room they can't get out.  
+	4/10
+
 
 Tokyo Revengers (2021-ongoing) - A show about an MC having an ability to time travel by shaking hands with police guy. He uses this power to save some girl. He tries to accomplish this by rising through the ranks of the gang that killed the girl. 
-
-Pacing is slow, so there's a few rinse-and-repeat events happening: 
-
-(1) MC goes into the past to "save everyone" -> accomplish that goal -> back to present -> realizes it's not enough to save the girl -> cries -> meets police guy -> add a new goal to accomplish -> (1). 
-
-(2) MC sees a new character -> doubts if they were the same person in the past/present. -> (2).
-
-(3) In any scenario, MC says he hasn't changed anything, but the future did.
-
-(4) MC is a moron. He forgets key details that were just mentioned in the last episode.
-
-Also, 1 of his friends die in the present after going back to the present, cumulatively.
-
-S1: His friend dies (He accomplished his latest goal and went into the present).
-7/10
-
-S2: Nerd guy (Arch-nemesis of MC) is a time traveler, too?
-8/10
-
-S3: Nerd guy wasn't a time traveler. He just wanted to be like MC. Absolute cinema.
-8/10
+	Pacing is slow, so there's a few rinse-and-repeat events happening: 
+		(1) MC goes into the past to "save everyone" -> accomplish that goal -> back to present -> realizes it's not enough to save the girl -> cries -> meets police guy -> add a new goal to accomplish -> (1). 
+		(2) MC sees a new character -> doubts if they were the same person in the past/present. -> (2).
+		(3) In any scenario, MC says he hasn't changed anything, but the future did.
+		(4) MC is a moron. He forgets key details that were just mentioned in the last episode.
+		Also, 1 of his friends die in the present after going back to the present, cumulatively.
+	S1: His friend dies (He accomplished his latest goal and went into the present).
+		7/10
+	S2: Nerd guy (Arch-nemesis of MC) is a time traveler, too?
+		8/10
+	S3: Nerd guy wasn't a time traveler. He just wanted to be like MC. Absolute cinema.
+		8/10
 
