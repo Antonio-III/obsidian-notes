@@ -168,11 +168,18 @@ S1: Female titan captured.
 S2: Titans are humans. Beast Titan speaks.
 9/10
 
-S3: Titans are people of a certain race that committed crimes against groups of people.
+S3: (Exposition dump) Titans are people of a certain race that committed crimes against groups of people.
 10/10
 
 S4, part 1: MC was about to fight Armored Titan and Jaw Titan. A buildup to the next part.
 8/10
+
+S4, part 2: Big titans walk on people.
+7/10
+
+S4, part 3: They reached a world without titans; except the place MC was buried in was a place to get titan powers, again; and the cycle continues (Civilizations don't know how to stop killing themselves). Cinema.
+7/10
+
 ### Incomplete
 
 Jujutsu Kaisen (2020-ongoing) - Sorcery or some shit
