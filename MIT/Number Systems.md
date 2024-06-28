@@ -1,4 +1,4 @@
-
+[Source](https://ocw.mit.edu/courses/16-01-unified-engineering-i-ii-iii-iv-fall-2005-spring-2006/84063b268408fcd4398c0ac44dfd6db5_number_systems.pdf)
 # Decimal Number System
 
 Decimal means **base 10**, hence the prefix **dec**. In this number system, the digits that can be used to count are 0,1,2,3,4,5,6,7,8,9. These are **10** symbols.
