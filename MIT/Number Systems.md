@@ -402,10 +402,29 @@ This means that the bit pattern can be seen as:
 |                                  1 1 1 0                                  |  -2   |                              1 1 1 0                              | .875  |
 |                                  1 1 1 1                                  |  -1   |                              1 1 1 1                              | .9375 |
 
+| a<sub>3</sub>,a<sub>2</sub>,a<sub>1</sub>,a<sub>0</sub>, unsigned | Value |
+| :---------------------------------------------------------------: | :---: |
+|                              0 0 0 0                              |  .0   |
+|                              0 0 0 1                              | .0625 |
+|                              0 0 1 0                              | .125  |
+|                              0 0 1 1                              | .1875 |
+|                              0 1 0 0                              | .250  |
+|                              0 1 0 1                              | .3125 |
+|                              0 1 1 0                              | .375  |
+|                              0 1 1 1                              | .4375 |
+|                              1 0 0 0                              |  .5   |
+|                              1 0 0 1                              | .5625 |
+|                              1 0 1 0                              | .625  |
+|                              1 0 1 1                              | .6875 |
+|                              1 1 0 0                              | .750  |
+|                              1 1 0 1                              | .8125 |
+|                              1 1 1 0                              | .875  |
+|                              1 1 1 1                              | .9375 |
+
 > [!question] What is the range (least~most) of values that this table can make?
 > -8.9375<sub>10</sub>~7.9375<sub>10</sub>.  
 
-> [!question] What is the precision (first value after 0) of the notation?
+> [!question] What is the precision (value of the fraction's least significant bit) of the notation?
 > 0.0625<sub>10</sub>.
 
 
