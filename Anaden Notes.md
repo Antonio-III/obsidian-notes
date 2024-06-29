@@ -1039,6 +1039,10 @@ FORBIDDEN CAVE
 
 
 DROWNED ERYTHULE(???)
+
+THE LUFFANA(???)
+
+Fileria(???)
 # Another Dungeon
 
 TOTO THEATER WORLD
