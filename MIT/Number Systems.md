@@ -323,7 +323,7 @@ We have a number: 1234567<sub>10</sub>. This number requires 7 place values to r
 
 In the context of integers, here are rules to determine if a number is significant:
 1. Any number except 0 is significant.
-2. A 0 is only significant if it is between the numbers 1~9.
+2. 0 is only significant if it is between the numbers 1~9.
 3. 0 is insignificant if it comes before numbers 1~9.
 
 > [!question] What are the significant digits of 0012340<sub>10</sub>?
@@ -411,12 +411,15 @@ This means that the bit pattern can be seen as:
 
 For programs to understand how to interpret a bit string to be a fixed-point notation, they use standards; specifically, the IEEE standard.
 
-> [question] What is the value represented by 1101.1110<sub>2</sub>? The integer is in two's complements, and the fractional is unsigned.
+> [!question] What is the value represented by 1101.1110<sub>2</sub>? The integer is in two's complements, and the fractional is unsigned.
 > -3.875<sub>10</sub>.
 
 
-## Modified Significance Rules
+## Bit Significance Rules
 
+1. A 1 is always significant.
+2. 0 is significant if it is between 1s.
+3. 
 
 ## Rational Notation
 
